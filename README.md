@@ -14,7 +14,7 @@ The SilentEpidemic dashboard was created by Orix Au Yeung (@SoloSynth1), Yingzi 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
 
 ## License: 
-The SilentEpidemic dashboard is licensed under the terms of the MIT license and Creative Commons Attribution 4.0 International License.
+The SilentEpidemic dashboard is licensed under the terms of the MIT license and [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Please refer to [the license file](LICENSE) for more information.
 
 ## References:
 1. Dataset Reference: National Institute on Drug Abuse. (2023). Overdose Data 1999-2021 [Excel file]. Retrieved from https://nida.nih.gov/sites/default/files/Overdose_data_1999-2021%201.19.23.xlsx
