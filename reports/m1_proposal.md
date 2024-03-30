@@ -33,6 +33,7 @@ The primary variables that will drive our visual analysis include:
 - Year: Temporal variable to illustrate time patterns, spanning from 1999 to 2021
 - Gender: Categorical variable to draw out disparities in drug misuse impacts between males and females.
 - Drug Categories: Categorical variable to elucidate the differential dangers they pose, including Any Opioid, Prescription Opioids, Heroin, Synthetic Opioids (other than Methadone, primarily fentanyl), Stimulants, Cocaine, and others.
+- Demographic: Categorical variable, including White (Non-Hispanic), Black (Non-Hispanic), Asian* (Non-Hispanic), Native Hawaiian or Other Pacific Islander* (Non-Hispanic), Hispanic, American Indian or Alaska Native (Non-Hispanic)
 
 A new variable, the 'Proportion of Deaths by Drug Type,' will be introduced to ascertain the most lethal drugs by taking the number of deaths attributable to each drug type and dividing it by the total number of overdose deaths. This metric will allow us to emphasize the disproportionate danger of certain substances, such as fentanyl, in our educational outreach.
 
