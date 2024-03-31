@@ -16,7 +16,6 @@ Our dashboard would be able to picture the following:
 - Drug Risk Comparisons: Visually represent the relative risks associated with different drug categories, highlighting the dangers of synthetic opioids compared to other substances.
 - Demographic Disparities: Highlight potential risk factors by ethnicity and gender to identify high-risk student populations.
 
-
 # Section 2: Description of the Data
 In response to Dr. Darling's concern and NIDA's commitment to addressing the surge in drug overdose fatalities, we will visualize data on National Drug Overdose Deaths from 1999 to 2021, drawn from the CDC WONDER database. The dataset provides detailed information on overdose deaths across the United States, categorized by drug type and demographic variables, and is a rich resource for understanding the evolving landscape of drug overdose fatalities.
 
@@ -41,7 +40,6 @@ Ideally, we would also have data on the educational backgrounds of individuals w
 
 Our visualizations aim to shed light on trends and changes in drug overdose deaths over the years. This crucial information directly addresses the concerns of our audience and aid healthcare professionals, policymakers, educators, and community leaders in developing targeted interventions and educational programs to prevent drug misuse and overdose, especially among youth, thereby aligning with NIDA's mission and Dr. Darling's objectives for the California State Board of Education.
 
-
 # Section 3: Research Questions and Usage Scenarios
 Dr. Darling is the State Board President of the California State Board of Education. She knows that the rate of national drug overdose deaths has been increasing over time in the United States and feels that there needs to be additional awareness raised on this topic amongst upper year high school students. As a result, she approached researchers from the National Institute on Drug Abuse (NIDA) and requested a customized dashboard which can be presented to students to educate them on the risks of drug overdose. Within the dashboard, she wants to display the relative risk of several types of drugs, as well as visualize the risk of overdose by ethnicity and gender to identify if any student populations are at higher risk of overdose. Lastly, she wants the dashboard to show overdose trends over time. 
 
@@ -51,5 +49,13 @@ Dr. Darling and other teachers will be able to use this dashboard to educate stu
 
 Overall, this dashboard will serve as a visual education tool to educate students on the real risk of drug overdose within society, and within their own age group. With this information, students will be able to make more informed personal choices regarding drug use. 
 
-
 # Section 4: App Sketch & Brief Description
+
+## App Sketch
+![Sketch of the app in development](../img/sketch.png)
+
+## Brief Description
+
+This app contains a landing page that shows the variables of interest from the dataset. This includes aggregated numbers such as overall overdose deaths and the fold increase in overdose cases during a specific time range. Plots including scatter plots, area plots and bar charts would be shown too to visualize the trend and the relationship between overdose cases and other related factors such as the type of drugs used and ethnicity. Tooltips would be popped up when the cursor hovers on the relevant data points.
+
+The menu at the left side of the menu would be solely dedicated to filters, offering means for users to manipulate the extension of data the graphs would contain according to their queries. The menu would contain different ways to filter, including but not limited to a dropdown menu for mutually exclusive categories, checkboxes for selecting multiple categories, and a slider for selecting time range. Finally, there will be a toggle button for toggling between datasets that encompass data from all ages and that contain data from only young adults.
