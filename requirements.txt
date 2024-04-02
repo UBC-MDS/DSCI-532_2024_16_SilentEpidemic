@@ -12,6 +12,7 @@ dash-table==5.0.0
 dash-vega-components==0.9.0
 et-xmlfile==1.1.0
 Flask==3.0.2
+gunicorn==21.2.0
 idna==3.6
 importlib_metadata==7.1.0
 itsdangerous==2.1.2
