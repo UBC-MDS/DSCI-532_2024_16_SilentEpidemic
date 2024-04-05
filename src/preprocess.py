@@ -66,9 +66,35 @@ def get_deaths_and_rate(raw_dfs, num_df_name, rate_df_name, pop_type):
     return overall_rows, specific_rows
 
 
-def preprocess():
-    """Preprocess the raw data.
+def get_rate(raw_dfs, rate_df_name):
+    """Parse and convert the data into a long format. (Rates only)
+
+    Parameters
+    ----------
+    raw_dfs
+        Dictionary returned from read_raw_data().
+
+    rate_df_name
+        Name of the Excel Spreadsheet that contains the death rates.
+
+    Returns
+    -------
+    list
+        A list of tuples containing deaths, death rates and other relevant attributes.
+
     """
+    rows = []
+
+    for year in range(1999, 2022):
+        for attributes, idx in config[rate_df_name]['indices'].items():
+            rate = raw_dfs[rate_df_name].loc[:, year].iloc[idx]
+            rows.append([*attributes, rate, year])
+
+    return rows
+
+
+def preprocess():
+    """Main preprocessing logic. """
     raw_dfs = read_raw_data()
 
     # handle overall data
@@ -82,13 +108,15 @@ def preprocess():
     overall_rows = o1 + o2
     specific_rows = s1 + s2
 
-    # TODO: handle demographic data
+    demo_rows = get_rate(raw_dfs, 'Rate OD by Demographic')
 
     overall_df = pd.DataFrame(overall_rows, columns=overall_columns)
     specific_df = pd.DataFrame(specific_rows, columns=specific_columns)
+    demo_df = pd.DataFrame(demo_rows, columns=demographic_columns)
 
-    overall_df.to_csv(os.path.join(OUTPUT_DIR, "overall.csv"))
-    specific_df.to_csv(os.path.join(OUTPUT_DIR, "specific.csv"))
+    overall_df.to_csv(os.path.join(OUTPUT_DIR, "overall.csv"), index=False)
+    specific_df.to_csv(os.path.join(OUTPUT_DIR, "specific.csv"), index=False)
+    demo_df.to_csv(os.path.join(OUTPUT_DIR, "demo.csv"), index=False)
 
 
 if __name__ == "__main__":

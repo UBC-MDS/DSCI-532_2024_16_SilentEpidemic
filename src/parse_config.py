@@ -1,6 +1,6 @@
-overall_columns = ("Type", "Sex", "Deaths", "Death Rate", "Year", "Population Type")
+overall_columns = ("Drug Type", "Sex", "Deaths", "Death Rate", "Year", "Population Type")
 specific_columns = ("Drug Type", "Sex", "with/without?", "Opioid Type", "Deaths", "Death Rate", "Year", "Population Type")
-demographic_columns = ()
+demographic_columns = ("Drug Type", "Demographic", "Death Rate", "Year")
 
 config = {
     'Number Drug OD Deaths': {
@@ -206,7 +206,64 @@ config = {
     },
     'Rate OD by Demographic': {
         "valid_rows": 84,
-        # TODO
+        "indices": {
+            ("Total Overdose Deaths", "Overall"): 0,
+            ("Total Overdose Deaths", "White (Non-Hispanic)"): 3,
+            ("Total Overdose Deaths", "Black (Non-Hispanic)"): 6,
+            ("Total Overdose Deaths", "Asian (Non-Hispanic)"): 9,
+            ("Total Overdose Deaths", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 12,
+            ("Total Overdose Deaths", "Hispanic"): 15,
+            ("Total Overdose Deaths", "American Indian or Alaska Native (Non-Hispanic)"): 18,
+            ("Any opioid", "Overall"): 21,
+            ("Any opioid", "White (Non-Hispanic)"): 24,
+            ("Any opioid", "Black (Non-Hispanic)"): 25,
+            ("Any opioid", "Asian (Non-Hispanic)"): 26,
+            ("Any opioid", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 27,
+            ("Any opioid", "Hispanic"): 28,
+            ("Any opioid", "American Indian or Alaska Native (Non-Hispanic)"): 29,
+            ("Prescription opioids", "Overall"): 30,
+            ("Prescription opioids", "White (Non-Hispanic)"): 33,
+            ("Prescription opioids", "Black (Non-Hispanic)"): 34,
+            ("Prescription opioids", "Asian (Non-Hispanic)"): 35,
+            ("Prescription opioids", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 36,
+            ("Prescription opioids", "Hispanic"): 37,
+            ("Prescription opioids", "American Indian or Alaska Native (Non-Hispanic)"): 38,
+            ("Synthetic opioids", "Overall"): 39,
+            ("Synthetic opioids", "White (Non-Hispanic)"): 42,
+            ("Synthetic opioids", "Black (Non-Hispanic)"): 43,
+            ("Synthetic opioids", "Asian (Non-Hispanic)"): 44,
+            ("Synthetic opioids", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 45,
+            ("Synthetic opioids", "Hispanic"): 46,
+            ("Synthetic opioids", "American Indian or Alaska Native (Non-Hispanic)"): 47,
+            ("Heroin", "Overall"): 48,
+            ("Heroin", "White (Non-Hispanic)"): 51,
+            ("Heroin", "Black (Non-Hispanic)"): 52,
+            ("Heroin", "Asian (Non-Hispanic)"): 53,
+            ("Heroin", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 54,
+            ("Heroin", "Hispanic"): 55,
+            ("Heroin", "American Indian or Alaska Native (Non-Hispanic)"): 56,
+            ("Stimulants", "Overall"): 57,
+            ("Stimulants", "White (Non-Hispanic)"): 60,
+            ("Stimulants", "Black (Non-Hispanic)"): 61,
+            ("Stimulants", "Asian (Non-Hispanic)"): 62,
+            ("Stimulants", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 63,
+            ("Stimulants", "Hispanic"): 64,
+            ("Stimulants", "American Indian or Alaska Native (Non-Hispanic)"): 65,
+            ("Cocaine", "Overall"): 66,
+            ("Cocaine", "White (Non-Hispanic)"): 69,
+            ("Cocaine", "Black (Non-Hispanic)"): 70,
+            ("Cocaine", "Asian (Non-Hispanic)"): 71,
+            ("Cocaine", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 72,
+            ("Cocaine", "Hispanic"): 73,
+            ("Cocaine", "American Indian or Alaska Native (Non-Hispanic)"): 74,
+            ("Psychostimulants", "Overall"): 75,
+            ("Psychostimulants", "White (Non-Hispanic)"): 78,
+            ("Psychostimulants", "Black (Non-Hispanic)"): 79,
+            ("Psychostimulants", "Asian (Non-Hispanic)"): 80,
+            ("Psychostimulants", "Native Hawaiin or Other Pacific Islander (Non-Hispanic)"): 81,
+            ("Psychostimulants", "Hispanic"): 82,
+            ("Psychostimulants", "American Indian or Alaska Native (Non-Hispanic)"): 83,
+        }
 
     },
 }
