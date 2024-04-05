@@ -1,0 +1,1841 @@
+,Drug Type,Sex,with/without?,Opioid Type,Deaths,Death Rate,Year,Population Type
+0,Prescription opioids,Female,overall,overall,1022.0,1.7,1999,Overall
+1,Prescription opioids,Male,overall,overall,2420.0,0.0,1999,Overall
+2,Prescription opioids,Female,with,synthetic,65.0,0.1,1999,Overall
+3,Prescription opioids,Male,with,synthetic,77.0,1.2,1999,Overall
+4,Synthetic opioids,Female,overall,overall,330.0,0.3,1999,Overall
+5,Synthetic opioids,Male,overall,overall,400.0,0.7,1999,Overall
+6,Heroin,Female,overall,overall,306.0,1.2,1999,Overall
+7,Heroin,Male,overall,overall,1654.0,,1999,Overall
+8,Heroin,Female,with,synthetic,4.0,,1999,Overall
+9,Heroin,Male,with,synthetic,11.0,,1999,Overall
+10,Stimulants,Female,overall,overall,980.0,2.3,1999,Overall
+11,Stimulants,Male,overall,overall,3291.0,0.7,1999,Overall
+12,Stimulants,Female,with,any,433.0,1.2,1999,Overall
+13,Stimulants,Male,with,any,1668.0,0.8,1999,Overall
+14,Stimulants,Female,with,synthetic,16.0,0.0,1999,Overall
+15,Stimulants,Male,with,synthetic,42.0,1.5,1999,Overall
+16,Cocaine,Female,overall,overall,850.0,2.1,1999,Overall
+17,Cocaine,Male,overall,overall,2972.0,0.7,1999,Overall
+18,Cocaine,Female,with,any,399.0,1.1,1999,Overall
+19,Cocaine,Male,with,any,1565.0,0.7,1999,Overall
+20,Cocaine,Female,with,synthetic,13.0,,1999,Overall
+21,Cocaine,Male,with,synthetic,34.0,,1999,Overall
+22,Psychostimulants,Female,overall,overall,158.0,0.3,1999,Overall
+23,Psychostimulants,Male,overall,overall,389.0,0.1,1999,Overall
+24,Psychostimulants,Female,with,any,46.0,0.1,1999,Overall
+25,Psychostimulants,Male,with,any,141.0,0.1,1999,Overall
+26,Psychostimulants,Female,with,synthetic,3.0,,1999,Overall
+27,Psychostimulants,Male,with,synthetic,8.0,,1999,Overall
+28,Benzodiazepines,Female,overall,overall,420.0,0.5,1999,Overall
+29,Benzodiazepines,Male,overall,overall,715.0,0.2,1999,Overall
+30,Benzodiazepines,Female,with,any,233.0,0.3,1999,Overall
+31,Benzodiazepines,Male,with,any,468.0,0.2,1999,Overall
+32,Benzodiazepines,Female,with,synthetic,51.0,,1999,Overall
+33,Benzodiazepines,Male,with,synthetic,71.0,,1999,Overall
+34,Antidepressants,Female,overall,overall,926.0,0.6,1999,Overall
+35,Antidepressants,Male,overall,overall,823.0,0.2,1999,Overall
+36,Antidepressants,Female,with,any,312.0,0.2,1999,Overall
+37,Antidepressants,Male,with,any,299.0,0.39999999999999997,1999,Overall
+38,Antidepressants,Female,with,synthetic,61.0,,1999,Overall
+39,Antidepressants,Male,with,synthetic,61.0,,1999,Overall
+40,Prescription opioids,Female,overall,overall,1236.0,1.8,2000,Overall
+41,Prescription opioids,Male,overall,overall,2549.0,0.0,2000,Overall
+42,Prescription opioids,Female,with,synthetic,76.0,0.1,2000,Overall
+43,Prescription opioids,Male,with,synthetic,91.0,1.3,2000,Overall
+44,Synthetic opioids,Female,overall,overall,374.0,0.3,2000,Overall
+45,Synthetic opioids,Male,overall,overall,408.0,0.7,2000,Overall
+46,Heroin,Female,overall,overall,279.0,1.1,2000,Overall
+47,Heroin,Male,overall,overall,1563.0,,2000,Overall
+48,Heroin,Female,with,synthetic,7.0,,2000,Overall
+49,Heroin,Male,with,synthetic,11.0,,2000,Overall
+50,Stimulants,Female,overall,overall,980.0,2.2,2000,Overall
+51,Stimulants,Male,overall,overall,3037.0,0.7,2000,Overall
+52,Stimulants,Female,with,any,422.0,1.1,2000,Overall
+53,Stimulants,Male,with,any,1550.0,0.7,2000,Overall
+54,Stimulants,Female,with,synthetic,15.0,0.0,2000,Overall
+55,Stimulants,Male,with,synthetic,36.0,1.4,2000,Overall
+56,Cocaine,Female,overall,overall,843.0,1.9,2000,Overall
+57,Cocaine,Male,overall,overall,2701.0,0.6,2000,Overall
+58,Cocaine,Female,with,any,387.0,1.0,2000,Overall
+59,Cocaine,Male,with,any,1447.0,0.7000000000000001,2000,Overall
+60,Cocaine,Female,with,synthetic,13.0,,2000,Overall
+61,Cocaine,Male,with,synthetic,33.0,,2000,Overall
+62,Psychostimulants,Female,overall,overall,164.0,0.3,2000,Overall
+63,Psychostimulants,Male,overall,overall,414.0,0.1,2000,Overall
+64,Psychostimulants,Female,with,any,49.0,0.1,2000,Overall
+65,Psychostimulants,Male,with,any,153.0,0.1,2000,Overall
+66,Psychostimulants,Female,with,synthetic,3.0,,2000,Overall
+67,Psychostimulants,Male,with,synthetic,4.0,,2000,Overall
+68,Benzodiazepines,Female,overall,overall,480.0,0.6,2000,Overall
+69,Benzodiazepines,Male,overall,overall,818.0,0.3,2000,Overall
+70,Benzodiazepines,Female,with,any,310.0,0.4,2000,Overall
+71,Benzodiazepines,Male,with,any,582.0,0.2,2000,Overall
+72,Benzodiazepines,Female,with,synthetic,55.0,,2000,Overall
+73,Benzodiazepines,Male,with,synthetic,81.0,,2000,Overall
+74,Antidepressants,Female,overall,overall,984.0,0.6,2000,Overall
+75,Antidepressants,Male,overall,overall,814.0,0.3,2000,Overall
+76,Antidepressants,Female,with,any,387.0,0.2,2000,Overall
+77,Antidepressants,Male,with,any,292.0,0.3,2000,Overall
+78,Antidepressants,Female,with,synthetic,77.0,0.0,2000,Overall
+79,Antidepressants,Male,with,synthetic,46.0,,2000,Overall
+80,Prescription opioids,Female,overall,overall,1608.0,2.2,2001,Overall
+81,Prescription opioids,Male,overall,overall,3162.0,0.1,2001,Overall
+82,Prescription opioids,Female,with,synthetic,86.0,0.1,2001,Overall
+83,Prescription opioids,Male,with,synthetic,113.0,1.5999999999999999,2001,Overall
+84,Synthetic opioids,Female,overall,overall,447.0,0.4,2001,Overall
+85,Synthetic opioids,Male,overall,overall,510.0,0.6,2001,Overall
+86,Heroin,Female,overall,overall,313.0,1.0,2001,Overall
+87,Heroin,Male,overall,overall,1466.0,,2001,Overall
+88,Heroin,Female,with,synthetic,4.0,,2001,Overall
+89,Heroin,Male,with,synthetic,11.0,,2001,Overall
+90,Stimulants,Female,overall,overall,1083.0,2.3,2001,Overall
+91,Stimulants,Male,overall,overall,3225.0,0.7,2001,Overall
+92,Stimulants,Female,with,any,480.0,1.1,2001,Overall
+93,Stimulants,Male,with,any,1516.0,0.8,2001,Overall
+94,Stimulants,Female,with,synthetic,28.0,0.0,2001,Overall
+95,Stimulants,Male,with,synthetic,52.0,1.5,2001,Overall
+96,Cocaine,Female,overall,overall,957.0,2.0,2001,Overall
+97,Cocaine,Male,overall,overall,2876.0,0.6,2001,Overall
+98,Cocaine,Female,with,any,453.0,1.0,2001,Overall
+99,Cocaine,Male,with,any,1433.0,0.7000000000000001,2001,Overall
+100,Cocaine,Female,with,synthetic,25.0,,2001,Overall
+101,Cocaine,Male,with,synthetic,50.0,,2001,Overall
+102,Psychostimulants,Female,overall,overall,152.0,0.3,2001,Overall
+103,Psychostimulants,Male,overall,overall,411.0,0.1,2001,Overall
+104,Psychostimulants,Female,with,any,42.0,0.1,2001,Overall
+105,Psychostimulants,Male,with,any,122.0,0.1,2001,Overall
+106,Psychostimulants,Female,with,synthetic,3.0,,2001,Overall
+107,Psychostimulants,Male,with,synthetic,3.0,,2001,Overall
+108,Benzodiazepines,Female,overall,overall,614.0,0.7,2001,Overall
+109,Benzodiazepines,Male,overall,overall,980.0,0.4,2001,Overall
+110,Benzodiazepines,Female,with,any,411.0,0.5,2001,Overall
+111,Benzodiazepines,Male,with,any,710.0,0.19999999999999996,2001,Overall
+112,Benzodiazepines,Female,with,synthetic,83.0,0.1,2001,Overall
+113,Benzodiazepines,Male,with,synthetic,103.0,0.5,2001,Overall
+114,Antidepressants,Female,overall,overall,1009.0,0.7,2001,Overall
+115,Antidepressants,Male,overall,overall,1008.0,0.3,2001,Overall
+116,Antidepressants,Female,with,any,426.0,0.3,2001,Overall
+117,Antidepressants,Male,with,any,464.0,0.39999999999999997,2001,Overall
+118,Antidepressants,Female,with,synthetic,79.0,0.0,2001,Overall
+119,Antidepressants,Male,with,synthetic,68.0,0.6,2001,Overall
+120,Prescription opioids,Female,overall,overall,2304.0,2.9,2002,Overall
+121,Prescription opioids,Male,overall,overall,4179.0,0.1,2002,Overall
+122,Prescription opioids,Female,with,synthetic,157.0,0.1,2002,Overall
+123,Prescription opioids,Male,with,synthetic,165.0,2.1999999999999997,2002,Overall
+124,Synthetic opioids,Female,overall,overall,614.0,0.5,2002,Overall
+125,Synthetic opioids,Male,overall,overall,681.0,0.7,2002,Overall
+126,Heroin,Female,overall,overall,359.0,1.2,2002,Overall
+127,Heroin,Male,overall,overall,1730.0,,2002,Overall
+128,Heroin,Female,with,synthetic,5.0,,2002,Overall
+129,Heroin,Male,with,synthetic,10.0,,2002,Overall
+130,Stimulants,Female,overall,overall,1400.0,2.8,2002,Overall
+131,Stimulants,Male,overall,overall,4023.0,0.9,2002,Overall
+132,Stimulants,Female,with,any,658.0,1.4,2002,Overall
+133,Stimulants,Male,with,any,1920.0,0.9999999999999999,2002,Overall
+134,Stimulants,Female,with,synthetic,30.0,0.0,2002,Overall
+135,Stimulants,Male,with,synthetic,53.0,1.9,2002,Overall
+136,Cocaine,Female,overall,overall,1143.0,2.4,2002,Overall
+137,Cocaine,Male,overall,overall,3456.0,0.8,2002,Overall
+138,Cocaine,Female,with,any,560.0,1.2,2002,Overall
+139,Cocaine,Male,with,any,1758.0,0.8,2002,Overall
+140,Cocaine,Female,with,synthetic,19.0,,2002,Overall
+141,Cocaine,Male,with,synthetic,46.0,,2002,Overall
+142,Psychostimulants,Female,overall,overall,285.0,0.5,2002,Overall
+143,Psychostimulants,Male,overall,overall,656.0,0.1,2002,Overall
+144,Psychostimulants,Female,with,any,114.0,0.1,2002,Overall
+145,Psychostimulants,Male,with,any,211.0,0.19999999999999998,2002,Overall
+146,Psychostimulants,Female,with,synthetic,12.0,,2002,Overall
+147,Psychostimulants,Male,with,synthetic,7.0,,2002,Overall
+148,Benzodiazepines,Female,overall,overall,763.0,0.9,2002,Overall
+149,Benzodiazepines,Male,overall,overall,1259.0,0.5,2002,Overall
+150,Benzodiazepines,Female,with,any,553.0,0.7,2002,Overall
+151,Benzodiazepines,Male,with,any,958.0,0.19999999999999996,2002,Overall
+152,Benzodiazepines,Female,with,synthetic,107.0,0.1,2002,Overall
+153,Benzodiazepines,Male,with,synthetic,123.0,0.6,2002,Overall
+154,Antidepressants,Female,overall,overall,1318.0,0.7,2002,Overall
+155,Antidepressants,Male,overall,overall,1052.0,0.4,2002,Overall
+156,Antidepressants,Female,with,any,634.0,0.4,2002,Overall
+157,Antidepressants,Male,with,any,514.0,0.4,2002,Overall
+158,Antidepressants,Female,with,synthetic,154.0,0.1,2002,Overall
+159,Antidepressants,Male,with,synthetic,84.0,0.7000000000000001,2002,Overall
+160,Prescription opioids,Female,overall,overall,2681.0,3.3,2003,Overall
+161,Prescription opioids,Male,overall,overall,4780.0,0.1,2003,Overall
+162,Prescription opioids,Female,with,synthetic,151.0,0.1,2003,Overall
+163,Prescription opioids,Male,with,synthetic,193.0,2.5,2003,Overall
+164,Synthetic opioids,Female,overall,overall,643.0,0.5,2003,Overall
+165,Synthetic opioids,Male,overall,overall,757.0,0.7,2003,Overall
+166,Heroin,Female,overall,overall,358.0,1.2,2003,Overall
+167,Heroin,Male,overall,overall,1722.0,,2003,Overall
+168,Heroin,Female,with,synthetic,3.0,,2003,Overall
+169,Heroin,Male,with,synthetic,13.0,,2003,Overall
+170,Stimulants,Female,overall,overall,1626.0,3.2,2003,Overall
+171,Stimulants,Male,overall,overall,4589.0,0.9,2003,Overall
+172,Stimulants,Female,with,any,692.0,1.4,2003,Overall
+173,Stimulants,Male,with,any,2040.0,1.2000000000000002,2003,Overall
+174,Stimulants,Female,with,synthetic,57.0,0.1,2003,Overall
+175,Stimulants,Male,with,synthetic,78.0,2.1,2003,Overall
+176,Cocaine,Female,overall,overall,1322.0,2.7,2003,Overall
+177,Cocaine,Male,overall,overall,3877.0,0.8,2003,Overall
+178,Cocaine,Female,with,any,603.0,1.3,2003,Overall
+179,Cocaine,Male,with,any,1853.0,1.0,2003,Overall
+180,Cocaine,Female,with,synthetic,44.0,0.1,2003,Overall
+181,Cocaine,Male,with,synthetic,65.0,,2003,Overall
+182,Psychostimulants,Female,overall,overall,353.0,0.6,2003,Overall
+183,Psychostimulants,Male,overall,overall,826.0,0.1,2003,Overall
+184,Psychostimulants,Female,with,any,119.0,0.2,2003,Overall
+185,Psychostimulants,Male,with,any,240.0,0.30000000000000004,2003,Overall
+186,Psychostimulants,Female,with,synthetic,14.0,,2003,Overall
+187,Psychostimulants,Male,with,synthetic,14.0,,2003,Overall
+188,Benzodiazepines,Female,overall,overall,885.0,0.9,2003,Overall
+189,Benzodiazepines,Male,overall,overall,1363.0,0.6,2003,Overall
+190,Benzodiazepines,Female,with,any,620.0,0.7,2003,Overall
+191,Benzodiazepines,Male,with,any,1072.0,0.20000000000000007,2003,Overall
+192,Benzodiazepines,Female,with,synthetic,105.0,0.1,2003,Overall
+193,Benzodiazepines,Male,with,synthetic,137.0,0.7000000000000001,2003,Overall
+194,Antidepressants,Female,overall,overall,1384.0,0.8,2003,Overall
+195,Antidepressants,Male,overall,overall,1128.0,0.4,2003,Overall
+196,Antidepressants,Female,with,any,692.0,0.4,2003,Overall
+197,Antidepressants,Male,with,any,542.0,0.5,2003,Overall
+198,Antidepressants,Female,with,synthetic,139.0,0.1,2003,Overall
+199,Antidepressants,Male,with,synthetic,91.0,0.8,2003,Overall
+200,Prescription opioids,Female,overall,overall,3144.0,3.7,2004,Overall
+201,Prescription opioids,Male,overall,overall,5433.0,0.1,2004,Overall
+202,Prescription opioids,Female,with,synthetic,184.0,0.1,2004,Overall
+203,Prescription opioids,Male,with,synthetic,200.0,2.8,2004,Overall
+204,Synthetic opioids,Female,overall,overall,798.0,0.6,2004,Overall
+205,Synthetic opioids,Male,overall,overall,866.0,0.6,2004,Overall
+206,Heroin,Female,overall,overall,341.0,1.1,2004,Overall
+207,Heroin,Male,overall,overall,1537.0,,2004,Overall
+208,Heroin,Female,with,synthetic,6.0,,2004,Overall
+209,Heroin,Male,with,synthetic,7.0,,2004,Overall
+210,Stimulants,Female,overall,overall,1767.0,3.3,2004,Overall
+211,Stimulants,Male,overall,overall,4824.0,1.0,2004,Overall
+212,Stimulants,Female,with,any,743.0,1.4,2004,Overall
+213,Stimulants,Male,with,any,2107.0,1.2999999999999998,2004,Overall
+214,Stimulants,Female,with,synthetic,52.0,0.1,2004,Overall
+215,Stimulants,Male,with,synthetic,105.0,2.3,2004,Overall
+216,Cocaine,Female,overall,overall,1405.0,2.8,2004,Overall
+217,Cocaine,Male,overall,overall,4038.0,0.9,2004,Overall
+218,Cocaine,Female,with,any,634.0,1.3,2004,Overall
+219,Cocaine,Male,with,any,1888.0,0.9999999999999999,2004,Overall
+220,Cocaine,Female,with,synthetic,41.0,0.1,2004,Overall
+221,Cocaine,Male,with,synthetic,89.0,,2004,Overall
+222,Psychostimulants,Female,overall,overall,393.0,0.6,2004,Overall
+223,Psychostimulants,Male,overall,overall,912.0,0.1,2004,Overall
+224,Psychostimulants,Female,with,any,128.0,0.2,2004,Overall
+225,Psychostimulants,Male,with,any,279.0,0.30000000000000004,2004,Overall
+226,Psychostimulants,Female,with,synthetic,12.0,,2004,Overall
+227,Psychostimulants,Male,with,synthetic,17.0,,2004,Overall
+228,Benzodiazepines,Female,overall,overall,1079.0,1.1,2004,Overall
+229,Benzodiazepines,Male,overall,overall,1548.0,0.7,2004,Overall
+230,Benzodiazepines,Female,with,any,797.0,0.9,2004,Overall
+231,Benzodiazepines,Male,with,any,1252.0,0.20000000000000007,2004,Overall
+232,Benzodiazepines,Female,with,synthetic,128.0,0.1,2004,Overall
+233,Benzodiazepines,Male,with,synthetic,142.0,0.8,2004,Overall
+234,Antidepressants,Female,overall,overall,1549.0,0.8,2004,Overall
+235,Antidepressants,Male,overall,overall,1209.0,0.5,2004,Overall
+236,Antidepressants,Female,with,any,762.0,0.4,2004,Overall
+237,Antidepressants,Male,with,any,617.0,0.4,2004,Overall
+238,Antidepressants,Female,with,synthetic,164.0,0.1,2004,Overall
+239,Antidepressants,Male,with,synthetic,100.0,0.8,2004,Overall
+240,Prescription opioids,Female,overall,overall,3572.0,4.1,2005,Overall
+241,Prescription opioids,Male,overall,overall,6040.0,0.2,2005,Overall
+242,Prescription opioids,Female,with,synthetic,207.0,0.1,2005,Overall
+243,Prescription opioids,Male,with,synthetic,219.0,3.0,2005,Overall
+244,Synthetic opioids,Female,overall,overall,823.0,0.6,2005,Overall
+245,Synthetic opioids,Male,overall,overall,919.0,0.7,2005,Overall
+246,Heroin,Female,overall,overall,389.0,1.1,2005,Overall
+247,Heroin,Male,overall,overall,1620.0,,2005,Overall
+248,Heroin,Female,with,synthetic,9.0,,2005,Overall
+249,Heroin,Male,with,synthetic,25.0,,2005,Overall
+250,Stimulants,Female,overall,overall,2001.0,3.8,2005,Overall
+251,Stimulants,Male,overall,overall,5605.0,1.1,2005,Overall
+252,Stimulants,Female,with,any,853.0,1.6,2005,Overall
+253,Stimulants,Male,with,any,2362.0,1.5,2005,Overall
+254,Stimulants,Female,with,synthetic,75.0,0.1,2005,Overall
+255,Stimulants,Male,with,synthetic,128.0,2.5,2005,Overall
+256,Cocaine,Female,overall,overall,1620.0,3.1,2005,Overall
+257,Cocaine,Male,overall,overall,4588.0,1.0,2005,Overall
+258,Cocaine,Female,with,any,737.0,1.4,2005,Overall
+259,Cocaine,Male,with,any,2105.0,1.1,2005,Overall
+260,Cocaine,Female,with,synthetic,62.0,0.1,2005,Overall
+261,Cocaine,Male,with,synthetic,112.0,,2005,Overall
+262,Psychostimulants,Female,overall,overall,438.0,0.8,2005,Overall
+263,Psychostimulants,Male,overall,overall,1170.0,0.2,2005,Overall
+264,Psychostimulants,Female,with,any,145.0,0.2,2005,Overall
+265,Psychostimulants,Male,with,any,331.0,0.3,2005,Overall
+266,Psychostimulants,Female,with,synthetic,13.0,,2005,Overall
+267,Psychostimulants,Male,with,synthetic,20.0,,2005,Overall
+268,Benzodiazepines,Female,overall,overall,1209.0,1.3,2005,Overall
+269,Benzodiazepines,Male,overall,overall,1875.0,0.8,2005,Overall
+270,Benzodiazepines,Female,with,any,922.0,1.0,2005,Overall
+271,Benzodiazepines,Male,with,any,1508.0,0.30000000000000004,2005,Overall
+272,Benzodiazepines,Female,with,synthetic,150.0,0.1,2005,Overall
+273,Benzodiazepines,Male,with,synthetic,162.0,1.0,2005,Overall
+274,Antidepressants,Female,overall,overall,1575.0,0.9,2005,Overall
+275,Antidepressants,Male,overall,overall,1286.0,0.5,2005,Overall
+276,Antidepressants,Female,with,any,806.0,0.5,2005,Overall
+277,Antidepressants,Male,with,any,702.0,0.4,2005,Overall
+278,Antidepressants,Female,with,synthetic,159.0,0.1,2005,Overall
+279,Antidepressants,Male,with,synthetic,119.0,0.8,2005,Overall
+280,Prescription opioids,Female,overall,overall,4274.0,4.9,2006,Overall
+281,Prescription opioids,Male,overall,overall,7315.0,0.2,2006,Overall
+282,Prescription opioids,Female,with,synthetic,246.0,0.2,2006,Overall
+283,Prescription opioids,Male,with,synthetic,327.0,3.6999999999999997,2006,Overall
+284,Synthetic opioids,Female,overall,overall,1030.0,1.1,2006,Overall
+285,Synthetic opioids,Male,overall,overall,1677.0,0.7,2006,Overall
+286,Heroin,Female,overall,overall,344.0,1.2,2006,Overall
+287,Heroin,Male,overall,overall,1744.0,,2006,Overall
+288,Heroin,Female,with,synthetic,25.0,,2006,Overall
+289,Heroin,Male,with,synthetic,88.0,,2006,Overall
+290,Stimulants,Female,overall,overall,2214.0,4.4,2006,Overall
+291,Stimulants,Male,overall,overall,6454.0,1.3,2006,Overall
+292,Stimulants,Female,with,any,979.0,1.9,2006,Overall
+293,Stimulants,Male,with,any,2785.0,1.5999999999999999,2006,Overall
+294,Stimulants,Female,with,synthetic,120.0,0.2,2006,Overall
+295,Stimulants,Male,with,synthetic,343.0,2.6999999999999997,2006,Overall
+296,Cocaine,Female,overall,overall,1860.0,3.8,2006,Overall
+297,Cocaine,Male,overall,overall,5588.0,1.1,2006,Overall
+298,Cocaine,Female,with,any,845.0,1.7,2006,Overall
+299,Cocaine,Male,with,any,2527.0,1.4,2006,Overall
+300,Cocaine,Female,with,synthetic,109.0,0.2,2006,Overall
+301,Cocaine,Male,with,synthetic,323.0,2.3,2006,Overall
+302,Psychostimulants,Female,overall,overall,411.0,0.7,2006,Overall
+303,Psychostimulants,Male,overall,overall,1051.0,0.2,2006,Overall
+304,Psychostimulants,Female,with,any,170.0,0.2,2006,Overall
+305,Psychostimulants,Male,with,any,356.0,0.3,2006,Overall
+306,Psychostimulants,Female,with,synthetic,16.0,,2006,Overall
+307,Psychostimulants,Male,with,synthetic,21.0,,2006,Overall
+308,Benzodiazepines,Female,overall,overall,1472.0,1.6,2006,Overall
+309,Benzodiazepines,Male,overall,overall,2363.0,1.0,2006,Overall
+310,Benzodiazepines,Female,with,any,1137.0,1.3,2006,Overall
+311,Benzodiazepines,Male,with,any,1908.0,0.30000000000000004,2006,Overall
+312,Benzodiazepines,Female,with,synthetic,165.0,0.2,2006,Overall
+313,Benzodiazepines,Male,with,synthetic,242.0,1.2,2006,Overall
+314,Antidepressants,Female,overall,overall,1819.0,0.9,2006,Overall
+315,Antidepressants,Male,overall,overall,1314.0,0.5,2006,Overall
+316,Antidepressants,Female,with,any,946.0,0.5,2006,Overall
+317,Antidepressants,Male,with,any,716.0,0.5,2006,Overall
+318,Antidepressants,Female,with,synthetic,176.0,0.1,2006,Overall
+319,Antidepressants,Male,with,synthetic,124.0,0.9,2006,Overall
+320,Prescription opioids,Female,overall,overall,4863.0,5.3,2007,Overall
+321,Prescription opioids,Male,overall,overall,7933.0,0.2,2007,Overall
+322,Prescription opioids,Female,with,synthetic,286.0,0.2,2007,Overall
+323,Prescription opioids,Male,with,synthetic,315.0,4.0,2007,Overall
+324,Synthetic opioids,Female,overall,overall,1053.0,0.8,2007,Overall
+325,Synthetic opioids,Male,overall,overall,1160.0,0.8,2007,Overall
+326,Heroin,Female,overall,overall,399.0,1.3,2007,Overall
+327,Heroin,Male,overall,overall,2000.0,,2007,Overall
+328,Heroin,Female,with,synthetic,3.0,,2007,Overall
+329,Heroin,Male,with,synthetic,10.0,,2007,Overall
+330,Stimulants,Female,overall,overall,2028.0,3.8,2007,Overall
+331,Stimulants,Male,overall,overall,5669.0,1.2,2007,Overall
+332,Stimulants,Female,with,any,902.0,1.7,2007,Overall
+333,Stimulants,Male,with,any,2492.0,1.4000000000000001,2007,Overall
+334,Stimulants,Female,with,synthetic,76.0,0.1,2007,Overall
+335,Stimulants,Male,with,synthetic,170.0,2.5,2007,Overall
+336,Cocaine,Female,overall,overall,1665.0,3.2,2007,Overall
+337,Cocaine,Male,overall,overall,4847.0,1.0,2007,Overall
+338,Cocaine,Female,with,any,784.0,1.5,2007,Overall
+339,Cocaine,Male,with,any,2243.0,1.2000000000000002,2007,Overall
+340,Cocaine,Female,with,synthetic,63.0,0.1,2007,Overall
+341,Cocaine,Male,with,synthetic,156.0,2.1,2007,Overall
+342,Psychostimulants,Female,overall,overall,409.0,0.7,2007,Overall
+343,Psychostimulants,Male,overall,overall,969.0,0.2,2007,Overall
+344,Psychostimulants,Female,with,any,150.0,0.2,2007,Overall
+345,Psychostimulants,Male,with,any,323.0,0.2,2007,Overall
+346,Psychostimulants,Female,with,synthetic,17.0,,2007,Overall
+347,Psychostimulants,Male,with,synthetic,18.0,,2007,Overall
+348,Benzodiazepines,Female,overall,overall,1894.0,1.7,2007,Overall
+349,Benzodiazepines,Male,overall,overall,2606.0,1.2,2007,Overall
+350,Benzodiazepines,Female,with,any,1473.0,1.4,2007,Overall
+351,Benzodiazepines,Male,with,any,2132.0,0.30000000000000004,2007,Overall
+352,Benzodiazepines,Female,with,synthetic,224.0,0.1,2007,Overall
+353,Benzodiazepines,Male,with,synthetic,212.0,1.4,2007,Overall
+354,Antidepressants,Female,overall,overall,1958.0,1.0,2007,Overall
+355,Antidepressants,Male,overall,overall,1467.0,0.6,2007,Overall
+356,Antidepressants,Female,with,any,1094.0,0.5,2007,Overall
+357,Antidepressants,Male,with,any,807.0,0.5000000000000001,2007,Overall
+358,Antidepressants,Female,with,synthetic,203.0,0.1,2007,Overall
+359,Antidepressants,Male,with,synthetic,89.0,1.0,2007,Overall
+360,Prescription opioids,Female,overall,overall,4959.0,5.4,2008,Overall
+361,Prescription opioids,Male,overall,overall,8190.0,0.2,2008,Overall
+362,Prescription opioids,Female,with,synthetic,309.0,0.2,2008,Overall
+363,Prescription opioids,Male,with,synthetic,346.0,4.1,2008,Overall
+364,Synthetic opioids,Female,overall,overall,1083.0,0.8,2008,Overall
+365,Synthetic opioids,Male,overall,overall,1223.0,1.0,2008,Overall
+366,Heroin,Female,overall,overall,551.0,1.6,2008,Overall
+367,Heroin,Male,overall,overall,2490.0,,2008,Overall
+368,Heroin,Female,with,synthetic,13.0,,2008,Overall
+369,Heroin,Male,with,synthetic,15.0,,2008,Overall
+370,Stimulants,Female,overall,overall,1667.0,3.1,2008,Overall
+371,Stimulants,Male,overall,overall,4653.0,1.0,2008,Overall
+372,Stimulants,Female,with,any,829.0,1.5,2008,Overall
+373,Stimulants,Male,with,any,2256.0,1.1,2008,Overall
+374,Stimulants,Female,with,synthetic,78.0,0.1,2008,Overall
+375,Stimulants,Male,with,synthetic,149.0,2.0,2008,Overall
+376,Cocaine,Female,overall,overall,1322.0,2.5,2008,Overall
+377,Cocaine,Male,overall,overall,3807.0,0.9,2008,Overall
+378,Cocaine,Female,with,any,695.0,1.3,2008,Overall
+379,Cocaine,Male,with,any,1961.0,0.7999999999999999,2008,Overall
+380,Cocaine,Female,with,synthetic,59.0,0.1,2008,Overall
+381,Cocaine,Male,with,synthetic,123.0,1.7,2008,Overall
+382,Psychostimulants,Female,overall,overall,375.0,0.6,2008,Overall
+383,Psychostimulants,Male,overall,overall,927.0,0.2,2008,Overall
+384,Psychostimulants,Female,with,any,151.0,0.2,2008,Overall
+385,Psychostimulants,Male,with,any,344.0,0.2,2008,Overall
+386,Psychostimulants,Female,with,synthetic,19.0,,2008,Overall
+387,Psychostimulants,Male,with,synthetic,28.0,,2008,Overall
+388,Benzodiazepines,Female,overall,overall,2046.0,2.0,2008,Overall
+389,Benzodiazepines,Male,overall,overall,2964.0,1.3,2008,Overall
+390,Benzodiazepines,Female,with,any,1618.0,1.6,2008,Overall
+391,Benzodiazepines,Male,with,any,2452.0,0.30000000000000004,2008,Overall
+392,Benzodiazepines,Female,with,synthetic,250.0,0.2,2008,Overall
+393,Benzodiazepines,Male,with,synthetic,241.0,1.4000000000000001,2008,Overall
+394,Antidepressants,Female,overall,overall,2047.0,1.0,2008,Overall
+395,Antidepressants,Male,overall,overall,1563.0,0.7,2008,Overall
+396,Antidepressants,Female,with,any,1199.0,0.6,2008,Overall
+397,Antidepressants,Male,with,any,912.0,0.40000000000000013,2008,Overall
+398,Antidepressants,Female,with,synthetic,248.0,0.1,2008,Overall
+399,Antidepressants,Male,with,synthetic,136.0,1.0,2008,Overall
+400,Prescription opioids,Female,overall,overall,5212.0,5.5,2009,Overall
+401,Prescription opioids,Male,overall,overall,8311.0,0.3,2009,Overall
+402,Prescription opioids,Female,with,synthetic,444.0,0.3,2009,Overall
+403,Prescription opioids,Male,with,synthetic,428.0,4.1000000000000005,2009,Overall
+404,Synthetic opioids,Female,overall,overall,1445.0,1.0,2009,Overall
+405,Synthetic opioids,Male,overall,overall,1501.0,1.1,2009,Overall
+406,Heroin,Female,overall,overall,577.0,1.8,2009,Overall
+407,Heroin,Male,overall,overall,2701.0,,2009,Overall
+408,Heroin,Female,with,synthetic,10.0,,2009,Overall
+409,Heroin,Male,with,synthetic,19.0,,2009,Overall
+410,Stimulants,Female,overall,overall,1586.0,2.8,2009,Overall
+411,Stimulants,Male,overall,overall,4238.0,0.9,2009,Overall
+412,Stimulants,Female,with,any,752.0,1.3,2009,Overall
+413,Stimulants,Male,with,any,2014.0,0.9999999999999999,2009,Overall
+414,Stimulants,Female,with,synthetic,83.0,0.1,2009,Overall
+415,Stimulants,Male,with,synthetic,157.0,1.7999999999999998,2009,Overall
+416,Cocaine,Female,overall,overall,1141.0,2.1,2009,Overall
+417,Cocaine,Male,overall,overall,3209.0,0.7,2009,Overall
+418,Cocaine,Female,with,any,574.0,1.1,2009,Overall
+419,Cocaine,Male,with,any,1636.0,0.7,2009,Overall
+420,Cocaine,Female,with,synthetic,61.0,0.1,2009,Overall
+421,Cocaine,Male,with,synthetic,115.0,1.4,2009,Overall
+422,Psychostimulants,Female,overall,overall,489.0,0.8,2009,Overall
+423,Psychostimulants,Male,overall,overall,1143.0,0.2,2009,Overall
+424,Psychostimulants,Female,with,any,207.0,0.3,2009,Overall
+425,Psychostimulants,Male,with,any,447.0,0.3,2009,Overall
+426,Psychostimulants,Female,with,synthetic,25.0,,2009,Overall
+427,Psychostimulants,Male,with,synthetic,44.0,,2009,Overall
+428,Benzodiazepines,Female,overall,overall,2281.0,2.2,2009,Overall
+429,Benzodiazepines,Male,overall,overall,3286.0,1.5,2009,Overall
+430,Benzodiazepines,Female,with,any,1853.0,1.8,2009,Overall
+431,Benzodiazepines,Male,with,any,2780.0,0.30000000000000004,2009,Overall
+432,Benzodiazepines,Female,with,synthetic,330.0,0.2,2009,Overall
+433,Benzodiazepines,Male,with,synthetic,328.0,1.6,2009,Overall
+434,Antidepressants,Female,overall,overall,2133.0,1.1,2009,Overall
+435,Antidepressants,Male,overall,overall,1635.0,0.7,2009,Overall
+436,Antidepressants,Female,with,any,1308.0,0.6,2009,Overall
+437,Antidepressants,Male,with,any,984.0,0.5,2009,Overall
+438,Antidepressants,Female,with,synthetic,337.0,0.1,2009,Overall
+439,Antidepressants,Male,with,synthetic,168.0,1.0,2009,Overall
+440,Prescription opioids,Female,overall,overall,5644.0,5.8,2010,Overall
+441,Prescription opioids,Male,overall,overall,8939.0,0.3,2010,Overall
+442,Prescription opioids,Female,with,synthetic,453.0,0.3,2010,Overall
+443,Prescription opioids,Male,with,synthetic,486.0,4.4,2010,Overall
+444,Synthetic opioids,Female,overall,overall,1440.0,1.0,2010,Overall
+445,Synthetic opioids,Male,overall,overall,1567.0,1.0,2010,Overall
+446,Heroin,Female,overall,overall,584.0,1.6,2010,Overall
+447,Heroin,Male,overall,overall,2452.0,,2010,Overall
+448,Heroin,Female,with,synthetic,8.0,,2010,Overall
+449,Heroin,Male,with,synthetic,37.0,,2010,Overall
+450,Stimulants,Female,overall,overall,1683.0,2.8,2010,Overall
+451,Stimulants,Male,overall,overall,4231.0,0.9,2010,Overall
+452,Stimulants,Female,with,any,803.0,1.2,2010,Overall
+453,Stimulants,Male,with,any,1859.0,0.9999999999999999,2010,Overall
+454,Stimulants,Female,with,synthetic,99.0,0.1,2010,Overall
+455,Stimulants,Male,with,synthetic,136.0,1.7999999999999998,2010,Overall
+456,Cocaine,Female,overall,overall,1132.0,2.0,2010,Overall
+457,Cocaine,Male,overall,overall,3051.0,0.7,2010,Overall
+458,Cocaine,Female,with,any,572.0,1.0,2010,Overall
+459,Cocaine,Male,with,any,1514.0,0.6000000000000001,2010,Overall
+460,Cocaine,Female,with,synthetic,63.0,0.1,2010,Overall
+461,Cocaine,Male,with,synthetic,104.0,1.2,2010,Overall
+462,Psychostimulants,Female,overall,overall,592.0,0.8,2010,Overall
+463,Psychostimulants,Male,overall,overall,1262.0,0.2,2010,Overall
+464,Psychostimulants,Female,with,any,255.0,0.2,2010,Overall
+465,Psychostimulants,Male,with,any,385.0,0.39999999999999997,2010,Overall
+466,Psychostimulants,Female,with,synthetic,37.0,,2010,Overall
+467,Psychostimulants,Male,with,synthetic,36.0,,2010,Overall
+468,Benzodiazepines,Female,overall,overall,2579.0,2.6,2010,Overall
+469,Benzodiazepines,Male,overall,overall,3918.0,1.8,2010,Overall
+470,Benzodiazepines,Female,with,any,2125.0,2.2,2010,Overall
+471,Benzodiazepines,Male,with,any,3392.0,0.30000000000000004,2010,Overall
+472,Benzodiazepines,Female,with,synthetic,355.0,0.3,2010,Overall
+473,Benzodiazepines,Male,with,synthetic,391.0,1.9000000000000001,2010,Overall
+474,Antidepressants,Female,overall,overall,2204.0,1.1,2010,Overall
+475,Antidepressants,Male,overall,overall,1685.0,0.8,2010,Overall
+476,Antidepressants,Female,with,any,1364.0,0.6,2010,Overall
+477,Antidepressants,Male,with,any,1025.0,0.3999999999999999,2010,Overall
+478,Antidepressants,Female,with,synthetic,358.0,0.1,2010,Overall
+479,Antidepressants,Male,with,synthetic,210.0,1.0,2010,Overall
+480,Prescription opioids,Female,overall,overall,6082.0,5.9,2011,Overall
+481,Prescription opioids,Male,overall,overall,9058.0,0.3,2011,Overall
+482,Prescription opioids,Female,with,synthetic,426.0,0.3,2011,Overall
+483,Prescription opioids,Male,with,synthetic,463.0,4.6000000000000005,2011,Overall
+484,Synthetic opioids,Female,overall,overall,1247.0,0.9,2011,Overall
+485,Synthetic opioids,Male,overall,overall,1419.0,1.4,2011,Overall
+486,Heroin,Female,overall,overall,878.0,2.3,2011,Overall
+487,Heroin,Male,overall,overall,3519.0,,2011,Overall
+488,Heroin,Female,with,synthetic,11.0,,2011,Overall
+489,Heroin,Male,with,synthetic,33.0,,2011,Overall
+490,Stimulants,Female,overall,overall,1955.0,3.1,2011,Overall
+491,Stimulants,Male,overall,overall,4810.0,1.1,2011,Overall
+492,Stimulants,Female,with,any,1024.0,1.5,2011,Overall
+493,Stimulants,Male,with,any,2231.0,1.1,2011,Overall
+494,Stimulants,Female,with,synthetic,122.0,0.1,2011,Overall
+495,Stimulants,Male,with,synthetic,152.0,2.1,2011,Overall
+496,Cocaine,Female,overall,overall,1314.0,2.2,2011,Overall
+497,Cocaine,Male,overall,overall,3367.0,0.8,2011,Overall
+498,Cocaine,Female,with,any,746.0,1.2,2011,Overall
+499,Cocaine,Male,with,any,1759.0,0.7,2011,Overall
+500,Cocaine,Female,with,synthetic,87.0,0.1,2011,Overall
+501,Cocaine,Male,with,synthetic,102.0,1.4,2011,Overall
+502,Psychostimulants,Female,overall,overall,693.0,1.0,2011,Overall
+503,Psychostimulants,Male,overall,overall,1573.0,0.3,2011,Overall
+504,Psychostimulants,Female,with,any,316.0,0.4,2011,Overall
+505,Psychostimulants,Male,with,any,560.0,0.39999999999999997,2011,Overall
+506,Psychostimulants,Female,with,synthetic,40.0,,2011,Overall
+507,Psychostimulants,Male,with,synthetic,53.0,,2011,Overall
+508,Benzodiazepines,Female,overall,overall,2902.0,2.6,2011,Overall
+509,Benzodiazepines,Male,overall,overall,3970.0,1.9,2011,Overall
+510,Benzodiazepines,Female,with,any,2408.0,2.2,2011,Overall
+511,Benzodiazepines,Male,with,any,3418.0,0.30000000000000027,2011,Overall
+512,Benzodiazepines,Female,with,synthetic,324.0,0.2,2011,Overall
+513,Benzodiazepines,Male,with,synthetic,341.0,2.0,2011,Overall
+514,Antidepressants,Female,overall,overall,2422.0,1.1,2011,Overall
+515,Antidepressants,Male,overall,overall,1691.0,0.8,2011,Overall
+516,Antidepressants,Female,with,any,1468.0,0.7,2011,Overall
+517,Antidepressants,Male,with,any,1033.0,0.5,2011,Overall
+518,Antidepressants,Female,with,synthetic,283.0,0.1,2011,Overall
+519,Antidepressants,Male,with,synthetic,180.0,1.2,2011,Overall
+520,Prescription opioids,Female,overall,overall,5995.0,5.3,2012,Overall
+521,Prescription opioids,Male,overall,overall,8245.0,0.3,2012,Overall
+522,Prescription opioids,Female,with,synthetic,445.0,0.3,2012,Overall
+523,Prescription opioids,Male,with,synthetic,416.0,4.2,2012,Overall
+524,Synthetic opioids,Female,overall,overall,1195.0,0.9,2012,Overall
+525,Synthetic opioids,Male,overall,overall,1433.0,1.9,2012,Overall
+526,Heroin,Female,overall,overall,1213.0,3.1,2012,Overall
+527,Heroin,Male,overall,overall,4712.0,,2012,Overall
+528,Heroin,Female,with,synthetic,19.0,,2012,Overall
+529,Heroin,Male,with,synthetic,50.0,,2012,Overall
+530,Stimulants,Female,overall,overall,2026.0,3.1,2012,Overall
+531,Stimulants,Male,overall,overall,4853.0,1.1,2012,Overall
+532,Stimulants,Female,with,any,1057.0,1.5,2012,Overall
+533,Stimulants,Male,with,any,2283.0,1.1,2012,Overall
+534,Stimulants,Female,with,synthetic,91.0,0.1,2012,Overall
+535,Stimulants,Male,with,synthetic,170.0,2.1,2012,Overall
+536,Cocaine,Female,overall,overall,1262.0,2.0,2012,Overall
+537,Cocaine,Male,overall,overall,3142.0,0.8,2012,Overall
+538,Cocaine,Female,with,any,720.0,1.1,2012,Overall
+539,Cocaine,Male,with,any,1728.0,0.5999999999999999,2012,Overall
+540,Cocaine,Female,with,synthetic,59.0,0.1,2012,Overall
+541,Cocaine,Male,with,synthetic,123.0,1.2999999999999998,2012,Overall
+542,Psychostimulants,Female,overall,overall,816.0,1.2,2012,Overall
+543,Psychostimulants,Male,overall,overall,1819.0,0.3,2012,Overall
+544,Psychostimulants,Female,with,any,378.0,0.4,2012,Overall
+545,Psychostimulants,Male,with,any,615.0,0.5,2012,Overall
+546,Psychostimulants,Female,with,synthetic,40.0,,2012,Overall
+547,Psychostimulants,Male,with,synthetic,51.0,,2012,Overall
+548,Benzodiazepines,Female,overall,overall,2789.0,2.4,2012,Overall
+549,Benzodiazepines,Male,overall,overall,3735.0,1.8,2012,Overall
+550,Benzodiazepines,Female,with,any,2283.0,2.1,2012,Overall
+551,Benzodiazepines,Male,with,any,3217.0,0.30000000000000004,2012,Overall
+552,Benzodiazepines,Female,with,synthetic,304.0,0.2,2012,Overall
+553,Benzodiazepines,Male,with,synthetic,351.0,1.9000000000000001,2012,Overall
+554,Antidepressants,Female,overall,overall,2469.0,1.1,2012,Overall
+555,Antidepressants,Male,overall,overall,1790.0,0.8,2012,Overall
+556,Antidepressants,Female,with,any,1470.0,0.7,2012,Overall
+557,Antidepressants,Male,with,any,1066.0,0.5,2012,Overall
+558,Antidepressants,Female,with,synthetic,273.0,0.1,2012,Overall
+559,Antidepressants,Male,with,synthetic,191.0,1.2,2012,Overall
+560,Prescription opioids,Female,overall,overall,6049.0,5.1,2013,Overall
+561,Prescription opioids,Male,overall,overall,8096.0,0.3,2013,Overall
+562,Prescription opioids,Female,with,synthetic,488.0,0.3,2013,Overall
+563,Prescription opioids,Male,with,synthetic,527.0,4.1000000000000005,2013,Overall
+564,Synthetic opioids,Female,overall,overall,1431.0,1.1,2013,Overall
+565,Synthetic opioids,Male,overall,overall,1674.0,2.7,2013,Overall
+566,Heroin,Female,overall,overall,1732.0,4.2,2013,Overall
+567,Heroin,Male,overall,overall,6525.0,0.1,2013,Overall
+568,Heroin,Female,with,synthetic,58.0,0.1,2013,Overall
+569,Heroin,Male,with,synthetic,151.0,2.6,2013,Overall
+570,Stimulants,Female,overall,overall,2412.0,3.7,2013,Overall
+571,Stimulants,Male,overall,overall,5926.0,1.3,2013,Overall
+572,Stimulants,Female,with,any,1240.0,1.8,2013,Overall
+573,Stimulants,Male,with,any,2797.0,1.3,2013,Overall
+574,Stimulants,Female,with,synthetic,149.0,0.2,2013,Overall
+575,Stimulants,Male,with,synthetic,224.0,2.5,2013,Overall
+576,Cocaine,Female,overall,overall,1376.0,2.3,2013,Overall
+577,Cocaine,Male,overall,overall,3568.0,0.9,2013,Overall
+578,Cocaine,Female,with,any,803.0,1.3,2013,Overall
+579,Cocaine,Male,with,any,2028.0,0.7000000000000001,2013,Overall
+580,Cocaine,Female,with,synthetic,87.0,0.1,2013,Overall
+581,Cocaine,Male,with,synthetic,158.0,1.5,2013,Overall
+582,Psychostimulants,Female,overall,overall,1106.0,1.6,2013,Overall
+583,Psychostimulants,Male,overall,overall,2521.0,0.4,2013,Overall
+584,Psychostimulants,Female,with,any,491.0,0.6,2013,Overall
+585,Psychostimulants,Male,with,any,863.0,0.7999999999999999,2013,Overall
+586,Psychostimulants,Female,with,synthetic,67.0,0.1,2013,Overall
+587,Psychostimulants,Male,with,synthetic,75.0,1.0999999999999999,2013,Overall
+588,Benzodiazepines,Female,overall,overall,3026.0,2.5,2013,Overall
+589,Benzodiazepines,Male,overall,overall,3947.0,1.8,2013,Overall
+590,Benzodiazepines,Female,with,any,2485.0,2.2,2013,Overall
+591,Benzodiazepines,Male,with,any,3384.0,0.40000000000000013,2013,Overall
+592,Benzodiazepines,Female,with,synthetic,388.0,0.3,2013,Overall
+593,Benzodiazepines,Male,with,synthetic,416.0,2.0,2013,Overall
+594,Antidepressants,Female,overall,overall,2673.0,1.1,2013,Overall
+595,Antidepressants,Male,overall,overall,1785.0,0.8,2013,Overall
+596,Antidepressants,Female,with,any,1664.0,0.7,2013,Overall
+597,Antidepressants,Male,with,any,1099.0,0.5999999999999999,2013,Overall
+598,Antidepressants,Female,with,synthetic,348.0,0.2,2013,Overall
+599,Antidepressants,Male,with,synthetic,223.0,1.2,2013,Overall
+600,Prescription opioids,Female,overall,overall,6506.0,5.2,2014,Overall
+601,Prescription opioids,Male,overall,overall,8332.0,0.5,2014,Overall
+602,Prescription opioids,Female,with,synthetic,661.0,0.5,2014,Overall
+603,Prescription opioids,Male,with,synthetic,828.0,4.1,2014,Overall
+604,Synthetic opioids,Female,overall,overall,2079.0,2.2,2014,Overall
+605,Synthetic opioids,Male,overall,overall,3465.0,3.4,2014,Overall
+606,Heroin,Female,overall,overall,2414.0,5.2,2014,Overall
+607,Heroin,Male,overall,overall,8160.0,0.3,2014,Overall
+608,Heroin,Female,with,synthetic,275.0,0.5,2014,Overall
+609,Heroin,Male,with,synthetic,752.0,3.1,2014,Overall
+610,Stimulants,Female,overall,overall,2720.0,4.2,2014,Overall
+611,Stimulants,Male,overall,overall,6675.0,1.6,2014,Overall
+612,Stimulants,Female,with,any,1519.0,2.3,2014,Overall
+613,Stimulants,Male,with,any,3480.0,1.4,2014,Overall
+614,Stimulants,Female,with,synthetic,283.0,0.4,2014,Overall
+615,Stimulants,Male,with,synthetic,586.0,2.7,2014,Overall
+616,Cocaine,Female,overall,overall,1535.0,2.4,2014,Overall
+617,Cocaine,Male,overall,overall,3880.0,1.1,2014,Overall
+618,Cocaine,Female,with,any,973.0,1.6,2014,Overall
+619,Cocaine,Male,with,any,2441.0,0.5999999999999999,2014,Overall
+620,Cocaine,Female,with,synthetic,187.0,0.3,2014,Overall
+621,Cocaine,Male,with,synthetic,441.0,1.5,2014,Overall
+622,Psychostimulants,Female,overall,overall,1278.0,1.9,2014,Overall
+623,Psychostimulants,Male,overall,overall,3020.0,0.6,2014,Overall
+624,Psychostimulants,Female,with,any,610.0,0.8,2014,Overall
+625,Psychostimulants,Male,with,any,1196.0,0.7999999999999999,2014,Overall
+626,Psychostimulants,Female,with,synthetic,106.0,0.1,2014,Overall
+627,Psychostimulants,Male,with,synthetic,170.0,1.2999999999999998,2014,Overall
+628,Benzodiazepines,Female,overall,overall,3487.0,2.8,2014,Overall
+629,Benzodiazepines,Male,overall,overall,4458.0,2.1,2014,Overall
+630,Benzodiazepines,Female,with,any,2876.0,2.5,2014,Overall
+631,Benzodiazepines,Male,with,any,3857.0,0.3999999999999999,2014,Overall
+632,Benzodiazepines,Female,with,synthetic,534.0,0.4,2014,Overall
+633,Benzodiazepines,Male,with,synthetic,688.0,2.1,2014,Overall
+634,Antidepressants,Female,overall,overall,2857.0,1.2,2014,Overall
+635,Antidepressants,Male,overall,overall,1911.0,0.9,2014,Overall
+636,Antidepressants,Female,with,any,1767.0,0.8,2014,Overall
+637,Antidepressants,Male,with,any,1216.0,0.6,2014,Overall
+638,Antidepressants,Female,with,synthetic,437.0,0.2,2014,Overall
+639,Antidepressants,Male,with,synthetic,286.0,1.3,2014,Overall
+640,Prescription opioids,Female,overall,overall,6664.0,5.4,2015,Overall
+641,Prescription opioids,Male,overall,overall,8617.0,0.7,2015,Overall
+642,Prescription opioids,Female,with,synthetic,898.0,0.8,2015,Overall
+643,Prescription opioids,Male,with,synthetic,1365.0,4.0,2015,Overall
+644,Synthetic opioids,Female,overall,overall,3020.0,4.2,2015,Overall
+645,Synthetic opioids,Male,overall,overall,6560.0,4.1,2015,Overall
+646,Heroin,Female,overall,overall,3108.0,6.3,2015,Overall
+647,Heroin,Male,overall,overall,9881.0,0.9,2015,Overall
+648,Heroin,Female,with,synthetic,670.0,1.3,2015,Overall
+649,Heroin,Male,with,synthetic,2015.0,3.1999999999999997,2015,Overall
+650,Stimulants,Female,overall,overall,3527.0,5.4,2015,Overall
+651,Stimulants,Male,overall,overall,8595.0,2.1,2015,Overall
+652,Stimulants,Female,with,any,2000.0,2.9,2015,Overall
+653,Stimulants,Male,with,any,4594.0,1.6999999999999997,2015,Overall
+654,Stimulants,Female,with,synthetic,577.0,0.9,2015,Overall
+655,Stimulants,Male,with,synthetic,1392.0,3.1999999999999997,2015,Overall
+656,Cocaine,Female,overall,overall,1899.0,3.1,2015,Overall
+657,Cocaine,Male,overall,overall,4885.0,1.4,2015,Overall
+658,Cocaine,Female,with,any,1261.0,2.1,2015,Overall
+659,Cocaine,Male,with,any,3245.0,0.7000000000000002,2015,Overall
+660,Cocaine,Female,with,synthetic,425.0,0.7,2015,Overall
+661,Cocaine,Male,with,synthetic,1117.0,1.6,2015,Overall
+662,Psychostimulants,Female,overall,overall,1745.0,2.5,2015,Overall
+663,Psychostimulants,Male,overall,overall,3971.0,0.7,2015,Overall
+664,Psychostimulants,Female,with,any,819.0,1.0,2015,Overall
+665,Psychostimulants,Male,with,any,1526.0,1.1,2015,Overall
+666,Psychostimulants,Female,with,synthetic,174.0,0.2,2015,Overall
+667,Psychostimulants,Male,with,synthetic,320.0,1.6,2015,Overall
+668,Benzodiazepines,Female,overall,overall,3779.0,3.2,2015,Overall
+669,Benzodiazepines,Male,overall,overall,5012.0,2.3,2015,Overall
+670,Benzodiazepines,Female,with,any,3137.0,2.7,2015,Overall
+671,Benzodiazepines,Male,with,any,4348.0,0.40000000000000036,2015,Overall
+672,Benzodiazepines,Female,with,synthetic,738.0,0.7,2015,Overall
+673,Benzodiazepines,Male,with,synthetic,1063.0,2.1,2015,Overall
+674,Antidepressants,Female,overall,overall,2909.0,1.2,2015,Overall
+675,Antidepressants,Male,overall,overall,1985.0,0.9,2015,Overall
+676,Antidepressants,Female,with,any,1758.0,0.8,2015,Overall
+677,Antidepressants,Male,with,any,1304.0,0.6,2015,Overall
+678,Antidepressants,Female,with,synthetic,463.0,0.2,2015,Overall
+679,Antidepressants,Male,with,synthetic,345.0,1.2,2015,Overall
+680,Prescription opioids,Female,overall,overall,7109.0,6.2,2016,Overall
+681,Prescription opioids,Male,overall,overall,9978.0,1.3,2016,Overall
+682,Prescription opioids,Female,with,synthetic,1394.0,1.7,2016,Overall
+683,Prescription opioids,Male,with,synthetic,2661.0,3.9000000000000004,2016,Overall
+684,Synthetic opioids,Female,overall,overall,5578.0,8.9,2016,Overall
+685,Synthetic opioids,Male,overall,overall,13835.0,4.9,2016,Overall
+686,Heroin,Female,overall,overall,3717.0,7.5,2016,Overall
+687,Heroin,Male,overall,overall,11752.0,1.8,2016,Overall
+688,Heroin,Female,with,synthetic,1430.0,2.8,2016,Overall
+689,Heroin,Male,with,synthetic,4351.0,3.1000000000000005,2016,Overall
+690,Stimulants,Female,overall,overall,4895.0,7.8,2016,Overall
+691,Stimulants,Male,overall,overall,12363.0,3.3,2016,Overall
+692,Stimulants,Female,with,any,2987.0,4.7,2016,Overall
+693,Stimulants,Male,with,any,7235.0,2.1000000000000005,2016,Overall
+694,Stimulants,Female,with,synthetic,1428.0,2.3,2016,Overall
+695,Stimulants,Male,with,synthetic,3601.0,3.8000000000000003,2016,Overall
+696,Cocaine,Female,overall,overall,2882.0,4.7,2016,Overall
+697,Cocaine,Male,overall,overall,7493.0,2.3,2016,Overall
+698,Cocaine,Female,with,any,2048.0,3.3,2016,Overall
+699,Cocaine,Male,with,any,5215.0,0.9000000000000004,2016,Overall
+700,Cocaine,Female,with,synthetic,1171.0,2.0,2016,Overall
+701,Cocaine,Male,with,synthetic,3013.0,1.9000000000000001,2016,Overall
+702,Psychostimulants,Female,overall,overall,2194.0,3.4,2016,Overall
+703,Psychostimulants,Male,overall,overall,5348.0,1.1,2016,Overall
+704,Psychostimulants,Female,with,any,1072.0,1.5,2016,Overall
+705,Psychostimulants,Male,with,any,2344.0,1.2999999999999998,2016,Overall
+706,Psychostimulants,Female,with,synthetic,322.0,0.5,2016,Overall
+707,Psychostimulants,Male,with,synthetic,720.0,2.1,2016,Overall
+708,Benzodiazepines,Female,overall,overall,4359.0,4.0,2016,Overall
+709,Benzodiazepines,Male,overall,overall,6325.0,2.9,2016,Overall
+710,Benzodiazepines,Female,with,any,3723.0,3.5,2016,Overall
+711,Benzodiazepines,Male,with,any,5510.0,0.3999999999999999,2016,Overall
+712,Benzodiazepines,Female,with,synthetic,1188.0,1.4,2016,Overall
+713,Benzodiazepines,Male,with,synthetic,2120.0,2.1999999999999997,2016,Overall
+714,Antidepressants,Female,overall,overall,2835.0,1.2,2016,Overall
+715,Antidepressants,Male,overall,overall,1977.0,0.9,2016,Overall
+716,Antidepressants,Female,with,any,1719.0,0.8,2016,Overall
+717,Antidepressants,Male,with,any,1241.0,0.4999999999999999,2016,Overall
+718,Antidepressants,Female,with,synthetic,529.0,0.3,2016,Overall
+719,Antidepressants,Male,with,synthetic,473.0,1.0999999999999999,2016,Overall
+720,Prescription opioids,Female,overall,overall,7156.0,6.1,2017,Overall
+721,Prescription opioids,Male,overall,overall,9873.0,1.7,2017,Overall
+722,Prescription opioids,Female,with,synthetic,1859.0,2.3,2017,Overall
+723,Prescription opioids,Male,with,synthetic,3585.0,3.5,2017,Overall
+724,Synthetic opioids,Female,overall,overall,7942.0,13.0,2017,Overall
+725,Synthetic opioids,Male,overall,overall,20524.0,4.9,2017,Overall
+726,Heroin,Female,overall,overall,3886.0,7.3,2017,Overall
+727,Heroin,Male,overall,overall,11596.0,2.6,2017,Overall
+728,Heroin,Female,with,synthetic,2035.0,3.8,2017,Overall
+729,Heroin,Male,with,synthetic,6056.0,2.3000000000000003,2017,Overall
+730,Stimulants,Female,overall,overall,6645.0,10.3,2017,Overall
+731,Stimulants,Male,overall,overall,16494.0,4.6,2017,Overall
+732,Stimulants,Female,with,any,4292.0,6.5,2017,Overall
+733,Stimulants,Male,with,any,10163.0,2.6000000000000005,2017,Overall
+734,Stimulants,Female,with,synthetic,2612.0,4.3,2017,Overall
+735,Stimulants,Male,with,synthetic,6650.0,4.2,2017,Overall
+736,Cocaine,Female,overall,overall,3921.0,6.2,2017,Overall
+737,Cocaine,Male,overall,overall,10021.0,3.2,2017,Overall
+738,Cocaine,Female,with,any,2898.0,4.5,2017,Overall
+739,Cocaine,Male,with,any,7233.0,1.0999999999999996,2017,Overall
+740,Cocaine,Female,with,synthetic,2023.0,3.3,2017,Overall
+741,Cocaine,Male,with,synthetic,5218.0,2.0,2017,Overall
+742,Psychostimulants,Female,overall,overall,3093.0,4.5,2017,Overall
+743,Psychostimulants,Male,overall,overall,7240.0,1.7,2017,Overall
+744,Psychostimulants,Female,with,any,1683.0,2.2,2017,Overall
+745,Psychostimulants,Male,with,any,3520.0,1.5000000000000002,2017,Overall
+746,Psychostimulants,Female,with,synthetic,766.0,1.2,2017,Overall
+747,Psychostimulants,Male,with,synthetic,1780.0,2.4000000000000004,2017,Overall
+748,Benzodiazepines,Female,overall,overall,4772.0,4.2,2017,Overall
+749,Benzodiazepines,Male,overall,overall,6765.0,3.1,2017,Overall
+750,Benzodiazepines,Female,with,any,4031.0,3.7,2017,Overall
+751,Benzodiazepines,Male,with,any,5979.0,0.5,2017,Overall
+752,Benzodiazepines,Female,with,synthetic,1696.0,2.0,2017,Overall
+753,Benzodiazepines,Male,with,synthetic,3173.0,2.1,2017,Overall
+754,Antidepressants,Female,overall,overall,3112.0,1.3,2017,Overall
+755,Antidepressants,Male,overall,overall,2157.0,1.0,2017,Overall
+756,Antidepressants,Female,with,any,1871.0,0.9,2017,Overall
+757,Antidepressants,Male,with,any,1430.0,0.6000000000000001,2017,Overall
+758,Antidepressants,Female,with,synthetic,692.0,0.5,2017,Overall
+759,Antidepressants,Male,with,synthetic,722.0,1.2000000000000002,2017,Overall
+760,Prescription opioids,Female,overall,overall,6252.0,5.3,2018,Overall
+761,Prescription opioids,Male,overall,overall,8723.0,1.7,2018,Overall
+762,Prescription opioids,Female,with,synthetic,1872.0,2.2,2018,Overall
+763,Prescription opioids,Male,with,synthetic,3545.0,2.8,2018,Overall
+764,Synthetic opioids,Female,overall,overall,8807.0,14.2,2018,Overall
+765,Synthetic opioids,Male,overall,overall,22528.0,4.7,2018,Overall
+766,Heroin,Female,overall,overall,3705.0,7.1,2018,Overall
+767,Heroin,Male,overall,overall,11291.0,2.9,2018,Overall
+768,Heroin,Female,with,synthetic,2267.0,4.3,2018,Overall
+769,Heroin,Male,with,synthetic,6801.0,1.8000000000000003,2018,Overall
+770,Stimulants,Female,overall,overall,7529.0,11.4,2018,Overall
+771,Stimulants,Male,overall,overall,18348.0,5.1,2018,Overall
+772,Stimulants,Female,with,any,4870.0,7.2,2018,Overall
+773,Stimulants,Male,with,any,11295.0,2.9000000000000004,2018,Overall
+774,Stimulants,Female,with,synthetic,3405.0,5.2,2018,Overall
+775,Stimulants,Male,with,synthetic,8111.0,4.3,2018,Overall
+776,Cocaine,Female,overall,overall,4228.0,6.4,2018,Overall
+777,Cocaine,Male,overall,overall,10438.0,3.4,2018,Overall
+778,Cocaine,Female,with,any,3189.0,4.8,2018,Overall
+779,Cocaine,Male,with,any,7698.0,1.1,2018,Overall
+780,Cocaine,Female,with,synthetic,2496.0,3.9,2018,Overall
+781,Cocaine,Male,with,synthetic,6163.0,1.7000000000000002,2018,Overall
+782,Psychostimulants,Female,overall,overall,3775.0,5.5,2018,Overall
+783,Psychostimulants,Male,overall,overall,8901.0,2.1,2018,Overall
+784,Psychostimulants,Female,with,any,2058.0,2.8,2018,Overall
+785,Psychostimulants,Male,with,any,4347.0,1.7999999999999998,2018,Overall
+786,Psychostimulants,Female,with,synthetic,1163.0,1.6,2018,Overall
+787,Psychostimulants,Male,with,synthetic,2450.0,2.7,2018,Overall
+788,Benzodiazepines,Female,overall,overall,4481.0,3.9,2018,Overall
+789,Benzodiazepines,Male,overall,overall,6243.0,2.8,2018,Overall
+790,Benzodiazepines,Female,with,any,3699.0,3.4,2018,Overall
+791,Benzodiazepines,Male,with,any,5441.0,0.5,2018,Overall
+792,Benzodiazepines,Female,with,synthetic,1808.0,2.1,2018,Overall
+793,Benzodiazepines,Male,with,synthetic,3258.0,1.6999999999999997,2018,Overall
+794,Antidepressants,Female,overall,overall,2993.0,1.2,2018,Overall
+795,Antidepressants,Male,overall,overall,2071.0,0.9,2018,Overall
+796,Antidepressants,Female,with,any,1715.0,0.8,2018,Overall
+797,Antidepressants,Male,with,any,1304.0,0.6,2018,Overall
+798,Antidepressants,Female,with,synthetic,704.0,0.4,2018,Overall
+799,Antidepressants,Male,with,synthetic,719.0,1.1,2018,Overall
+800,Prescription opioids,Female,overall,overall,5755.0,5.1,2019,Overall
+801,Prescription opioids,Male,overall,overall,8384.0,1.8,2019,Overall
+802,Prescription opioids,Female,with,synthetic,1949.0,2.4,2019,Overall
+803,Prescription opioids,Male,with,synthetic,3927.0,2.4000000000000004,2019,Overall
+804,Synthetic opioids,Female,overall,overall,10076.0,16.6,2019,Overall
+805,Synthetic opioids,Male,overall,overall,26283.0,4.4,2019,Overall
+806,Heroin,Female,overall,overall,3520.0,6.6,2019,Overall
+807,Heroin,Male,overall,overall,10499.0,2.7,2019,Overall
+808,Heroin,Female,with,synthetic,2256.0,4.1,2019,Overall
+809,Heroin,Male,with,synthetic,6490.0,1.7000000000000002,2019,Overall
+810,Stimulants,Female,overall,overall,8532.0,13.4,2019,Overall
+811,Stimulants,Male,overall,overall,21699.0,6.1,2019,Overall
+812,Stimulants,Female,with,any,5561.0,8.6,2019,Overall
+813,Stimulants,Male,with,any,13631.0,3.200000000000001,2019,Overall
+814,Stimulants,Female,with,synthetic,4123.0,6.7,2019,Overall
+815,Stimulants,Male,with,synthetic,10504.0,4.6000000000000005,2019,Overall
+816,Cocaine,Female,overall,overall,4336.0,7.1,2019,Overall
+817,Cocaine,Male,overall,overall,11547.0,3.8,2019,Overall
+818,Cocaine,Female,with,any,3308.0,5.5,2019,Overall
+819,Cocaine,Male,with,any,8690.0,1.1000000000000005,2019,Overall
+820,Cocaine,Female,with,synthetic,2738.0,4.7,2019,Overall
+821,Cocaine,Male,with,synthetic,7401.0,1.7000000000000002,2019,Overall
+822,Psychostimulants,Female,overall,overall,4733.0,7.1,2019,Overall
+823,Psychostimulants,Male,overall,overall,11434.0,2.8,2019,Overall
+824,Psychostimulants,Female,with,any,2696.0,3.8,2019,Overall
+825,Psychostimulants,Male,with,any,5946.0,2.2,2019,Overall
+826,Psychostimulants,Female,with,synthetic,1711.0,2.5,2019,Overall
+827,Psychostimulants,Male,with,synthetic,3853.0,3.2,2019,Overall
+828,Benzodiazepines,Female,overall,overall,3986.0,3.6,2019,Overall
+829,Benzodiazepines,Male,overall,overall,5725.0,2.6,2019,Overall
+830,Benzodiazepines,Female,with,any,3303.0,3.1,2019,Overall
+831,Benzodiazepines,Male,with,any,4998.0,0.3999999999999999,2019,Overall
+832,Benzodiazepines,Female,with,synthetic,1834.0,2.1,2019,Overall
+833,Benzodiazepines,Male,with,synthetic,3353.0,1.4,2019,Overall
+834,Antidepressants,Female,overall,overall,3048.0,1.3,2019,Overall
+835,Antidepressants,Male,overall,overall,2127.0,0.9,2019,Overall
+836,Antidepressants,Female,with,any,1773.0,0.8,2019,Overall
+837,Antidepressants,Male,with,any,1378.0,0.6,2019,Overall
+838,Antidepressants,Female,with,synthetic,887.0,0.5,2019,Overall
+839,Antidepressants,Male,with,synthetic,823.0,1.0,2019,Overall
+840,Prescription opioids,Female,overall,overall,6441.0,6.1,2020,Overall
+841,Prescription opioids,Male,overall,overall,9975.0,2.7,2020,Overall
+842,Prescription opioids,Female,with,synthetic,2798.0,3.6,2020,Overall
+843,Prescription opioids,Male,with,synthetic,5828.0,2.2,2020,Overall
+844,Synthetic opioids,Female,overall,overall,15250.0,25.9,2020,Overall
+845,Synthetic opioids,Male,overall,overall,41266.0,4.1,2020,Overall
+846,Heroin,Female,overall,overall,3284.0,6.1,2020,Overall
+847,Heroin,Male,overall,overall,9881.0,2.8,2020,Overall
+848,Heroin,Female,with,synthetic,2294.0,4.1,2020,Overall
+849,Heroin,Male,with,synthetic,6696.0,1.2999999999999998,2020,Overall
+850,Stimulants,Female,overall,overall,11338.0,18.1,2020,Overall
+851,Stimulants,Male,overall,overall,29305.0,8.8,2020,Overall
+852,Stimulants,Female,with,any,7919.0,12.6,2020,Overall
+853,Stimulants,Male,with,any,20047.0,3.799999999999999,2020,Overall
+854,Stimulants,Female,with,synthetic,6631.0,10.9,2020,Overall
+855,Stimulants,Male,with,synthetic,17151.0,5.1,2020,Overall
+856,Cocaine,Female,overall,overall,5245.0,8.7,2020,Overall
+857,Cocaine,Male,overall,overall,14202.0,4.8,2020,Overall
+858,Cocaine,Female,with,any,4193.0,7.0,2020,Overall
+859,Cocaine,Male,with,any,11145.0,1.2000000000000002,2020,Overall
+860,Cocaine,Female,with,synthetic,3752.0,6.3,2020,Overall
+861,Cocaine,Male,with,synthetic,10151.0,1.7000000000000002,2020,Overall
+862,Psychostimulants,Female,overall,overall,6890.0,10.6,2020,Overall
+863,Psychostimulants,Male,overall,overall,16947.0,4.7,2020,Overall
+864,Psychostimulants,Female,with,any,4402.0,6.6,2020,Overall
+865,Psychostimulants,Male,with,any,10375.0,2.8,2020,Overall
+866,Psychostimulants,Female,with,synthetic,3461.0,5.3,2020,Overall
+867,Psychostimulants,Male,with,synthetic,8256.0,3.7,2020,Overall
+868,Benzodiazepines,Female,overall,overall,4810.0,4.7,2020,Overall
+869,Benzodiazepines,Male,overall,overall,7480.0,3.4,2020,Overall
+870,Benzodiazepines,Female,with,any,4108.0,4.2,2020,Overall
+871,Benzodiazepines,Male,with,any,6663.0,0.3999999999999999,2020,Overall
+872,Benzodiazepines,Female,with,synthetic,2733.0,3.3,2020,Overall
+873,Benzodiazepines,Male,with,synthetic,5250.0,1.2999999999999998,2020,Overall
+874,Antidepressants,Female,overall,overall,3122.0,1.5,2020,Overall
+875,Antidepressants,Male,overall,overall,2475.0,1.1,2020,Overall
+876,Antidepressants,Female,with,any,1931.0,1.0,2020,Overall
+877,Antidepressants,Male,with,any,1680.0,0.5999999999999999,2020,Overall
+878,Antidepressants,Female,with,synthetic,1149.0,0.8,2020,Overall
+879,Antidepressants,Male,with,synthetic,1238.0,1.0,2020,Overall
+880,Prescription opioids,Female,overall,overall,6623.0,6.0,2021,Overall
+881,Prescription opioids,Male,overall,overall,10083.0,2.9,2021,Overall
+882,Prescription opioids,Female,with,synthetic,6393.0,3.8,2021,Overall
+883,Prescription opioids,Male,with,synthetic,3251.0,2.0000000000000004,2021,Overall
+884,Synthetic opioids,Female,overall,overall,19571.0,31.4,2021,Overall
+885,Synthetic opioids,Male,overall,overall,51030.0,2.8,2021,Overall
+886,Heroin,Female,overall,overall,2372.0,4.1,2021,Overall
+887,Heroin,Male,overall,overall,6801.0,2.1,2021,Overall
+888,Heroin,Female,with,synthetic,1791.0,3.0,2021,Overall
+889,Heroin,Male,with,synthetic,4992.0,0.6999999999999997,2021,Overall
+890,Stimulants,Female,overall,overall,15087.0,23.2,2021,Overall
+891,Stimulants,Male,overall,overall,38408.0,11.7,2021,Overall
+892,Stimulants,Female,with,any,10898.0,16.5,2021,Overall
+893,Stimulants,Male,with,any,26784.0,4.600000000000001,2021,Overall
+894,Stimulants,Female,with,synthetic,9799.0,15.2,2021,Overall
+895,Stimulants,Male,with,synthetic,24630.0,5.600000000000001,2021,Overall
+896,Cocaine,Female,overall,overall,6858.0,10.5,2021,Overall
+897,Cocaine,Male,overall,overall,17628.0,5.9,2021,Overall
+898,Cocaine,Female,with,any,5418.0,8.4,2021,Overall
+899,Cocaine,Male,with,any,13832.0,1.3999999999999995,2021,Overall
+900,Cocaine,Female,with,synthetic,5071.0,7.9,2021,Overall
+901,Cocaine,Male,with,synthetic,13082.0,1.7000000000000002,2021,Overall
+902,Psychostimulants,Female,overall,overall,9218.0,14.3,2021,Overall
+903,Psychostimulants,Male,overall,overall,23319.0,6.7,2021,Overall
+904,Psychostimulants,Female,with,any,6317.0,9.4,2021,Overall
+905,Psychostimulants,Male,with,any,15054.0,3.3,2021,Overall
+906,Psychostimulants,Female,with,synthetic,5498.0,8.5,2021,Overall
+907,Psychostimulants,Male,with,synthetic,13488.0,4.0,2021,Overall
+908,Benzodiazepines,Female,overall,overall,5056.0,4.6,2021,Overall
+909,Benzodiazepines,Male,overall,overall,7443.0,3.4,2021,Overall
+910,Benzodiazepines,Female,with,any,4307.0,4.1,2021,Overall
+911,Benzodiazepines,Male,with,any,6685.0,0.3999999999999999,2021,Overall
+912,Benzodiazepines,Female,with,synthetic,3180.0,3.5,2021,Overall
+913,Benzodiazepines,Male,with,synthetic,5579.0,1.0999999999999996,2021,Overall
+914,Antidepressants,Female,overall,overall,3343.0,1.5,2021,Overall
+915,Antidepressants,Male,overall,overall,2516.0,1.1,2021,Overall
+916,Antidepressants,Female,with,any,2022.0,1.0,2021,Overall
+917,Antidepressants,Male,with,any,1745.0,0.5999999999999999,2021,Overall
+918,Antidepressants,Female,with,synthetic,1347.0,0.8,2021,Overall
+919,Antidepressants,Male,with,synthetic,1374.0,0.8999999999999999,2021,Overall
+920,Prescription opioids,Female,overall,overall,61.0,0.3,1999,"Young Adults, 15-24 Years"
+921,Prescription opioids,Male,overall,overall,167.0,0.8,1999,"Young Adults, 15-24 Years"
+922,Prescription opioids,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+923,Prescription opioids,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+924,Synthetic opioids,Female,overall,overall,,,1999,"Young Adults, 15-24 Years"
+925,Synthetic opioids,Male,overall,overall,28.0,0.1,1999,"Young Adults, 15-24 Years"
+926,Heroin,Female,overall,overall,38.0,0.2,1999,"Young Adults, 15-24 Years"
+927,Heroin,Male,overall,overall,160.0,0.8,1999,"Young Adults, 15-24 Years"
+928,Heroin,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+929,Heroin,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+930,Stimulants,Female,overall,overall,83.0,0.4,1999,"Young Adults, 15-24 Years"
+931,Stimulants,Male,overall,overall,239.0,1.2,1999,"Young Adults, 15-24 Years"
+932,Stimulants,Female,with,any,40.0,0.2,1999,"Young Adults, 15-24 Years"
+933,Stimulants,Male,with,any,120.0,0.6,1999,"Young Adults, 15-24 Years"
+934,Stimulants,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+935,Stimulants,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+936,Cocaine,Female,overall,overall,60.0,0.3,1999,"Young Adults, 15-24 Years"
+937,Cocaine,Male,overall,overall,207.0,1.0,1999,"Young Adults, 15-24 Years"
+938,Cocaine,Female,with,any,34.0,0.2,1999,"Young Adults, 15-24 Years"
+939,Cocaine,Male,with,any,113.0,0.6,1999,"Young Adults, 15-24 Years"
+940,Cocaine,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+941,Cocaine,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+942,Psychostimulants,Female,overall,overall,26.0,0.1,1999,"Young Adults, 15-24 Years"
+943,Psychostimulants,Male,overall,overall,41.0,0.2,1999,"Young Adults, 15-24 Years"
+944,Psychostimulants,Female,with,any,,,1999,"Young Adults, 15-24 Years"
+945,Psychostimulants,Male,with,any,,,1999,"Young Adults, 15-24 Years"
+946,Psychostimulants,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+947,Psychostimulants,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+948,Benzodiazepines,Female,overall,overall,12.0,,1999,"Young Adults, 15-24 Years"
+949,Benzodiazepines,Male,overall,overall,41.0,0.2,1999,"Young Adults, 15-24 Years"
+950,Benzodiazepines,Female,with,any,,,1999,"Young Adults, 15-24 Years"
+951,Benzodiazepines,Male,with,any,31.0,0.2,1999,"Young Adults, 15-24 Years"
+952,Benzodiazepines,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+953,Benzodiazepines,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+954,Antidepressants,Female,overall,overall,27.0,0.1,1999,"Young Adults, 15-24 Years"
+955,Antidepressants,Male,overall,overall,32.0,0.2,1999,"Young Adults, 15-24 Years"
+956,Antidepressants,Female,with,any,,,1999,"Young Adults, 15-24 Years"
+957,Antidepressants,Male,with,any,,,1999,"Young Adults, 15-24 Years"
+958,Antidepressants,Female,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+959,Antidepressants,Male,with,synthetic,,,1999,"Young Adults, 15-24 Years"
+960,Prescription opioids,Female,overall,overall,69.0,0.4,2000,"Young Adults, 15-24 Years"
+961,Prescription opioids,Male,overall,overall,219.0,1.1,2000,"Young Adults, 15-24 Years"
+962,Prescription opioids,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+963,Prescription opioids,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+964,Synthetic opioids,Female,overall,overall,13.0,,2000,"Young Adults, 15-24 Years"
+965,Synthetic opioids,Male,overall,overall,27.0,0.1,2000,"Young Adults, 15-24 Years"
+966,Heroin,Female,overall,overall,36.0,0.2,2000,"Young Adults, 15-24 Years"
+967,Heroin,Male,overall,overall,180.0,0.9,2000,"Young Adults, 15-24 Years"
+968,Heroin,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+969,Heroin,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+970,Stimulants,Female,overall,overall,94.0,0.5,2000,"Young Adults, 15-24 Years"
+971,Stimulants,Male,overall,overall,258.0,1.3,2000,"Young Adults, 15-24 Years"
+972,Stimulants,Female,with,any,43.0,0.2,2000,"Young Adults, 15-24 Years"
+973,Stimulants,Male,with,any,138.0,0.7,2000,"Young Adults, 15-24 Years"
+974,Stimulants,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+975,Stimulants,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+976,Cocaine,Female,overall,overall,72.0,0.4,2000,"Young Adults, 15-24 Years"
+977,Cocaine,Male,overall,overall,204.0,1.0,2000,"Young Adults, 15-24 Years"
+978,Cocaine,Female,with,any,39.0,0.2,2000,"Young Adults, 15-24 Years"
+979,Cocaine,Male,with,any,125.0,0.6,2000,"Young Adults, 15-24 Years"
+980,Cocaine,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+981,Cocaine,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+982,Psychostimulants,Female,overall,overall,31.0,0.2,2000,"Young Adults, 15-24 Years"
+983,Psychostimulants,Male,overall,overall,66.0,0.3,2000,"Young Adults, 15-24 Years"
+984,Psychostimulants,Female,with,any,,,2000,"Young Adults, 15-24 Years"
+985,Psychostimulants,Male,with,any,,0.1,2000,"Young Adults, 15-24 Years"
+986,Psychostimulants,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+987,Psychostimulants,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+988,Benzodiazepines,Female,overall,overall,22.0,0.1,2000,"Young Adults, 15-24 Years"
+989,Benzodiazepines,Male,overall,overall,68.0,0.3,2000,"Young Adults, 15-24 Years"
+990,Benzodiazepines,Female,with,any,17.0,,2000,"Young Adults, 15-24 Years"
+991,Benzodiazepines,Male,with,any,57.0,0.3,2000,"Young Adults, 15-24 Years"
+992,Benzodiazepines,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+993,Benzodiazepines,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+994,Antidepressants,Female,overall,overall,36.0,0.2,2000,"Young Adults, 15-24 Years"
+995,Antidepressants,Male,overall,overall,32.0,0.2,2000,"Young Adults, 15-24 Years"
+996,Antidepressants,Female,with,any,,,2000,"Young Adults, 15-24 Years"
+997,Antidepressants,Male,with,any,,,2000,"Young Adults, 15-24 Years"
+998,Antidepressants,Female,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+999,Antidepressants,Male,with,synthetic,,,2000,"Young Adults, 15-24 Years"
+1000,Prescription opioids,Female,overall,overall,101.0,0.5,2001,"Young Adults, 15-24 Years"
+1001,Prescription opioids,Male,overall,overall,388.0,1.9,2001,"Young Adults, 15-24 Years"
+1002,Prescription opioids,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1003,Prescription opioids,Male,with,synthetic,10.0,,2001,"Young Adults, 15-24 Years"
+1004,Synthetic opioids,Female,overall,overall,15.0,,2001,"Young Adults, 15-24 Years"
+1005,Synthetic opioids,Male,overall,overall,39.0,0.2,2001,"Young Adults, 15-24 Years"
+1006,Heroin,Female,overall,overall,42.0,0.2,2001,"Young Adults, 15-24 Years"
+1007,Heroin,Male,overall,overall,170.0,0.8,2001,"Young Adults, 15-24 Years"
+1008,Heroin,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1009,Heroin,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1010,Stimulants,Female,overall,overall,96.0,0.5,2001,"Young Adults, 15-24 Years"
+1011,Stimulants,Male,overall,overall,268.0,1.3,2001,"Young Adults, 15-24 Years"
+1012,Stimulants,Female,with,any,47.0,0.2,2001,"Young Adults, 15-24 Years"
+1013,Stimulants,Male,with,any,142.0,0.7,2001,"Young Adults, 15-24 Years"
+1014,Stimulants,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1015,Stimulants,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1016,Cocaine,Female,overall,overall,68.0,0.3,2001,"Young Adults, 15-24 Years"
+1017,Cocaine,Male,overall,overall,212.0,1.0,2001,"Young Adults, 15-24 Years"
+1018,Cocaine,Female,with,any,42.0,0.2,2001,"Young Adults, 15-24 Years"
+1019,Cocaine,Male,with,any,125.0,0.6,2001,"Young Adults, 15-24 Years"
+1020,Cocaine,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1021,Cocaine,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1022,Psychostimulants,Female,overall,overall,36.0,0.2,2001,"Young Adults, 15-24 Years"
+1023,Psychostimulants,Male,overall,overall,65.0,0.3,2001,"Young Adults, 15-24 Years"
+1024,Psychostimulants,Female,with,any,,,2001,"Young Adults, 15-24 Years"
+1025,Psychostimulants,Male,with,any,,0.1,2001,"Young Adults, 15-24 Years"
+1026,Psychostimulants,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1027,Psychostimulants,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1028,Benzodiazepines,Female,overall,overall,26.0,0.1,2001,"Young Adults, 15-24 Years"
+1029,Benzodiazepines,Male,overall,overall,107.0,0.5,2001,"Young Adults, 15-24 Years"
+1030,Benzodiazepines,Female,with,any,19.0,,2001,"Young Adults, 15-24 Years"
+1031,Benzodiazepines,Male,with,any,85.0,0.4,2001,"Young Adults, 15-24 Years"
+1032,Benzodiazepines,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1033,Benzodiazepines,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1034,Antidepressants,Female,overall,overall,30.0,0.2,2001,"Young Adults, 15-24 Years"
+1035,Antidepressants,Male,overall,overall,58.0,0.3,2001,"Young Adults, 15-24 Years"
+1036,Antidepressants,Female,with,any,,,2001,"Young Adults, 15-24 Years"
+1037,Antidepressants,Male,with,any,26.0,0.1,2001,"Young Adults, 15-24 Years"
+1038,Antidepressants,Female,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1039,Antidepressants,Male,with,synthetic,,,2001,"Young Adults, 15-24 Years"
+1040,Prescription opioids,Female,overall,overall,152.0,0.8,2002,"Young Adults, 15-24 Years"
+1041,Prescription opioids,Male,overall,overall,489.0,2.3,2002,"Young Adults, 15-24 Years"
+1042,Prescription opioids,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1043,Prescription opioids,Male,with,synthetic,12.0,,2002,"Young Adults, 15-24 Years"
+1044,Synthetic opioids,Female,overall,overall,22.0,0.1,2002,"Young Adults, 15-24 Years"
+1045,Synthetic opioids,Male,overall,overall,62.0,0.3,2002,"Young Adults, 15-24 Years"
+1046,Heroin,Female,overall,overall,56.0,0.3,2002,"Young Adults, 15-24 Years"
+1047,Heroin,Male,overall,overall,185.0,0.9,2002,"Young Adults, 15-24 Years"
+1048,Heroin,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1049,Heroin,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1050,Stimulants,Female,overall,overall,139.0,0.7,2002,"Young Adults, 15-24 Years"
+1051,Stimulants,Male,overall,overall,353.0,1.7,2002,"Young Adults, 15-24 Years"
+1052,Stimulants,Female,with,any,68.0,0.3,2002,"Young Adults, 15-24 Years"
+1053,Stimulants,Male,with,any,183.0,0.9,2002,"Young Adults, 15-24 Years"
+1054,Stimulants,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1055,Stimulants,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1056,Cocaine,Female,overall,overall,109.0,0.5,2002,"Young Adults, 15-24 Years"
+1057,Cocaine,Male,overall,overall,279.0,1.3,2002,"Young Adults, 15-24 Years"
+1058,Cocaine,Female,with,any,56.0,0.3,2002,"Young Adults, 15-24 Years"
+1059,Cocaine,Male,with,any,167.0,0.8,2002,"Young Adults, 15-24 Years"
+1060,Cocaine,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1061,Cocaine,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1062,Psychostimulants,Female,overall,overall,34.0,0.2,2002,"Young Adults, 15-24 Years"
+1063,Psychostimulants,Male,overall,overall,90.0,0.4,2002,"Young Adults, 15-24 Years"
+1064,Psychostimulants,Female,with,any,,,2002,"Young Adults, 15-24 Years"
+1065,Psychostimulants,Male,with,any,,0.1,2002,"Young Adults, 15-24 Years"
+1066,Psychostimulants,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1067,Psychostimulants,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1068,Benzodiazepines,Female,overall,overall,42.0,0.2,2002,"Young Adults, 15-24 Years"
+1069,Benzodiazepines,Male,overall,overall,136.0,0.6,2002,"Young Adults, 15-24 Years"
+1070,Benzodiazepines,Female,with,any,32.0,0.2,2002,"Young Adults, 15-24 Years"
+1071,Benzodiazepines,Male,with,any,114.0,0.5,2002,"Young Adults, 15-24 Years"
+1072,Benzodiazepines,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1073,Benzodiazepines,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1074,Antidepressants,Female,overall,overall,52.0,0.3,2002,"Young Adults, 15-24 Years"
+1075,Antidepressants,Male,overall,overall,50.0,0.2,2002,"Young Adults, 15-24 Years"
+1076,Antidepressants,Female,with,any,,,2002,"Young Adults, 15-24 Years"
+1077,Antidepressants,Male,with,any,29.0,0.1,2002,"Young Adults, 15-24 Years"
+1078,Antidepressants,Female,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1079,Antidepressants,Male,with,synthetic,,,2002,"Young Adults, 15-24 Years"
+1080,Prescription opioids,Female,overall,overall,175.0,0.9,2003,"Young Adults, 15-24 Years"
+1081,Prescription opioids,Male,overall,overall,658.0,3.1,2003,"Young Adults, 15-24 Years"
+1082,Prescription opioids,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1083,Prescription opioids,Male,with,synthetic,23.0,0.1,2003,"Young Adults, 15-24 Years"
+1084,Synthetic opioids,Female,overall,overall,34.0,0.2,2003,"Young Adults, 15-24 Years"
+1085,Synthetic opioids,Male,overall,overall,73.0,0.3,2003,"Young Adults, 15-24 Years"
+1086,Heroin,Female,overall,overall,55.0,0.3,2003,"Young Adults, 15-24 Years"
+1087,Heroin,Male,overall,overall,204.0,1.0,2003,"Young Adults, 15-24 Years"
+1088,Heroin,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1089,Heroin,Male,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1090,Stimulants,Female,overall,overall,162.0,0.8,2003,"Young Adults, 15-24 Years"
+1091,Stimulants,Male,overall,overall,445.0,2.1,2003,"Young Adults, 15-24 Years"
+1092,Stimulants,Female,with,any,65.0,0.3,2003,"Young Adults, 15-24 Years"
+1093,Stimulants,Male,with,any,236.0,1.1,2003,"Young Adults, 15-24 Years"
+1094,Stimulants,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1095,Stimulants,Male,with,synthetic,14.0,,2003,"Young Adults, 15-24 Years"
+1096,Cocaine,Female,overall,overall,118.0,0.6,2003,"Young Adults, 15-24 Years"
+1097,Cocaine,Male,overall,overall,357.0,1.7,2003,"Young Adults, 15-24 Years"
+1098,Cocaine,Female,with,any,57.0,0.3,2003,"Young Adults, 15-24 Years"
+1099,Cocaine,Male,with,any,209.0,1.0,2003,"Young Adults, 15-24 Years"
+1100,Cocaine,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1101,Cocaine,Male,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1102,Psychostimulants,Female,overall,overall,51.0,0.3,2003,"Young Adults, 15-24 Years"
+1103,Psychostimulants,Male,overall,overall,114.0,0.5,2003,"Young Adults, 15-24 Years"
+1104,Psychostimulants,Female,with,any,,,2003,"Young Adults, 15-24 Years"
+1105,Psychostimulants,Male,with,any,,0.2,2003,"Young Adults, 15-24 Years"
+1106,Psychostimulants,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1107,Psychostimulants,Male,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1108,Benzodiazepines,Female,overall,overall,53.0,0.3,2003,"Young Adults, 15-24 Years"
+1109,Benzodiazepines,Male,overall,overall,159.0,0.7,2003,"Young Adults, 15-24 Years"
+1110,Benzodiazepines,Female,with,any,37.0,0.2,2003,"Young Adults, 15-24 Years"
+1111,Benzodiazepines,Male,with,any,133.0,0.6,2003,"Young Adults, 15-24 Years"
+1112,Benzodiazepines,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1113,Benzodiazepines,Male,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1114,Antidepressants,Female,overall,overall,56.0,0.3,2003,"Young Adults, 15-24 Years"
+1115,Antidepressants,Male,overall,overall,59.0,0.3,2003,"Young Adults, 15-24 Years"
+1116,Antidepressants,Female,with,any,28.0,0.1,2003,"Young Adults, 15-24 Years"
+1117,Antidepressants,Male,with,any,29.0,0.1,2003,"Young Adults, 15-24 Years"
+1118,Antidepressants,Female,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1119,Antidepressants,Male,with,synthetic,,,2003,"Young Adults, 15-24 Years"
+1120,Prescription opioids,Female,overall,overall,202.0,1.0,2004,"Young Adults, 15-24 Years"
+1121,Prescription opioids,Male,overall,overall,829.0,3.9,2004,"Young Adults, 15-24 Years"
+1122,Prescription opioids,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1123,Prescription opioids,Male,with,synthetic,19.0,,2004,"Young Adults, 15-24 Years"
+1124,Synthetic opioids,Female,overall,overall,26.0,0.1,2004,"Young Adults, 15-24 Years"
+1125,Synthetic opioids,Male,overall,overall,95.0,0.4,2004,"Young Adults, 15-24 Years"
+1126,Heroin,Female,overall,overall,57.0,0.3,2004,"Young Adults, 15-24 Years"
+1127,Heroin,Male,overall,overall,206.0,1.0,2004,"Young Adults, 15-24 Years"
+1128,Heroin,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1129,Heroin,Male,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1130,Stimulants,Female,overall,overall,161.0,0.8,2004,"Young Adults, 15-24 Years"
+1131,Stimulants,Male,overall,overall,473.0,2.2,2004,"Young Adults, 15-24 Years"
+1132,Stimulants,Female,with,any,83.0,0.4,2004,"Young Adults, 15-24 Years"
+1133,Stimulants,Male,with,any,260.0,1.2,2004,"Young Adults, 15-24 Years"
+1134,Stimulants,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1135,Stimulants,Male,with,synthetic,13.0,,2004,"Young Adults, 15-24 Years"
+1136,Cocaine,Female,overall,overall,121.0,0.6,2004,"Young Adults, 15-24 Years"
+1137,Cocaine,Male,overall,overall,386.0,1.8,2004,"Young Adults, 15-24 Years"
+1138,Cocaine,Female,with,any,76.0,0.4,2004,"Young Adults, 15-24 Years"
+1139,Cocaine,Male,with,any,236.0,1.1,2004,"Young Adults, 15-24 Years"
+1140,Cocaine,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1141,Cocaine,Male,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1142,Psychostimulants,Female,overall,overall,43.0,0.2,2004,"Young Adults, 15-24 Years"
+1143,Psychostimulants,Male,overall,overall,99.0,0.5,2004,"Young Adults, 15-24 Years"
+1144,Psychostimulants,Female,with,any,,,2004,"Young Adults, 15-24 Years"
+1145,Psychostimulants,Male,with,any,,0.1,2004,"Young Adults, 15-24 Years"
+1146,Psychostimulants,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1147,Psychostimulants,Male,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1148,Benzodiazepines,Female,overall,overall,60.0,0.3,2004,"Young Adults, 15-24 Years"
+1149,Benzodiazepines,Male,overall,overall,211.0,1.0,2004,"Young Adults, 15-24 Years"
+1150,Benzodiazepines,Female,with,any,52.0,0.3,2004,"Young Adults, 15-24 Years"
+1151,Benzodiazepines,Male,with,any,185.0,0.9,2004,"Young Adults, 15-24 Years"
+1152,Benzodiazepines,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1153,Benzodiazepines,Male,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1154,Antidepressants,Female,overall,overall,65.0,0.3,2004,"Young Adults, 15-24 Years"
+1155,Antidepressants,Male,overall,overall,82.0,0.4,2004,"Young Adults, 15-24 Years"
+1156,Antidepressants,Female,with,any,28.0,0.1,2004,"Young Adults, 15-24 Years"
+1157,Antidepressants,Male,with,any,41.0,0.2,2004,"Young Adults, 15-24 Years"
+1158,Antidepressants,Female,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1159,Antidepressants,Male,with,synthetic,,,2004,"Young Adults, 15-24 Years"
+1160,Prescription opioids,Female,overall,overall,225.0,1.1,2005,"Young Adults, 15-24 Years"
+1161,Prescription opioids,Male,overall,overall,833.0,3.8,2005,"Young Adults, 15-24 Years"
+1162,Prescription opioids,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1163,Prescription opioids,Male,with,synthetic,27.0,0.1,2005,"Young Adults, 15-24 Years"
+1164,Synthetic opioids,Female,overall,overall,25.0,0.1,2005,"Young Adults, 15-24 Years"
+1165,Synthetic opioids,Male,overall,overall,105.0,0.5,2005,"Young Adults, 15-24 Years"
+1166,Heroin,Female,overall,overall,65.0,0.3,2005,"Young Adults, 15-24 Years"
+1167,Heroin,Male,overall,overall,214.0,1.0,2005,"Young Adults, 15-24 Years"
+1168,Heroin,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1169,Heroin,Male,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1170,Stimulants,Female,overall,overall,171.0,0.8,2005,"Young Adults, 15-24 Years"
+1171,Stimulants,Male,overall,overall,539.0,2.5,2005,"Young Adults, 15-24 Years"
+1172,Stimulants,Female,with,any,103.0,0.5,2005,"Young Adults, 15-24 Years"
+1173,Stimulants,Male,with,any,301.0,1.4,2005,"Young Adults, 15-24 Years"
+1174,Stimulants,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1175,Stimulants,Male,with,synthetic,20.0,0.1,2005,"Young Adults, 15-24 Years"
+1176,Cocaine,Female,overall,overall,132.0,0.6,2005,"Young Adults, 15-24 Years"
+1177,Cocaine,Male,overall,overall,414.0,1.9,2005,"Young Adults, 15-24 Years"
+1178,Cocaine,Female,with,any,91.0,0.4,2005,"Young Adults, 15-24 Years"
+1179,Cocaine,Male,with,any,254.0,1.2,2005,"Young Adults, 15-24 Years"
+1180,Cocaine,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1181,Cocaine,Male,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1182,Psychostimulants,Female,overall,overall,47.0,0.2,2005,"Young Adults, 15-24 Years"
+1183,Psychostimulants,Male,overall,overall,149.0,0.7,2005,"Young Adults, 15-24 Years"
+1184,Psychostimulants,Female,with,any,,,2005,"Young Adults, 15-24 Years"
+1185,Psychostimulants,Male,with,any,,0.3,2005,"Young Adults, 15-24 Years"
+1186,Psychostimulants,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1187,Psychostimulants,Male,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1188,Benzodiazepines,Female,overall,overall,83.0,0.4,2005,"Young Adults, 15-24 Years"
+1189,Benzodiazepines,Male,overall,overall,239.0,1.1,2005,"Young Adults, 15-24 Years"
+1190,Benzodiazepines,Female,with,any,68.0,0.3,2005,"Young Adults, 15-24 Years"
+1191,Benzodiazepines,Male,with,any,213.0,1.0,2005,"Young Adults, 15-24 Years"
+1192,Benzodiazepines,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1193,Benzodiazepines,Male,with,synthetic,22.0,0.1,2005,"Young Adults, 15-24 Years"
+1194,Antidepressants,Female,overall,overall,77.0,0.4,2005,"Young Adults, 15-24 Years"
+1195,Antidepressants,Male,overall,overall,75.0,0.3,2005,"Young Adults, 15-24 Years"
+1196,Antidepressants,Female,with,any,33.0,0.2,2005,"Young Adults, 15-24 Years"
+1197,Antidepressants,Male,with,any,46.0,0.2,2005,"Young Adults, 15-24 Years"
+1198,Antidepressants,Female,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1199,Antidepressants,Male,with,synthetic,,,2005,"Young Adults, 15-24 Years"
+1200,Prescription opioids,Female,overall,overall,290.0,1.4,2006,"Young Adults, 15-24 Years"
+1201,Prescription opioids,Male,overall,overall,1098.0,5.0,2006,"Young Adults, 15-24 Years"
+1202,Prescription opioids,Female,with,synthetic,14.0,,2006,"Young Adults, 15-24 Years"
+1203,Prescription opioids,Male,with,synthetic,38.0,0.2,2006,"Young Adults, 15-24 Years"
+1204,Synthetic opioids,Female,overall,overall,66.0,0.3,2006,"Young Adults, 15-24 Years"
+1205,Synthetic opioids,Male,overall,overall,212.0,1.0,2006,"Young Adults, 15-24 Years"
+1206,Heroin,Female,overall,overall,57.0,0.3,2006,"Young Adults, 15-24 Years"
+1207,Heroin,Male,overall,overall,256.0,1.2,2006,"Young Adults, 15-24 Years"
+1208,Heroin,Female,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1209,Heroin,Male,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1210,Stimulants,Female,overall,overall,202.0,1.0,2006,"Young Adults, 15-24 Years"
+1211,Stimulants,Male,overall,overall,587.0,2.7,2006,"Young Adults, 15-24 Years"
+1212,Stimulants,Female,with,any,108.0,0.5,2006,"Young Adults, 15-24 Years"
+1213,Stimulants,Male,with,any,368.0,1.7,2006,"Young Adults, 15-24 Years"
+1214,Stimulants,Female,with,synthetic,17.0,,2006,"Young Adults, 15-24 Years"
+1215,Stimulants,Male,with,synthetic,44.0,0.2,2006,"Young Adults, 15-24 Years"
+1216,Cocaine,Female,overall,overall,168.0,0.8,2006,"Young Adults, 15-24 Years"
+1217,Cocaine,Male,overall,overall,508.0,2.3,2006,"Young Adults, 15-24 Years"
+1218,Cocaine,Female,with,any,94.0,0.5,2006,"Young Adults, 15-24 Years"
+1219,Cocaine,Male,with,any,330.0,1.5,2006,"Young Adults, 15-24 Years"
+1220,Cocaine,Female,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1221,Cocaine,Male,with,synthetic,37.0,0.2,2006,"Young Adults, 15-24 Years"
+1222,Psychostimulants,Female,overall,overall,46.0,0.2,2006,"Young Adults, 15-24 Years"
+1223,Psychostimulants,Male,overall,overall,107.0,0.5,2006,"Young Adults, 15-24 Years"
+1224,Psychostimulants,Female,with,any,,,2006,"Young Adults, 15-24 Years"
+1225,Psychostimulants,Male,with,any,,0.2,2006,"Young Adults, 15-24 Years"
+1226,Psychostimulants,Female,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1227,Psychostimulants,Male,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1228,Benzodiazepines,Female,overall,overall,95.0,0.5,2006,"Young Adults, 15-24 Years"
+1229,Benzodiazepines,Male,overall,overall,347.0,1.6,2006,"Young Adults, 15-24 Years"
+1230,Benzodiazepines,Female,with,any,78.0,0.4,2006,"Young Adults, 15-24 Years"
+1231,Benzodiazepines,Male,with,any,309.0,1.4,2006,"Young Adults, 15-24 Years"
+1232,Benzodiazepines,Female,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1233,Benzodiazepines,Male,with,synthetic,36.0,0.2,2006,"Young Adults, 15-24 Years"
+1234,Antidepressants,Female,overall,overall,69.0,0.3,2006,"Young Adults, 15-24 Years"
+1235,Antidepressants,Male,overall,overall,57.0,0.3,2006,"Young Adults, 15-24 Years"
+1236,Antidepressants,Female,with,any,24.0,0.1,2006,"Young Adults, 15-24 Years"
+1237,Antidepressants,Male,with,any,28.0,0.1,2006,"Young Adults, 15-24 Years"
+1238,Antidepressants,Female,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1239,Antidepressants,Male,with,synthetic,,,2006,"Young Adults, 15-24 Years"
+1240,Prescription opioids,Female,overall,overall,353.0,1.7,2007,"Young Adults, 15-24 Years"
+1241,Prescription opioids,Male,overall,overall,1183.0,5.3,2007,"Young Adults, 15-24 Years"
+1242,Prescription opioids,Female,with,synthetic,12.0,,2007,"Young Adults, 15-24 Years"
+1243,Prescription opioids,Male,with,synthetic,29.0,0.1,2007,"Young Adults, 15-24 Years"
+1244,Synthetic opioids,Female,overall,overall,47.0,0.2,2007,"Young Adults, 15-24 Years"
+1245,Synthetic opioids,Male,overall,overall,128.0,0.6,2007,"Young Adults, 15-24 Years"
+1246,Heroin,Female,overall,overall,61.0,0.3,2007,"Young Adults, 15-24 Years"
+1247,Heroin,Male,overall,overall,298.0,1.3,2007,"Young Adults, 15-24 Years"
+1248,Heroin,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1249,Heroin,Male,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1250,Stimulants,Female,overall,overall,161.0,0.8,2007,"Young Adults, 15-24 Years"
+1251,Stimulants,Male,overall,overall,513.0,2.3,2007,"Young Adults, 15-24 Years"
+1252,Stimulants,Female,with,any,93.0,0.4,2007,"Young Adults, 15-24 Years"
+1253,Stimulants,Male,with,any,318.0,1.4,2007,"Young Adults, 15-24 Years"
+1254,Stimulants,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1255,Stimulants,Male,with,synthetic,17.0,,2007,"Young Adults, 15-24 Years"
+1256,Cocaine,Female,overall,overall,119.0,0.6,2007,"Young Adults, 15-24 Years"
+1257,Cocaine,Male,overall,overall,444.0,2.0,2007,"Young Adults, 15-24 Years"
+1258,Cocaine,Female,with,any,81.0,0.4,2007,"Young Adults, 15-24 Years"
+1259,Cocaine,Male,with,any,284.0,1.3,2007,"Young Adults, 15-24 Years"
+1260,Cocaine,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1261,Cocaine,Male,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1262,Psychostimulants,Female,overall,overall,51.0,0.2,2007,"Young Adults, 15-24 Years"
+1263,Psychostimulants,Male,overall,overall,91.0,0.4,2007,"Young Adults, 15-24 Years"
+1264,Psychostimulants,Female,with,any,,,2007,"Young Adults, 15-24 Years"
+1265,Psychostimulants,Male,with,any,,0.2,2007,"Young Adults, 15-24 Years"
+1266,Psychostimulants,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1267,Psychostimulants,Male,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1268,Benzodiazepines,Female,overall,overall,145.0,0.7,2007,"Young Adults, 15-24 Years"
+1269,Benzodiazepines,Male,overall,overall,370.0,1.7,2007,"Young Adults, 15-24 Years"
+1270,Benzodiazepines,Female,with,any,128.0,0.6,2007,"Young Adults, 15-24 Years"
+1271,Benzodiazepines,Male,with,any,324.0,1.5,2007,"Young Adults, 15-24 Years"
+1272,Benzodiazepines,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1273,Benzodiazepines,Male,with,synthetic,25.0,0.1,2007,"Young Adults, 15-24 Years"
+1274,Antidepressants,Female,overall,overall,66.0,0.3,2007,"Young Adults, 15-24 Years"
+1275,Antidepressants,Male,overall,overall,84.0,0.4,2007,"Young Adults, 15-24 Years"
+1276,Antidepressants,Female,with,any,33.0,0.2,2007,"Young Adults, 15-24 Years"
+1277,Antidepressants,Male,with,any,55.0,0.2,2007,"Young Adults, 15-24 Years"
+1278,Antidepressants,Female,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1279,Antidepressants,Male,with,synthetic,,,2007,"Young Adults, 15-24 Years"
+1280,Prescription opioids,Female,overall,overall,299.0,1.4,2008,"Young Adults, 15-24 Years"
+1281,Prescription opioids,Male,overall,overall,1150.0,5.2,2008,"Young Adults, 15-24 Years"
+1282,Prescription opioids,Female,with,synthetic,11.0,,2008,"Young Adults, 15-24 Years"
+1283,Prescription opioids,Male,with,synthetic,44.0,0.2,2008,"Young Adults, 15-24 Years"
+1284,Synthetic opioids,Female,overall,overall,48.0,0.2,2008,"Young Adults, 15-24 Years"
+1285,Synthetic opioids,Male,overall,overall,142.0,0.6,2008,"Young Adults, 15-24 Years"
+1286,Heroin,Female,overall,overall,96.0,0.5,2008,"Young Adults, 15-24 Years"
+1287,Heroin,Male,overall,overall,401.0,1.8,2008,"Young Adults, 15-24 Years"
+1288,Heroin,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1289,Heroin,Male,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1290,Stimulants,Female,overall,overall,115.0,0.5,2008,"Young Adults, 15-24 Years"
+1291,Stimulants,Male,overall,overall,385.0,1.7,2008,"Young Adults, 15-24 Years"
+1292,Stimulants,Female,with,any,71.0,0.3,2008,"Young Adults, 15-24 Years"
+1293,Stimulants,Male,with,any,263.0,1.2,2008,"Young Adults, 15-24 Years"
+1294,Stimulants,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1295,Stimulants,Male,with,synthetic,20.0,0.1,2008,"Young Adults, 15-24 Years"
+1296,Cocaine,Female,overall,overall,89.0,0.4,2008,"Young Adults, 15-24 Years"
+1297,Cocaine,Male,overall,overall,295.0,1.3,2008,"Young Adults, 15-24 Years"
+1298,Cocaine,Female,with,any,62.0,0.3,2008,"Young Adults, 15-24 Years"
+1299,Cocaine,Male,with,any,218.0,1.0,2008,"Young Adults, 15-24 Years"
+1300,Cocaine,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1301,Cocaine,Male,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1302,Psychostimulants,Female,overall,overall,31.0,0.1,2008,"Young Adults, 15-24 Years"
+1303,Psychostimulants,Male,overall,overall,96.0,0.4,2008,"Young Adults, 15-24 Years"
+1304,Psychostimulants,Female,with,any,,,2008,"Young Adults, 15-24 Years"
+1305,Psychostimulants,Male,with,any,,0.2,2008,"Young Adults, 15-24 Years"
+1306,Psychostimulants,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1307,Psychostimulants,Male,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1308,Benzodiazepines,Female,overall,overall,133.0,0.6,2008,"Young Adults, 15-24 Years"
+1309,Benzodiazepines,Male,overall,overall,417.0,1.9,2008,"Young Adults, 15-24 Years"
+1310,Benzodiazepines,Female,with,any,114.0,0.5,2008,"Young Adults, 15-24 Years"
+1311,Benzodiazepines,Male,with,any,372.0,1.7,2008,"Young Adults, 15-24 Years"
+1312,Benzodiazepines,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1313,Benzodiazepines,Male,with,synthetic,32.0,0.1,2008,"Young Adults, 15-24 Years"
+1314,Antidepressants,Female,overall,overall,74.0,0.3,2008,"Young Adults, 15-24 Years"
+1315,Antidepressants,Male,overall,overall,83.0,0.4,2008,"Young Adults, 15-24 Years"
+1316,Antidepressants,Female,with,any,37.0,0.2,2008,"Young Adults, 15-24 Years"
+1317,Antidepressants,Male,with,any,57.0,0.3,2008,"Young Adults, 15-24 Years"
+1318,Antidepressants,Female,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1319,Antidepressants,Male,with,synthetic,,,2008,"Young Adults, 15-24 Years"
+1320,Prescription opioids,Female,overall,overall,338.0,1.6,2009,"Young Adults, 15-24 Years"
+1321,Prescription opioids,Male,overall,overall,1068.0,4.8,2009,"Young Adults, 15-24 Years"
+1322,Prescription opioids,Female,with,synthetic,21.0,0.1,2009,"Young Adults, 15-24 Years"
+1323,Prescription opioids,Male,with,synthetic,37.0,0.2,2009,"Young Adults, 15-24 Years"
+1324,Synthetic opioids,Female,overall,overall,53.0,0.2,2009,"Young Adults, 15-24 Years"
+1325,Synthetic opioids,Male,overall,overall,150.0,0.7,2009,"Young Adults, 15-24 Years"
+1326,Heroin,Female,overall,overall,115.0,0.5,2009,"Young Adults, 15-24 Years"
+1327,Heroin,Male,overall,overall,395.0,1.8,2009,"Young Adults, 15-24 Years"
+1328,Heroin,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1329,Heroin,Male,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1330,Stimulants,Female,overall,overall,98.0,0.5,2009,"Young Adults, 15-24 Years"
+1331,Stimulants,Male,overall,overall,297.0,1.3,2009,"Young Adults, 15-24 Years"
+1332,Stimulants,Female,with,any,59.0,0.3,2009,"Young Adults, 15-24 Years"
+1333,Stimulants,Male,with,any,212.0,1.0,2009,"Young Adults, 15-24 Years"
+1334,Stimulants,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1335,Stimulants,Male,with,synthetic,18.0,,2009,"Young Adults, 15-24 Years"
+1336,Cocaine,Female,overall,overall,58.0,0.3,2009,"Young Adults, 15-24 Years"
+1337,Cocaine,Male,overall,overall,211.0,0.9,2009,"Young Adults, 15-24 Years"
+1338,Cocaine,Female,with,any,42.0,0.2,2009,"Young Adults, 15-24 Years"
+1339,Cocaine,Male,with,any,166.0,0.7,2009,"Young Adults, 15-24 Years"
+1340,Cocaine,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1341,Cocaine,Male,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1342,Psychostimulants,Female,overall,overall,46.0,0.2,2009,"Young Adults, 15-24 Years"
+1343,Psychostimulants,Male,overall,overall,101.0,0.5,2009,"Young Adults, 15-24 Years"
+1344,Psychostimulants,Female,with,any,21.0,0.1,2009,"Young Adults, 15-24 Years"
+1345,Psychostimulants,Male,with,any,58.0,0.3,2009,"Young Adults, 15-24 Years"
+1346,Psychostimulants,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1347,Psychostimulants,Male,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1348,Benzodiazepines,Female,overall,overall,147.0,0.7,2009,"Young Adults, 15-24 Years"
+1349,Benzodiazepines,Male,overall,overall,424.0,1.9,2009,"Young Adults, 15-24 Years"
+1350,Benzodiazepines,Female,with,any,130.0,0.6,2009,"Young Adults, 15-24 Years"
+1351,Benzodiazepines,Male,with,any,387.0,1.7,2009,"Young Adults, 15-24 Years"
+1352,Benzodiazepines,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1353,Benzodiazepines,Male,with,synthetic,40.0,0.2,2009,"Young Adults, 15-24 Years"
+1354,Antidepressants,Female,overall,overall,76.0,0.4,2009,"Young Adults, 15-24 Years"
+1355,Antidepressants,Male,overall,overall,101.0,0.5,2009,"Young Adults, 15-24 Years"
+1356,Antidepressants,Female,with,any,41.0,0.2,2009,"Young Adults, 15-24 Years"
+1357,Antidepressants,Male,with,any,62.0,0.3,2009,"Young Adults, 15-24 Years"
+1358,Antidepressants,Female,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1359,Antidepressants,Male,with,synthetic,,,2009,"Young Adults, 15-24 Years"
+1360,Prescription opioids,Female,overall,overall,389.0,1.8,2010,"Young Adults, 15-24 Years"
+1361,Prescription opioids,Male,overall,overall,1141.0,5.1,2010,"Young Adults, 15-24 Years"
+1362,Prescription opioids,Female,with,synthetic,26.0,0.1,2010,"Young Adults, 15-24 Years"
+1363,Prescription opioids,Male,with,synthetic,39.0,0.2,2010,"Young Adults, 15-24 Years"
+1364,Synthetic opioids,Female,overall,overall,77.0,0.4,2010,"Young Adults, 15-24 Years"
+1365,Synthetic opioids,Male,overall,overall,152.0,0.7,2010,"Young Adults, 15-24 Years"
+1366,Heroin,Female,overall,overall,118.0,0.6,2010,"Young Adults, 15-24 Years"
+1367,Heroin,Male,overall,overall,419.0,1.9,2010,"Young Adults, 15-24 Years"
+1368,Heroin,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1369,Heroin,Male,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1370,Stimulants,Female,overall,overall,145.0,0.7,2010,"Young Adults, 15-24 Years"
+1371,Stimulants,Male,overall,overall,284.0,1.3,2010,"Young Adults, 15-24 Years"
+1372,Stimulants,Female,with,any,93.0,0.4,2010,"Young Adults, 15-24 Years"
+1373,Stimulants,Male,with,any,195.0,0.9,2010,"Young Adults, 15-24 Years"
+1374,Stimulants,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1375,Stimulants,Male,with,synthetic,16.0,,2010,"Young Adults, 15-24 Years"
+1376,Cocaine,Female,overall,overall,80.0,0.4,2010,"Young Adults, 15-24 Years"
+1377,Cocaine,Male,overall,overall,185.0,0.8,2010,"Young Adults, 15-24 Years"
+1378,Cocaine,Female,with,any,63.0,0.3,2010,"Young Adults, 15-24 Years"
+1379,Cocaine,Male,with,any,146.0,0.7,2010,"Young Adults, 15-24 Years"
+1380,Cocaine,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1381,Cocaine,Male,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1382,Psychostimulants,Female,overall,overall,73.0,0.3,2010,"Young Adults, 15-24 Years"
+1383,Psychostimulants,Male,overall,overall,106.0,0.5,2010,"Young Adults, 15-24 Years"
+1384,Psychostimulants,Female,with,any,36.0,0.2,2010,"Young Adults, 15-24 Years"
+1385,Psychostimulants,Male,with,any,55.0,0.2,2010,"Young Adults, 15-24 Years"
+1386,Psychostimulants,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1387,Psychostimulants,Male,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1388,Benzodiazepines,Female,overall,overall,172.0,0.8,2010,"Young Adults, 15-24 Years"
+1389,Benzodiazepines,Male,overall,overall,486.0,2.2,2010,"Young Adults, 15-24 Years"
+1390,Benzodiazepines,Female,with,any,157.0,0.7,2010,"Young Adults, 15-24 Years"
+1391,Benzodiazepines,Male,with,any,448.0,2.0,2010,"Young Adults, 15-24 Years"
+1392,Benzodiazepines,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1393,Benzodiazepines,Male,with,synthetic,43.0,0.2,2010,"Young Adults, 15-24 Years"
+1394,Antidepressants,Female,overall,overall,78.0,0.4,2010,"Young Adults, 15-24 Years"
+1395,Antidepressants,Male,overall,overall,120.0,0.5,2010,"Young Adults, 15-24 Years"
+1396,Antidepressants,Female,with,any,51.0,0.2,2010,"Young Adults, 15-24 Years"
+1397,Antidepressants,Male,with,any,75.0,0.3,2010,"Young Adults, 15-24 Years"
+1398,Antidepressants,Female,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1399,Antidepressants,Male,with,synthetic,,,2010,"Young Adults, 15-24 Years"
+1400,Prescription opioids,Female,overall,overall,363.0,1.7,2011,"Young Adults, 15-24 Years"
+1401,Prescription opioids,Male,overall,overall,1064.0,4.7,2011,"Young Adults, 15-24 Years"
+1402,Prescription opioids,Female,with,synthetic,23.0,0.1,2011,"Young Adults, 15-24 Years"
+1403,Prescription opioids,Male,with,synthetic,39.0,0.2,2011,"Young Adults, 15-24 Years"
+1404,Synthetic opioids,Female,overall,overall,60.0,0.3,2011,"Young Adults, 15-24 Years"
+1405,Synthetic opioids,Male,overall,overall,160.0,0.7,2011,"Young Adults, 15-24 Years"
+1406,Heroin,Female,overall,overall,183.0,0.9,2011,"Young Adults, 15-24 Years"
+1407,Heroin,Male,overall,overall,626.0,2.8,2011,"Young Adults, 15-24 Years"
+1408,Heroin,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1409,Heroin,Male,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1410,Stimulants,Female,overall,overall,134.0,0.6,2011,"Young Adults, 15-24 Years"
+1411,Stimulants,Male,overall,overall,352.0,1.6,2011,"Young Adults, 15-24 Years"
+1412,Stimulants,Female,with,any,87.0,0.4,2011,"Young Adults, 15-24 Years"
+1413,Stimulants,Male,with,any,259.0,1.2,2011,"Young Adults, 15-24 Years"
+1414,Stimulants,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1415,Stimulants,Male,with,synthetic,10.0,,2011,"Young Adults, 15-24 Years"
+1416,Cocaine,Female,overall,overall,82.0,0.4,2011,"Young Adults, 15-24 Years"
+1417,Cocaine,Male,overall,overall,228.0,1.0,2011,"Young Adults, 15-24 Years"
+1418,Cocaine,Female,with,any,63.0,0.3,2011,"Young Adults, 15-24 Years"
+1419,Cocaine,Male,with,any,179.0,0.8,2011,"Young Adults, 15-24 Years"
+1420,Cocaine,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1421,Cocaine,Male,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1422,Psychostimulants,Female,overall,overall,63.0,0.3,2011,"Young Adults, 15-24 Years"
+1423,Psychostimulants,Male,overall,overall,136.0,0.6,2011,"Young Adults, 15-24 Years"
+1424,Psychostimulants,Female,with,any,32.0,0.1,2011,"Young Adults, 15-24 Years"
+1425,Psychostimulants,Male,with,any,91.0,0.4,2011,"Young Adults, 15-24 Years"
+1426,Psychostimulants,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1427,Psychostimulants,Male,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1428,Benzodiazepines,Female,overall,overall,158.0,0.7,2011,"Young Adults, 15-24 Years"
+1429,Benzodiazepines,Male,overall,overall,456.0,2.0,2011,"Young Adults, 15-24 Years"
+1430,Benzodiazepines,Female,with,any,149.0,0.7,2011,"Young Adults, 15-24 Years"
+1431,Benzodiazepines,Male,with,any,420.0,1.9,2011,"Young Adults, 15-24 Years"
+1432,Benzodiazepines,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1433,Benzodiazepines,Male,with,synthetic,44.0,0.2,2011,"Young Adults, 15-24 Years"
+1434,Antidepressants,Female,overall,overall,83.0,0.4,2011,"Young Adults, 15-24 Years"
+1435,Antidepressants,Male,overall,overall,100.0,0.4,2011,"Young Adults, 15-24 Years"
+1436,Antidepressants,Female,with,any,48.0,0.2,2011,"Young Adults, 15-24 Years"
+1437,Antidepressants,Male,with,any,66.0,0.3,2011,"Young Adults, 15-24 Years"
+1438,Antidepressants,Female,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1439,Antidepressants,Male,with,synthetic,,,2011,"Young Adults, 15-24 Years"
+1440,Prescription opioids,Female,overall,overall,289.0,1.3,2012,"Young Adults, 15-24 Years"
+1441,Prescription opioids,Male,overall,overall,831.0,3.7,2012,"Young Adults, 15-24 Years"
+1442,Prescription opioids,Female,with,synthetic,10.0,,2012,"Young Adults, 15-24 Years"
+1443,Prescription opioids,Male,with,synthetic,32.0,0.1,2012,"Young Adults, 15-24 Years"
+1444,Synthetic opioids,Female,overall,overall,35.0,0.2,2012,"Young Adults, 15-24 Years"
+1445,Synthetic opioids,Male,overall,overall,137.0,0.6,2012,"Young Adults, 15-24 Years"
+1446,Heroin,Female,overall,overall,241.0,1.1,2012,"Young Adults, 15-24 Years"
+1447,Heroin,Male,overall,overall,722.0,3.2,2012,"Young Adults, 15-24 Years"
+1448,Heroin,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1449,Heroin,Male,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1450,Stimulants,Female,overall,overall,129.0,0.6,2012,"Young Adults, 15-24 Years"
+1451,Stimulants,Male,overall,overall,323.0,1.4,2012,"Young Adults, 15-24 Years"
+1452,Stimulants,Female,with,any,87.0,0.4,2012,"Young Adults, 15-24 Years"
+1453,Stimulants,Male,with,any,223.0,1.0,2012,"Young Adults, 15-24 Years"
+1454,Stimulants,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1455,Stimulants,Male,with,synthetic,18.0,,2012,"Young Adults, 15-24 Years"
+1456,Cocaine,Female,overall,overall,70.0,0.3,2012,"Young Adults, 15-24 Years"
+1457,Cocaine,Male,overall,overall,200.0,0.9,2012,"Young Adults, 15-24 Years"
+1458,Cocaine,Female,with,any,56.0,0.3,2012,"Young Adults, 15-24 Years"
+1459,Cocaine,Male,with,any,171.0,0.8,2012,"Young Adults, 15-24 Years"
+1460,Cocaine,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1461,Cocaine,Male,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1462,Psychostimulants,Female,overall,overall,63.0,0.3,2012,"Young Adults, 15-24 Years"
+1463,Psychostimulants,Male,overall,overall,134.0,0.6,2012,"Young Adults, 15-24 Years"
+1464,Psychostimulants,Female,with,any,34.0,0.2,2012,"Young Adults, 15-24 Years"
+1465,Psychostimulants,Male,with,any,60.0,0.3,2012,"Young Adults, 15-24 Years"
+1466,Psychostimulants,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1467,Psychostimulants,Male,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1468,Benzodiazepines,Female,overall,overall,137.0,0.6,2012,"Young Adults, 15-24 Years"
+1469,Benzodiazepines,Male,overall,overall,374.0,1.7,2012,"Young Adults, 15-24 Years"
+1470,Benzodiazepines,Female,with,any,128.0,0.6,2012,"Young Adults, 15-24 Years"
+1471,Benzodiazepines,Male,with,any,351.0,1.6,2012,"Young Adults, 15-24 Years"
+1472,Benzodiazepines,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1473,Benzodiazepines,Male,with,synthetic,37.0,0.2,2012,"Young Adults, 15-24 Years"
+1474,Antidepressants,Female,overall,overall,68.0,0.3,2012,"Young Adults, 15-24 Years"
+1475,Antidepressants,Male,overall,overall,91.0,0.4,2012,"Young Adults, 15-24 Years"
+1476,Antidepressants,Female,with,any,36.0,0.2,2012,"Young Adults, 15-24 Years"
+1477,Antidepressants,Male,with,any,54.0,0.2,2012,"Young Adults, 15-24 Years"
+1478,Antidepressants,Female,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1479,Antidepressants,Male,with,synthetic,,,2012,"Young Adults, 15-24 Years"
+1480,Prescription opioids,Female,overall,overall,241.0,1.1,2013,"Young Adults, 15-24 Years"
+1481,Prescription opioids,Male,overall,overall,747.0,3.3,2013,"Young Adults, 15-24 Years"
+1482,Prescription opioids,Female,with,synthetic,19.0,,2013,"Young Adults, 15-24 Years"
+1483,Prescription opioids,Male,with,synthetic,43.0,0.2,2013,"Young Adults, 15-24 Years"
+1484,Synthetic opioids,Female,overall,overall,68.0,0.3,2013,"Young Adults, 15-24 Years"
+1485,Synthetic opioids,Male,overall,overall,169.0,0.8,2013,"Young Adults, 15-24 Years"
+1486,Heroin,Female,overall,overall,322.0,1.5,2013,"Young Adults, 15-24 Years"
+1487,Heroin,Male,overall,overall,941.0,4.2,2013,"Young Adults, 15-24 Years"
+1488,Heroin,Female,with,synthetic,7.0,,2013,"Young Adults, 15-24 Years"
+1489,Heroin,Male,with,synthetic,13.0,,2013,"Young Adults, 15-24 Years"
+1490,Stimulants,Female,overall,overall,166.0,0.8,2013,"Young Adults, 15-24 Years"
+1491,Stimulants,Male,overall,overall,383.0,1.7,2013,"Young Adults, 15-24 Years"
+1492,Stimulants,Female,with,any,104.0,0.5,2013,"Young Adults, 15-24 Years"
+1493,Stimulants,Male,with,any,245.0,1.1,2013,"Young Adults, 15-24 Years"
+1494,Stimulants,Female,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1495,Stimulants,Male,with,synthetic,46.0,0.2,2013,"Young Adults, 15-24 Years"
+1496,Cocaine,Female,overall,overall,78.0,0.4,2013,"Young Adults, 15-24 Years"
+1497,Cocaine,Male,overall,overall,195.0,0.9,2013,"Young Adults, 15-24 Years"
+1498,Cocaine,Female,with,any,64.0,0.3,2013,"Young Adults, 15-24 Years"
+1499,Cocaine,Male,with,any,158.0,0.7,2013,"Young Adults, 15-24 Years"
+1500,Cocaine,Female,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1501,Cocaine,Male,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1502,Psychostimulants,Female,overall,overall,100.0,0.5,2013,"Young Adults, 15-24 Years"
+1503,Psychostimulants,Male,overall,overall,203.0,0.9,2013,"Young Adults, 15-24 Years"
+1504,Psychostimulants,Female,with,any,48.0,0.2,2013,"Young Adults, 15-24 Years"
+1505,Psychostimulants,Male,with,any,100.0,0.4,2013,"Young Adults, 15-24 Years"
+1506,Psychostimulants,Female,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1507,Psychostimulants,Male,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1508,Benzodiazepines,Female,overall,overall,133.0,0.6,2013,"Young Adults, 15-24 Years"
+1509,Benzodiazepines,Male,overall,overall,374.0,1.7,2013,"Young Adults, 15-24 Years"
+1510,Benzodiazepines,Female,with,any,117.0,0.5,2013,"Young Adults, 15-24 Years"
+1511,Benzodiazepines,Male,with,any,335.0,1.5,2013,"Young Adults, 15-24 Years"
+1512,Benzodiazepines,Female,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1513,Benzodiazepines,Male,with,synthetic,39.0,0.2,2013,"Young Adults, 15-24 Years"
+1514,Antidepressants,Female,overall,overall,75.0,0.3,2013,"Young Adults, 15-24 Years"
+1515,Antidepressants,Male,overall,overall,98.0,0.4,2013,"Young Adults, 15-24 Years"
+1516,Antidepressants,Female,with,any,40.0,0.2,2013,"Young Adults, 15-24 Years"
+1517,Antidepressants,Male,with,any,61.0,0.3,2013,"Young Adults, 15-24 Years"
+1518,Antidepressants,Female,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1519,Antidepressants,Male,with,synthetic,,,2013,"Young Adults, 15-24 Years"
+1520,Prescription opioids,Female,overall,overall,252.0,1.2,2014,"Young Adults, 15-24 Years"
+1521,Prescription opioids,Male,overall,overall,679.0,3.0,2014,"Young Adults, 15-24 Years"
+1522,Prescription opioids,Female,with,synthetic,27.0,0.1,2014,"Young Adults, 15-24 Years"
+1523,Prescription opioids,Male,with,synthetic,54.0,0.2,2014,"Young Adults, 15-24 Years"
+1524,Synthetic opioids,Female,overall,overall,138.0,0.6,2014,"Young Adults, 15-24 Years"
+1525,Synthetic opioids,Male,overall,overall,376.0,1.7,2014,"Young Adults, 15-24 Years"
+1526,Heroin,Female,overall,overall,373.0,1.7,2014,"Young Adults, 15-24 Years"
+1527,Heroin,Male,overall,overall,1079.0,4.8,2014,"Young Adults, 15-24 Years"
+1528,Heroin,Female,with,synthetic,42.0,0.2,2014,"Young Adults, 15-24 Years"
+1529,Heroin,Male,with,synthetic,89.0,0.4,2014,"Young Adults, 15-24 Years"
+1530,Stimulants,Female,overall,overall,178.0,0.8,2014,"Young Adults, 15-24 Years"
+1531,Stimulants,Male,overall,overall,457.0,2.0,2014,"Young Adults, 15-24 Years"
+1532,Stimulants,Female,with,any,120.0,0.6,2014,"Young Adults, 15-24 Years"
+1533,Stimulants,Male,with,any,337.0,1.5,2014,"Young Adults, 15-24 Years"
+1534,Stimulants,Female,with,synthetic,19.0,,2014,"Young Adults, 15-24 Years"
+1535,Stimulants,Male,with,synthetic,106.0,0.5,2014,"Young Adults, 15-24 Years"
+1536,Cocaine,Female,overall,overall,84.0,0.4,2014,"Young Adults, 15-24 Years"
+1537,Cocaine,Male,overall,overall,250.0,1.1,2014,"Young Adults, 15-24 Years"
+1538,Cocaine,Female,with,any,69.0,0.3,2014,"Young Adults, 15-24 Years"
+1539,Cocaine,Male,with,any,211.0,0.9,2014,"Young Adults, 15-24 Years"
+1540,Cocaine,Female,with,synthetic,,,2014,"Young Adults, 15-24 Years"
+1541,Cocaine,Male,with,synthetic,32.0,0.1,2014,"Young Adults, 15-24 Years"
+1542,Psychostimulants,Female,overall,overall,103.0,0.5,2014,"Young Adults, 15-24 Years"
+1543,Psychostimulants,Male,overall,overall,237.0,1.1,2014,"Young Adults, 15-24 Years"
+1544,Psychostimulants,Female,with,any,57.0,0.3,2014,"Young Adults, 15-24 Years"
+1545,Psychostimulants,Male,with,any,147.0,0.7,2014,"Young Adults, 15-24 Years"
+1546,Psychostimulants,Female,with,synthetic,,,2014,"Young Adults, 15-24 Years"
+1547,Psychostimulants,Male,with,synthetic,,,2014,"Young Adults, 15-24 Years"
+1548,Benzodiazepines,Female,overall,overall,167.0,0.8,2014,"Young Adults, 15-24 Years"
+1549,Benzodiazepines,Male,overall,overall,405.0,1.8,2014,"Young Adults, 15-24 Years"
+1550,Benzodiazepines,Female,with,any,147.0,0.7,2014,"Young Adults, 15-24 Years"
+1551,Benzodiazepines,Male,with,any,367.0,1.6,2014,"Young Adults, 15-24 Years"
+1552,Benzodiazepines,Female,with,synthetic,25.0,0.1,2014,"Young Adults, 15-24 Years"
+1553,Benzodiazepines,Male,with,synthetic,64.0,0.3,2014,"Young Adults, 15-24 Years"
+1554,Antidepressants,Female,overall,overall,98.0,0.5,2014,"Young Adults, 15-24 Years"
+1555,Antidepressants,Male,overall,overall,108.0,0.5,2014,"Young Adults, 15-24 Years"
+1556,Antidepressants,Female,with,any,49.0,0.2,2014,"Young Adults, 15-24 Years"
+1557,Antidepressants,Male,with,any,72.0,0.3,2014,"Young Adults, 15-24 Years"
+1558,Antidepressants,Female,with,synthetic,,,2014,"Young Adults, 15-24 Years"
+1559,Antidepressants,Male,with,synthetic,,,2014,"Young Adults, 15-24 Years"
+1560,Prescription opioids,Female,overall,overall,267.0,1.2,2015,"Young Adults, 15-24 Years"
+1561,Prescription opioids,Male,overall,overall,619.0,2.8,2015,"Young Adults, 15-24 Years"
+1562,Prescription opioids,Female,with,synthetic,58.0,0.3,2015,"Young Adults, 15-24 Years"
+1563,Prescription opioids,Male,with,synthetic,113.0,0.5,2015,"Young Adults, 15-24 Years"
+1564,Synthetic opioids,Female,overall,overall,281.0,1.3,2015,"Young Adults, 15-24 Years"
+1565,Synthetic opioids,Male,overall,overall,718.0,3.2,2015,"Young Adults, 15-24 Years"
+1566,Heroin,Female,overall,overall,477.0,2.2,2015,"Young Adults, 15-24 Years"
+1567,Heroin,Male,overall,overall,1172.0,5.2,2015,"Young Adults, 15-24 Years"
+1568,Heroin,Female,with,synthetic,96.0,0.4,2015,"Young Adults, 15-24 Years"
+1569,Heroin,Male,with,synthetic,209.0,0.9,2015,"Young Adults, 15-24 Years"
+1570,Stimulants,Female,overall,overall,281.0,1.3,2015,"Young Adults, 15-24 Years"
+1571,Stimulants,Male,overall,overall,545.0,2.4,2015,"Young Adults, 15-24 Years"
+1572,Stimulants,Female,with,any,198.0,0.9,2015,"Young Adults, 15-24 Years"
+1573,Stimulants,Male,with,any,391.0,1.7,2015,"Young Adults, 15-24 Years"
+1574,Stimulants,Female,with,synthetic,52.0,0.2,2015,"Young Adults, 15-24 Years"
+1575,Stimulants,Male,with,synthetic,303.0,1.4,2015,"Young Adults, 15-24 Years"
+1576,Cocaine,Female,overall,overall,139.0,0.7,2015,"Young Adults, 15-24 Years"
+1577,Cocaine,Male,overall,overall,303.0,1.3,2015,"Young Adults, 15-24 Years"
+1578,Cocaine,Female,with,any,122.0,0.6,2015,"Young Adults, 15-24 Years"
+1579,Cocaine,Male,with,any,263.0,1.2,2015,"Young Adults, 15-24 Years"
+1580,Cocaine,Female,with,synthetic,40.0,0.2,2015,"Young Adults, 15-24 Years"
+1581,Cocaine,Male,with,synthetic,81.0,0.4,2015,"Young Adults, 15-24 Years"
+1582,Psychostimulants,Female,overall,overall,157.0,0.7,2015,"Young Adults, 15-24 Years"
+1583,Psychostimulants,Male,overall,overall,259.0,1.2,2015,"Young Adults, 15-24 Years"
+1584,Psychostimulants,Female,with,any,85.0,0.4,2015,"Young Adults, 15-24 Years"
+1585,Psychostimulants,Male,with,any,142.0,0.6,2015,"Young Adults, 15-24 Years"
+1586,Psychostimulants,Female,with,synthetic,,,2015,"Young Adults, 15-24 Years"
+1587,Psychostimulants,Male,with,synthetic,30.0,0.1,2015,"Young Adults, 15-24 Years"
+1588,Benzodiazepines,Female,overall,overall,189.0,0.9,2015,"Young Adults, 15-24 Years"
+1589,Benzodiazepines,Male,overall,overall,476.0,2.1,2015,"Young Adults, 15-24 Years"
+1590,Benzodiazepines,Female,with,any,164.0,0.8,2015,"Young Adults, 15-24 Years"
+1591,Benzodiazepines,Male,with,any,438.0,1.9,2015,"Young Adults, 15-24 Years"
+1592,Benzodiazepines,Female,with,synthetic,43.0,0.2,2015,"Young Adults, 15-24 Years"
+1593,Benzodiazepines,Male,with,synthetic,109.0,0.5,2015,"Young Adults, 15-24 Years"
+1594,Antidepressants,Female,overall,overall,105.0,0.5,2015,"Young Adults, 15-24 Years"
+1595,Antidepressants,Male,overall,overall,98.0,0.4,2015,"Young Adults, 15-24 Years"
+1596,Antidepressants,Female,with,any,49.0,0.2,2015,"Young Adults, 15-24 Years"
+1597,Antidepressants,Male,with,any,55.0,0.2,2015,"Young Adults, 15-24 Years"
+1598,Antidepressants,Female,with,synthetic,21.0,0.1,2015,"Young Adults, 15-24 Years"
+1599,Antidepressants,Male,with,synthetic,,,2015,"Young Adults, 15-24 Years"
+1600,Prescription opioids,Female,overall,overall,294.0,1.4,2016,"Young Adults, 15-24 Years"
+1601,Prescription opioids,Male,overall,overall,852.0,3.8,2016,"Young Adults, 15-24 Years"
+1602,Prescription opioids,Female,with,synthetic,88.0,0.4,2016,"Young Adults, 15-24 Years"
+1603,Prescription opioids,Male,with,synthetic,201.0,0.9,2016,"Young Adults, 15-24 Years"
+1604,Synthetic opioids,Female,overall,overall,524.0,2.5,2016,"Young Adults, 15-24 Years"
+1605,Synthetic opioids,Male,overall,overall,1434.0,6.4,2016,"Young Adults, 15-24 Years"
+1606,Heroin,Female,overall,overall,453.0,2.1,2016,"Young Adults, 15-24 Years"
+1607,Heroin,Male,overall,overall,1275.0,5.7,2016,"Young Adults, 15-24 Years"
+1608,Heroin,Female,with,synthetic,160.0,0.8,2016,"Young Adults, 15-24 Years"
+1609,Heroin,Male,with,synthetic,375.0,1.7,2016,"Young Adults, 15-24 Years"
+1610,Stimulants,Female,overall,overall,375.0,1.8,2016,"Young Adults, 15-24 Years"
+1611,Stimulants,Male,overall,overall,900.0,4.0,2016,"Young Adults, 15-24 Years"
+1612,Stimulants,Female,with,any,265.0,1.2,2016,"Young Adults, 15-24 Years"
+1613,Stimulants,Male,with,any,671.0,3.0,2016,"Young Adults, 15-24 Years"
+1614,Stimulants,Female,with,synthetic,135.0,0.6,2016,"Young Adults, 15-24 Years"
+1615,Stimulants,Male,with,synthetic,512.0,2.3,2016,"Young Adults, 15-24 Years"
+1616,Cocaine,Female,overall,overall,204.0,1.0,2016,"Young Adults, 15-24 Years"
+1617,Cocaine,Male,overall,overall,553.0,2.5,2016,"Young Adults, 15-24 Years"
+1618,Cocaine,Female,with,any,171.0,0.8,2016,"Young Adults, 15-24 Years"
+1619,Cocaine,Male,with,any,470.0,2.1,2016,"Young Adults, 15-24 Years"
+1620,Cocaine,Female,with,synthetic,114.0,0.5,2016,"Young Adults, 15-24 Years"
+1621,Cocaine,Male,with,synthetic,240.0,1.1,2016,"Young Adults, 15-24 Years"
+1622,Psychostimulants,Female,overall,overall,183.0,0.9,2016,"Young Adults, 15-24 Years"
+1623,Psychostimulants,Male,overall,overall,388.0,1.7,2016,"Young Adults, 15-24 Years"
+1624,Psychostimulants,Female,with,any,98.0,0.5,2016,"Young Adults, 15-24 Years"
+1625,Psychostimulants,Male,with,any,236.0,1.1,2016,"Young Adults, 15-24 Years"
+1626,Psychostimulants,Female,with,synthetic,23.0,0.1,2016,"Young Adults, 15-24 Years"
+1627,Psychostimulants,Male,with,synthetic,74.0,0.3,2016,"Young Adults, 15-24 Years"
+1628,Benzodiazepines,Female,overall,overall,247.0,1.2,2016,"Young Adults, 15-24 Years"
+1629,Benzodiazepines,Male,overall,overall,799.0,3.6,2016,"Young Adults, 15-24 Years"
+1630,Benzodiazepines,Female,with,any,217.0,1.0,2016,"Young Adults, 15-24 Years"
+1631,Benzodiazepines,Male,with,any,714.0,3.2,2016,"Young Adults, 15-24 Years"
+1632,Benzodiazepines,Female,with,synthetic,92.0,0.4,2016,"Young Adults, 15-24 Years"
+1633,Benzodiazepines,Male,with,synthetic,285.0,1.3,2016,"Young Adults, 15-24 Years"
+1634,Antidepressants,Female,overall,overall,94.0,0.4,2016,"Young Adults, 15-24 Years"
+1635,Antidepressants,Male,overall,overall,106.0,0.5,2016,"Young Adults, 15-24 Years"
+1636,Antidepressants,Female,with,any,40.0,0.2,2016,"Young Adults, 15-24 Years"
+1637,Antidepressants,Male,with,any,62.0,0.3,2016,"Young Adults, 15-24 Years"
+1638,Antidepressants,Female,with,synthetic,,,2016,"Young Adults, 15-24 Years"
+1639,Antidepressants,Male,with,synthetic,20.0,0.1,2016,"Young Adults, 15-24 Years"
+1640,Prescription opioids,Female,overall,overall,322.0,1.5,2017,"Young Adults, 15-24 Years"
+1641,Prescription opioids,Male,overall,overall,728.0,3.3,2017,"Young Adults, 15-24 Years"
+1642,Prescription opioids,Female,with,synthetic,122.0,0.6,2017,"Young Adults, 15-24 Years"
+1643,Prescription opioids,Male,with,synthetic,242.0,1.1,2017,"Young Adults, 15-24 Years"
+1644,Synthetic opioids,Female,overall,overall,778.0,3.7,2017,"Young Adults, 15-24 Years"
+1645,Synthetic opioids,Male,overall,overall,1877.0,8.5,2017,"Young Adults, 15-24 Years"
+1646,Heroin,Female,overall,overall,423.0,2.0,2017,"Young Adults, 15-24 Years"
+1647,Heroin,Male,overall,overall,1031.0,4.7,2017,"Young Adults, 15-24 Years"
+1648,Heroin,Female,with,synthetic,199.0,0.9,2017,"Young Adults, 15-24 Years"
+1649,Heroin,Male,with,synthetic,502.0,2.3,2017,"Young Adults, 15-24 Years"
+1650,Stimulants,Female,overall,overall,529.0,2.5,2017,"Young Adults, 15-24 Years"
+1651,Stimulants,Male,overall,overall,1058.0,4.8,2017,"Young Adults, 15-24 Years"
+1652,Stimulants,Female,with,any,419.0,2.0,2017,"Young Adults, 15-24 Years"
+1653,Stimulants,Male,with,any,789.0,3.6,2017,"Young Adults, 15-24 Years"
+1654,Stimulants,Female,with,synthetic,262.0,1.2,2017,"Young Adults, 15-24 Years"
+1655,Stimulants,Male,with,synthetic,559.0,2.5,2017,"Young Adults, 15-24 Years"
+1656,Cocaine,Female,overall,overall,291.0,1.4,2017,"Young Adults, 15-24 Years"
+1657,Cocaine,Male,overall,overall,633.0,2.9,2017,"Young Adults, 15-24 Years"
+1658,Cocaine,Female,with,any,259.0,1.2,2017,"Young Adults, 15-24 Years"
+1659,Cocaine,Male,with,any,533.0,2.4,2017,"Young Adults, 15-24 Years"
+1660,Cocaine,Female,with,synthetic,188.0,0.9,2017,"Young Adults, 15-24 Years"
+1661,Cocaine,Male,with,synthetic,376.0,1.7,2017,"Young Adults, 15-24 Years"
+1662,Psychostimulants,Female,overall,overall,281.0,1.3,2017,"Young Adults, 15-24 Years"
+1663,Psychostimulants,Male,overall,overall,499.0,2.3,2017,"Young Adults, 15-24 Years"
+1664,Psychostimulants,Female,with,any,198.0,0.9,2017,"Young Adults, 15-24 Years"
+1665,Psychostimulants,Male,with,any,318.0,1.4,2017,"Young Adults, 15-24 Years"
+1666,Psychostimulants,Female,with,synthetic,97.0,0.5,2017,"Young Adults, 15-24 Years"
+1667,Psychostimulants,Male,with,synthetic,169.0,0.8,2017,"Young Adults, 15-24 Years"
+1668,Benzodiazepines,Female,overall,overall,298.0,1.4,2017,"Young Adults, 15-24 Years"
+1669,Benzodiazepines,Male,overall,overall,733.0,3.3,2017,"Young Adults, 15-24 Years"
+1670,Benzodiazepines,Female,with,any,275.0,1.3,2017,"Young Adults, 15-24 Years"
+1671,Benzodiazepines,Male,with,any,667.0,3.0,2017,"Young Adults, 15-24 Years"
+1672,Benzodiazepines,Female,with,synthetic,153.0,0.7,2017,"Young Adults, 15-24 Years"
+1673,Benzodiazepines,Male,with,synthetic,356.0,1.6,2017,"Young Adults, 15-24 Years"
+1674,Antidepressants,Female,overall,overall,111.0,0.5,2017,"Young Adults, 15-24 Years"
+1675,Antidepressants,Male,overall,overall,120.0,0.5,2017,"Young Adults, 15-24 Years"
+1676,Antidepressants,Female,with,any,51.0,0.2,2017,"Young Adults, 15-24 Years"
+1677,Antidepressants,Male,with,any,74.0,0.3,2017,"Young Adults, 15-24 Years"
+1678,Antidepressants,Female,with,synthetic,26.0,0.1,2017,"Young Adults, 15-24 Years"
+1679,Antidepressants,Male,with,synthetic,45.0,0.2,2017,"Young Adults, 15-24 Years"
+1680,Prescription opioids,Female,overall,overall,242.0,1.2,2018,"Young Adults, 15-24 Years"
+1681,Prescription opioids,Male,overall,overall,548.0,2.5,2018,"Young Adults, 15-24 Years"
+1682,Prescription opioids,Female,with,synthetic,117.0,0.6,2018,"Young Adults, 15-24 Years"
+1683,Prescription opioids,Male,with,synthetic,235.0,1.1,2018,"Young Adults, 15-24 Years"
+1684,Synthetic opioids,Female,overall,overall,799.0,3.8,2018,"Young Adults, 15-24 Years"
+1685,Synthetic opioids,Male,overall,overall,1841.0,8.4,2018,"Young Adults, 15-24 Years"
+1686,Heroin,Female,overall,overall,339.0,1.6,2018,"Young Adults, 15-24 Years"
+1687,Heroin,Male,overall,overall,821.0,3.7,2018,"Young Adults, 15-24 Years"
+1688,Heroin,Female,with,synthetic,178.0,0.8,2018,"Young Adults, 15-24 Years"
+1689,Heroin,Male,with,synthetic,445.0,2.0,2018,"Young Adults, 15-24 Years"
+1690,Stimulants,Female,overall,overall,517.0,2.5,2018,"Young Adults, 15-24 Years"
+1691,Stimulants,Male,overall,overall,980.0,4.5,2018,"Young Adults, 15-24 Years"
+1692,Stimulants,Female,with,any,400.0,1.9,2018,"Young Adults, 15-24 Years"
+1693,Stimulants,Male,with,any,770.0,3.5,2018,"Young Adults, 15-24 Years"
+1694,Stimulants,Female,with,synthetic,284.0,1.4,2018,"Young Adults, 15-24 Years"
+1695,Stimulants,Male,with,synthetic,676.0,3.1,2018,"Young Adults, 15-24 Years"
+1696,Cocaine,Female,overall,overall,265.0,1.3,2018,"Young Adults, 15-24 Years"
+1697,Cocaine,Male,overall,overall,594.0,2.7,2018,"Young Adults, 15-24 Years"
+1698,Cocaine,Female,with,any,223.0,1.1,2018,"Young Adults, 15-24 Years"
+1699,Cocaine,Male,with,any,528.0,2.4,2018,"Young Adults, 15-24 Years"
+1700,Cocaine,Female,with,synthetic,182.0,0.9,2018,"Young Adults, 15-24 Years"
+1701,Cocaine,Male,with,synthetic,408.0,1.9,2018,"Young Adults, 15-24 Years"
+1702,Psychostimulants,Female,overall,overall,294.0,1.4,2018,"Young Adults, 15-24 Years"
+1703,Psychostimulants,Male,overall,overall,455.0,2.1,2018,"Young Adults, 15-24 Years"
+1704,Psychostimulants,Female,with,any,215.0,1.0,2018,"Young Adults, 15-24 Years"
+1705,Psychostimulants,Male,with,any,298.0,1.4,2018,"Young Adults, 15-24 Years"
+1706,Psychostimulants,Female,with,synthetic,128.0,0.6,2018,"Young Adults, 15-24 Years"
+1707,Psychostimulants,Male,with,synthetic,191.0,0.9,2018,"Young Adults, 15-24 Years"
+1708,Benzodiazepines,Female,overall,overall,263.0,1.3,2018,"Young Adults, 15-24 Years"
+1709,Benzodiazepines,Male,overall,overall,636.0,2.9,2018,"Young Adults, 15-24 Years"
+1710,Benzodiazepines,Female,with,any,236.0,1.1,2018,"Young Adults, 15-24 Years"
+1711,Benzodiazepines,Male,with,any,576.0,2.6,2018,"Young Adults, 15-24 Years"
+1712,Benzodiazepines,Female,with,synthetic,162.0,0.8,2018,"Young Adults, 15-24 Years"
+1713,Benzodiazepines,Male,with,synthetic,360.0,1.6,2018,"Young Adults, 15-24 Years"
+1714,Antidepressants,Female,overall,overall,119.0,0.6,2018,"Young Adults, 15-24 Years"
+1715,Antidepressants,Male,overall,overall,118.0,0.5,2018,"Young Adults, 15-24 Years"
+1716,Antidepressants,Female,with,any,52.0,0.2,2018,"Young Adults, 15-24 Years"
+1717,Antidepressants,Male,with,any,71.0,0.3,2018,"Young Adults, 15-24 Years"
+1718,Antidepressants,Female,with,synthetic,34.0,0.2,2018,"Young Adults, 15-24 Years"
+1719,Antidepressants,Male,with,synthetic,47.0,0.2,2018,"Young Adults, 15-24 Years"
+1720,Prescription opioids,Female,overall,overall,198.0,0.9,2019,"Young Adults, 15-24 Years"
+1721,Prescription opioids,Male,overall,overall,474.0,2.2,2019,"Young Adults, 15-24 Years"
+1722,Prescription opioids,Female,with,synthetic,100.0,0.5,2019,"Young Adults, 15-24 Years"
+1723,Prescription opioids,Male,with,synthetic,232.0,1.1,2019,"Young Adults, 15-24 Years"
+1724,Synthetic opioids,Female,overall,overall,865.0,4.1,2019,"Young Adults, 15-24 Years"
+1725,Synthetic opioids,Male,overall,overall,2175.0,10.0,2019,"Young Adults, 15-24 Years"
+1726,Heroin,Female,overall,overall,280.0,1.3,2019,"Young Adults, 15-24 Years"
+1727,Heroin,Male,overall,overall,596.0,2.7,2019,"Young Adults, 15-24 Years"
+1728,Heroin,Female,with,synthetic,179.0,0.9,2019,"Young Adults, 15-24 Years"
+1729,Heroin,Male,with,synthetic,346.0,1.6,2019,"Young Adults, 15-24 Years"
+1730,Stimulants,Female,overall,overall,501.0,2.4,2019,"Young Adults, 15-24 Years"
+1731,Stimulants,Male,overall,overall,1108.0,5.1,2019,"Young Adults, 15-24 Years"
+1732,Stimulants,Female,with,any,373.0,1.8,2019,"Young Adults, 15-24 Years"
+1733,Stimulants,Male,with,any,850.0,3.9,2019,"Young Adults, 15-24 Years"
+1734,Stimulants,Female,with,synthetic,295.0,1.4,2019,"Young Adults, 15-24 Years"
+1735,Stimulants,Male,with,synthetic,1103.0,5.1,2019,"Young Adults, 15-24 Years"
+1736,Cocaine,Female,overall,overall,236.0,1.1,2019,"Young Adults, 15-24 Years"
+1737,Cocaine,Male,overall,overall,614.0,2.8,2019,"Young Adults, 15-24 Years"
+1738,Cocaine,Female,with,any,203.0,1.0,2019,"Young Adults, 15-24 Years"
+1739,Cocaine,Male,with,any,540.0,2.5,2019,"Young Adults, 15-24 Years"
+1740,Cocaine,Female,with,synthetic,179.0,0.9,2019,"Young Adults, 15-24 Years"
+1741,Cocaine,Male,with,synthetic,467.0,2.1,2019,"Young Adults, 15-24 Years"
+1742,Psychostimulants,Female,overall,overall,313.0,1.5,2019,"Young Adults, 15-24 Years"
+1743,Psychostimulants,Male,overall,overall,596.0,2.7,2019,"Young Adults, 15-24 Years"
+1744,Psychostimulants,Female,with,any,210.0,1.0,2019,"Young Adults, 15-24 Years"
+1745,Psychostimulants,Male,with,any,403.0,1.8,2019,"Young Adults, 15-24 Years"
+1746,Psychostimulants,Female,with,synthetic,148.0,0.7,2019,"Young Adults, 15-24 Years"
+1747,Psychostimulants,Male,with,synthetic,280.0,1.3,2019,"Young Adults, 15-24 Years"
+1748,Benzodiazepines,Female,overall,overall,208.0,1.0,2019,"Young Adults, 15-24 Years"
+1749,Benzodiazepines,Male,overall,overall,519.0,2.4,2019,"Young Adults, 15-24 Years"
+1750,Benzodiazepines,Female,with,any,190.0,0.9,2019,"Young Adults, 15-24 Years"
+1751,Benzodiazepines,Male,with,any,472.0,2.2,2019,"Young Adults, 15-24 Years"
+1752,Benzodiazepines,Female,with,synthetic,140.0,0.7,2019,"Young Adults, 15-24 Years"
+1753,Benzodiazepines,Male,with,synthetic,346.0,1.6,2019,"Young Adults, 15-24 Years"
+1754,Antidepressants,Female,overall,overall,127.0,0.6,2019,"Young Adults, 15-24 Years"
+1755,Antidepressants,Male,overall,overall,112.0,0.5,2019,"Young Adults, 15-24 Years"
+1756,Antidepressants,Female,with,any,55.0,0.3,2019,"Young Adults, 15-24 Years"
+1757,Antidepressants,Male,with,any,73.0,0.3,2019,"Young Adults, 15-24 Years"
+1758,Antidepressants,Female,with,synthetic,35.0,0.2,2019,"Young Adults, 15-24 Years"
+1759,Antidepressants,Male,with,synthetic,51.0,0.2,2019,"Young Adults, 15-24 Years"
+1760,Prescription opioids,Female,overall,overall,220.0,1.1,2020,"Young Adults, 15-24 Years"
+1761,Prescription opioids,Male,overall,overall,592.0,2.7,2020,"Young Adults, 15-24 Years"
+1762,Prescription opioids,Female,with,synthetic,139.0,0.7,2020,"Young Adults, 15-24 Years"
+1763,Prescription opioids,Male,with,synthetic,341.0,1.6,2020,"Young Adults, 15-24 Years"
+1764,Synthetic opioids,Female,overall,overall,1428.0,6.9,2020,"Young Adults, 15-24 Years"
+1765,Synthetic opioids,Male,overall,overall,3965.0,18.2,2020,"Young Adults, 15-24 Years"
+1766,Heroin,Female,overall,overall,230.0,1.1,2020,"Young Adults, 15-24 Years"
+1767,Heroin,Male,overall,overall,481.0,2.2,2020,"Young Adults, 15-24 Years"
+1768,Heroin,Female,with,synthetic,160.0,0.8,2020,"Young Adults, 15-24 Years"
+1769,Heroin,Male,with,synthetic,314.0,1.4,2020,"Young Adults, 15-24 Years"
+1770,Stimulants,Female,overall,overall,679.0,3.3,2020,"Young Adults, 15-24 Years"
+1771,Stimulants,Male,overall,overall,1520.0,7.0,2020,"Young Adults, 15-24 Years"
+1772,Stimulants,Female,with,any,568.0,2.7,2020,"Young Adults, 15-24 Years"
+1773,Stimulants,Male,with,any,1259.0,5.8,2020,"Young Adults, 15-24 Years"
+1774,Stimulants,Female,with,synthetic,496.0,2.4,2020,"Young Adults, 15-24 Years"
+1775,Stimulants,Male,with,synthetic,650.0,3.0,2020,"Young Adults, 15-24 Years"
+1776,Cocaine,Female,overall,overall,299.0,1.4,2020,"Young Adults, 15-24 Years"
+1777,Cocaine,Male,overall,overall,790.0,3.6,2020,"Young Adults, 15-24 Years"
+1778,Cocaine,Female,with,any,277.0,1.3,2020,"Young Adults, 15-24 Years"
+1779,Cocaine,Male,with,any,711.0,3.3,2020,"Young Adults, 15-24 Years"
+1780,Cocaine,Female,with,synthetic,251.0,1.2,2020,"Young Adults, 15-24 Years"
+1781,Cocaine,Male,with,synthetic,650.0,3.0,2020,"Young Adults, 15-24 Years"
+1782,Psychostimulants,Female,overall,overall,444.0,2.1,2020,"Young Adults, 15-24 Years"
+1783,Psychostimulants,Male,overall,overall,872.0,4.0,2020,"Young Adults, 15-24 Years"
+1784,Psychostimulants,Female,with,any,351.0,1.7,2020,"Young Adults, 15-24 Years"
+1785,Psychostimulants,Male,with,any,671.0,3.1,2020,"Young Adults, 15-24 Years"
+1786,Psychostimulants,Female,with,synthetic,293.0,1.4,2020,"Young Adults, 15-24 Years"
+1787,Psychostimulants,Male,with,synthetic,563.0,2.6,2020,"Young Adults, 15-24 Years"
+1788,Benzodiazepines,Female,overall,overall,330.0,1.6,2020,"Young Adults, 15-24 Years"
+1789,Benzodiazepines,Male,overall,overall,937.0,4.3,2020,"Young Adults, 15-24 Years"
+1790,Benzodiazepines,Female,with,any,292.0,1.4,2020,"Young Adults, 15-24 Years"
+1791,Benzodiazepines,Male,with,any,864.0,4.0,2020,"Young Adults, 15-24 Years"
+1792,Benzodiazepines,Female,with,synthetic,257.0,1.2,2020,"Young Adults, 15-24 Years"
+1793,Benzodiazepines,Male,with,synthetic,750.0,3.5,2020,"Young Adults, 15-24 Years"
+1794,Antidepressants,Female,overall,overall,119.0,0.6,2020,"Young Adults, 15-24 Years"
+1795,Antidepressants,Male,overall,overall,144.0,0.7,2020,"Young Adults, 15-24 Years"
+1796,Antidepressants,Female,with,any,53.0,0.3,2020,"Young Adults, 15-24 Years"
+1797,Antidepressants,Male,with,any,96.0,0.4,2020,"Young Adults, 15-24 Years"
+1798,Antidepressants,Female,with,synthetic,44.0,0.2,2020,"Young Adults, 15-24 Years"
+1799,Antidepressants,Male,with,synthetic,78.0,0.4,2020,"Young Adults, 15-24 Years"
+1800,Prescription opioids,Female,overall,overall,206.0,1.0,2021,"Young Adults, 15-24 Years"
+1801,Prescription opioids,Male,overall,overall,449.0,2.0,2021,"Young Adults, 15-24 Years"
+1802,Prescription opioids,Female,with,synthetic,136.0,0.6,2021,"Young Adults, 15-24 Years"
+1803,Prescription opioids,Male,with,synthetic,278.0,1.3,2021,"Young Adults, 15-24 Years"
+1804,Synthetic opioids,Female,overall,overall,1755.0,8.3,2021,"Young Adults, 15-24 Years"
+1805,Synthetic opioids,Male,overall,overall,4181.0,19.0,2021,"Young Adults, 15-24 Years"
+1806,Heroin,Female,overall,overall,126.0,0.6,2021,"Young Adults, 15-24 Years"
+1807,Heroin,Male,overall,overall,234.0,1.1,2021,"Young Adults, 15-24 Years"
+1808,Heroin,Female,with,synthetic,88.0,0.4,2021,"Young Adults, 15-24 Years"
+1809,Heroin,Male,with,synthetic,157.0,0.7,2021,"Young Adults, 15-24 Years"
+1810,Stimulants,Female,overall,overall,852.0,4.0,2021,"Young Adults, 15-24 Years"
+1811,Stimulants,Male,overall,overall,1620.0,7.4,2021,"Young Adults, 15-24 Years"
+1812,Stimulants,Female,with,any,709.0,3.4,2021,"Young Adults, 15-24 Years"
+1813,Stimulants,Male,with,any,1358.0,6.2,2021,"Young Adults, 15-24 Years"
+1814,Stimulants,Female,with,synthetic,660.0,3.1,2021,"Young Adults, 15-24 Years"
+1815,Stimulants,Male,with,synthetic,1285.0,5.8,2021,"Young Adults, 15-24 Years"
+1816,Cocaine,Female,overall,overall,384.0,1.8,2021,"Young Adults, 15-24 Years"
+1817,Cocaine,Male,overall,overall,773.0,3.5,2021,"Young Adults, 15-24 Years"
+1818,Cocaine,Female,with,any,345.0,1.6,2021,"Young Adults, 15-24 Years"
+1819,Cocaine,Male,with,any,694.0,3.2,2021,"Young Adults, 15-24 Years"
+1820,Cocaine,Female,with,synthetic,330.0,1.6,2021,"Young Adults, 15-24 Years"
+1821,Cocaine,Male,with,synthetic,669.0,3.0,2021,"Young Adults, 15-24 Years"
+1822,Psychostimulants,Female,overall,overall,541.0,2.6,2021,"Young Adults, 15-24 Years"
+1823,Psychostimulants,Male,overall,overall,961.0,4.4,2021,"Young Adults, 15-24 Years"
+1824,Psychostimulants,Female,with,any,428.0,2.0,2021,"Young Adults, 15-24 Years"
+1825,Psychostimulants,Male,with,any,766.0,3.5,2021,"Young Adults, 15-24 Years"
+1826,Psychostimulants,Female,with,synthetic,389.0,1.8,2021,"Young Adults, 15-24 Years"
+1827,Psychostimulants,Male,with,synthetic,714.0,3.2,2021,"Young Adults, 15-24 Years"
+1828,Benzodiazepines,Female,overall,overall,329.0,1.6,2021,"Young Adults, 15-24 Years"
+1829,Benzodiazepines,Male,overall,overall,789.0,3.6,2021,"Young Adults, 15-24 Years"
+1830,Benzodiazepines,Female,with,any,292.0,1.4,2021,"Young Adults, 15-24 Years"
+1831,Benzodiazepines,Male,with,any,728.0,3.3,2021,"Young Adults, 15-24 Years"
+1832,Benzodiazepines,Female,with,synthetic,272.0,1.3,2021,"Young Adults, 15-24 Years"
+1833,Benzodiazepines,Male,with,synthetic,660.0,3.0,2021,"Young Adults, 15-24 Years"
+1834,Antidepressants,Female,overall,overall,185.0,0.9,2021,"Young Adults, 15-24 Years"
+1835,Antidepressants,Male,overall,overall,148.0,0.7,2021,"Young Adults, 15-24 Years"
+1836,Antidepressants,Female,with,any,83.0,0.4,2021,"Young Adults, 15-24 Years"
+1837,Antidepressants,Male,with,any,89.0,0.4,2021,"Young Adults, 15-24 Years"
+1838,Antidepressants,Female,with,synthetic,72.0,0.3,2021,"Young Adults, 15-24 Years"
+1839,Antidepressants,Male,with,synthetic,73.0,0.3,2021,"Young Adults, 15-24 Years"

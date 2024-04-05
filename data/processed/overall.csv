@@ -1,0 +1,185 @@
+,Type,Sex,Deaths,Death Rate,Year,Population Type
+0,Overall,Female,5591.0,3.9,1999,Overall
+1,Overall,Male,11258.0,8.2,1999,Overall
+2,Any opioid,Female,2057.0,1.4,1999,Overall
+3,Any opioid,Male,5993.0,4.3,1999,Overall
+4,Overall,Female,5852.0,4.1,2000,Overall
+5,Overall,Male,11563.0,8.3,2000,Overall
+6,Any opioid,Female,2264.0,1.6,2000,Overall
+7,Any opioid,Male,6143.0,4.4,2000,Overall
+8,Overall,Female,6736.0,4.6,2001,Overall
+9,Overall,Male,12658.0,9.0,2001,Overall
+10,Any opioid,Female,2767.0,1.9,2001,Overall
+11,Any opioid,Male,6729.0,4.8,2001,Overall
+12,Overall,Female,8490.0,5.8,2002,Overall
+13,Overall,Male,15028.0,10.6,2002,Overall
+14,Any opioid,Female,3760.0,2.6,2002,Overall
+15,Any opioid,Male,8160.0,5.7,2002,Overall
+16,Overall,Female,9386.0,6.4,2003,Overall
+17,Overall,Male,16399.0,11.5,2003,Overall
+18,Any opioid,Female,4138.0,2.8,2003,Overall
+19,Any opioid,Male,8802.0,6.1,2003,Overall
+20,Overall,Female,10304.0,6.9,2004,Overall
+21,Overall,Male,17120.0,11.8,2004,Overall
+22,Any opioid,Female,4643.0,3.1,2004,Overall
+23,Any opioid,Male,9113.0,6.3,2004,Overall
+24,Overall,Female,11089.0,7.3,2005,Overall
+25,Overall,Male,18724.0,12.8,2005,Overall
+26,Any opioid,Female,5161.0,3.4,2005,Overall
+27,Any opioid,Male,9757.0,6.6,2005,Overall
+28,Overall,Female,12532.0,8.2,2006,Overall
+29,Overall,Male,21893.0,14.8,2006,Overall
+30,Any opioid,Female,5945.0,3.9,2006,Overall
+31,Any opioid,Male,11600.0,7.8,2006,Overall
+32,Overall,Female,13712.0,8.8,2007,Overall
+33,Overall,Male,22298.0,14.9,2007,Overall
+34,Any opioid,Female,6581.0,4.3,2007,Overall
+35,Any opioid,Male,11935.0,8.0,2007,Overall
+36,Overall,Female,13982.0,8.9,2008,Overall
+37,Overall,Male,22468.0,14.9,2008,Overall
+38,Any opioid,Female,6819.0,4.4,2008,Overall
+39,Any opioid,Male,12763.0,8.4,2008,Overall
+40,Overall,Female,14411.0,9.1,2009,Overall
+41,Overall,Male,22593.0,14.8,2009,Overall
+42,Any opioid,Female,7287.0,4.6,2009,Overall
+43,Any opioid,Male,13135.0,8.7,2009,Overall
+44,Overall,Female,15323.0,9.6,2010,Overall
+45,Overall,Male,23006.0,15.0,2010,Overall
+46,Any opioid,Female,7734.0,4.9,2010,Overall
+47,Any opioid,Male,13355.0,8.7,2010,Overall
+48,Overall,Female,16352.0,10.2,2011,Overall
+49,Overall,Male,24988.0,16.1,2011,Overall
+50,Any opioid,Female,8325.0,5.2,2011,Overall
+51,Any opioid,Male,14459.0,9.4,2011,Overall
+52,Overall,Female,16390.0,10.2,2012,Overall
+53,Overall,Male,25112.0,16.1,2012,Overall
+54,Any opioid,Female,8432.0,5.3,2012,Overall
+55,Any opioid,Male,14734.0,9.5,2012,Overall
+56,Overall,Female,17183.0,10.6,2013,Overall
+57,Overall,Male,26799.0,17.0,2013,Overall
+58,Any opioid,Female,9055.0,5.6,2013,Overall
+59,Any opioid,Male,15997.0,10.2,2013,Overall
+60,Overall,Female,18243.0,11.1,2014,Overall
+61,Overall,Male,28812.0,18.3,2014,Overall
+62,Any opioid,Female,10227.0,6.3,2014,Overall
+63,Any opioid,Male,18420.0,11.7,2014,Overall
+64,Overall,Female,19447.0,11.8,2015,Overall
+65,Overall,Male,32957.0,20.8,2015,Overall
+66,Any opioid,Female,11420.0,7.1,2015,Overall
+67,Any opioid,Male,21671.0,13.7,2015,Overall
+68,Overall,Female,22074.0,13.4,2016,Overall
+69,Overall,Male,41558.0,26.2,2016,Overall
+70,Any opioid,Female,13751.0,8.5,2016,Overall
+71,Any opioid,Male,28498.0,18.1,2016,Overall
+72,Overall,Female,23685.0,14.4,2017,Overall
+73,Overall,Male,46552.0,29.1,2017,Overall
+74,Any opioid,Female,15263.0,9.4,2017,Overall
+75,Any opioid,Male,32337.0,20.4,2017,Overall
+76,Overall,Female,22426.0,13.6,2018,Overall
+77,Overall,Male,44941.0,27.9,2018,Overall
+78,Any opioid,Female,14724.0,9.0,2018,Overall
+79,Any opioid,Male,32078.0,20.1,2018,Overall
+80,Overall,Female,22749.0,13.7,2019,Overall
+81,Overall,Male,47881.0,29.6,2019,Overall
+82,Any opioid,Female,15225.0,9.3,2019,Overall
+83,Any opioid,Male,34635.0,21.7,2019,Overall
+84,Overall,Female,28071.0,17.1,2020,Overall
+85,Overall,Male,63728.0,39.5,2020,Overall
+86,Any opioid,Female,19970.0,12.3,2020,Overall
+87,Any opioid,Male,48660.0,30.4,2020,Overall
+88,Overall,Female,32398.0,19.6,2021,Overall
+89,Overall,Male,74301.0,45.1,2021,Overall
+90,Any opioid,Female,23654.0,14.5,2021,Overall
+91,Any opioid,Male,56757.0,34.8,2021,Overall
+92,Overall,Female,346.0,1.8,1999,"Young Adults, 15-24 Years"
+93,Overall,Male,894.0,4.5,1999,"Young Adults, 15-24 Years"
+94,Any opioid,Female,141.0,0.7,1999,"Young Adults, 15-24 Years"
+95,Any opioid,Male,480.0,2.4,1999,"Young Adults, 15-24 Years"
+96,Overall,Female,369.0,1.9,2000,"Young Adults, 15-24 Years"
+97,Overall,Male,1066.0,5.3,2000,"Young Adults, 15-24 Years"
+98,Any opioid,Female,140.0,0.7,2000,"Young Adults, 15-24 Years"
+99,Any opioid,Male,588.0,2.9,2000,"Young Adults, 15-24 Years"
+100,Overall,Female,438.0,2.2,2001,"Young Adults, 15-24 Years"
+101,Overall,Male,1262.0,6.1,2001,"Young Adults, 15-24 Years"
+102,Any opioid,Female,203.0,1.0,2001,"Young Adults, 15-24 Years"
+103,Any opioid,Male,741.0,3.6,2001,"Young Adults, 15-24 Years"
+104,Overall,Female,560.0,2.8,2002,"Young Adults, 15-24 Years"
+105,Overall,Male,1535.0,7.3,2002,"Young Adults, 15-24 Years"
+106,Any opioid,Female,269.0,1.4,2002,"Young Adults, 15-24 Years"
+107,Any opioid,Male,910.0,4.3,2002,"Young Adults, 15-24 Years"
+108,Overall,Female,632.0,3.1,2003,"Young Adults, 15-24 Years"
+109,Overall,Male,1859.0,8.8,2003,"Young Adults, 15-24 Years"
+110,Any opioid,Female,306.0,1.5,2003,"Young Adults, 15-24 Years"
+111,Any opioid,Male,1093.0,5.2,2003,"Young Adults, 15-24 Years"
+112,Overall,Female,683.0,3.3,2004,"Young Adults, 15-24 Years"
+113,Overall,Male,2068.0,9.6,2004,"Young Adults, 15-24 Years"
+114,Any opioid,Female,333.0,1.6,2004,"Young Adults, 15-24 Years"
+115,Any opioid,Male,1263.0,5.9,2004,"Young Adults, 15-24 Years"
+116,Overall,Female,733.0,3.5,2005,"Young Adults, 15-24 Years"
+117,Overall,Male,2185.0,10.0,2005,"Young Adults, 15-24 Years"
+118,Any opioid,Female,371.0,1.8,2005,"Young Adults, 15-24 Years"
+119,Any opioid,Male,1314.0,6.0,2005,"Young Adults, 15-24 Years"
+120,Overall,Female,820.0,3.9,2006,"Young Adults, 15-24 Years"
+121,Overall,Male,2640.0,12.0,2006,"Young Adults, 15-24 Years"
+122,Any opioid,Female,444.0,2.1,2006,"Young Adults, 15-24 Years"
+123,Any opioid,Male,1652.0,7.5,2006,"Young Adults, 15-24 Years"
+124,Overall,Female,883.0,4.2,2007,"Young Adults, 15-24 Years"
+125,Overall,Male,2667.0,12.0,2007,"Young Adults, 15-24 Years"
+126,Any opioid,Female,491.0,2.3,2007,"Young Adults, 15-24 Years"
+127,Any opioid,Male,1685.0,7.6,2007,"Young Adults, 15-24 Years"
+128,Overall,Female,848.0,4.0,2008,"Young Adults, 15-24 Years"
+129,Overall,Male,2639.0,11.9,2008,"Young Adults, 15-24 Years"
+130,Any opioid,Female,482.0,2.3,2008,"Young Adults, 15-24 Years"
+131,Any opioid,Male,1812.0,8.1,2008,"Young Adults, 15-24 Years"
+132,Overall,Female,862.0,4.1,2009,"Young Adults, 15-24 Years"
+133,Overall,Male,2515.0,11.3,2009,"Young Adults, 15-24 Years"
+134,Any opioid,Female,521.0,2.5,2009,"Young Adults, 15-24 Years"
+135,Any opioid,Male,1708.0,7.7,2009,"Young Adults, 15-24 Years"
+136,Overall,Female,988.0,4.6,2010,"Young Adults, 15-24 Years"
+137,Overall,Male,2583.0,11.6,2010,"Young Adults, 15-24 Years"
+138,Any opioid,Female,603.0,2.8,2010,"Young Adults, 15-24 Years"
+139,Any opioid,Male,1784.0,8.0,2010,"Young Adults, 15-24 Years"
+140,Overall,Female,990.0,4.6,2011,"Young Adults, 15-24 Years"
+141,Overall,Male,2772.0,12.4,2011,"Young Adults, 15-24 Years"
+142,Any opioid,Female,624.0,2.9,2011,"Young Adults, 15-24 Years"
+143,Any opioid,Male,1921.0,8.6,2011,"Young Adults, 15-24 Years"
+144,Overall,Female,945.0,4.4,2012,"Young Adults, 15-24 Years"
+145,Overall,Male,2573.0,11.4,2012,"Young Adults, 15-24 Years"
+146,Any opioid,Female,574.0,2.7,2012,"Young Adults, 15-24 Years"
+147,Any opioid,Male,1769.0,7.9,2012,"Young Adults, 15-24 Years"
+148,Overall,Female,1028.0,4.8,2013,"Young Adults, 15-24 Years"
+149,Overall,Male,2636.0,11.7,2013,"Young Adults, 15-24 Years"
+150,Any opioid,Female,640.0,3.0,2013,"Young Adults, 15-24 Years"
+151,Any opioid,Male,1846.0,8.2,2013,"Young Adults, 15-24 Years"
+152,Overall,Female,1075.0,5.0,2014,"Young Adults, 15-24 Years"
+153,Overall,Male,2723.0,12.1,2014,"Young Adults, 15-24 Years"
+154,Any opioid,Female,711.0,3.3,2014,"Young Adults, 15-24 Years"
+155,Any opioid,Male,1995.0,8.9,2014,"Young Adults, 15-24 Years"
+156,Overall,Female,1258.0,5.9,2015,"Young Adults, 15-24 Years"
+157,Overall,Male,2977.0,13.3,2015,"Young Adults, 15-24 Years"
+158,Any opioid,Female,871.0,4.1,2015,"Young Adults, 15-24 Years"
+159,Any opioid,Male,2211.0,9.8,2015,"Young Adults, 15-24 Years"
+160,Overall,Female,1483.0,7.0,2016,"Young Adults, 15-24 Years"
+161,Overall,Male,3893.0,17.5,2016,"Young Adults, 15-24 Years"
+162,Any opioid,Female,1041.0,4.9,2016,"Young Adults, 15-24 Years"
+163,Any opioid,Male,2986.0,13.4,2016,"Young Adults, 15-24 Years"
+164,Overall,Female,1663.0,7.9,2017,"Young Adults, 15-24 Years"
+165,Overall,Male,3792.0,17.1,2017,"Young Adults, 15-24 Years"
+166,Any opioid,Female,1209.0,5.7,2017,"Young Adults, 15-24 Years"
+167,Any opioid,Male,2885.0,13.0,2017,"Young Adults, 15-24 Years"
+168,Overall,Female,1481.0,7.1,2018,"Young Adults, 15-24 Years"
+169,Overall,Male,3152.0,14.3,2018,"Young Adults, 15-24 Years"
+170,Any opioid,Female,1091.0,5.2,2018,"Young Adults, 15-24 Years"
+171,Any opioid,Male,2527.0,11.5,2018,"Young Adults, 15-24 Years"
+172,Overall,Female,1459.0,7.0,2019,"Young Adults, 15-24 Years"
+173,Overall,Male,3318.0,15.2,2019,"Young Adults, 15-24 Years"
+174,Any opioid,Female,1058.0,5.1,2019,"Young Adults, 15-24 Years"
+175,Any opioid,Male,2667.0,12.2,2019,"Young Adults, 15-24 Years"
+176,Overall,Female,1990.0,9.6,2020,"Young Adults, 15-24 Years"
+177,Overall,Male,5105.0,23.5,2020,"Young Adults, 15-24 Years"
+178,Any opioid,Female,1584.0,7.6,2020,"Young Adults, 15-24 Years"
+179,Any opioid,Male,4402.0,20.3,2020,"Young Adults, 15-24 Years"
+180,Overall,Female,2311.0,11.0,2021,"Young Adults, 15-24 Years"
+181,Overall,Male,5115.0,23.3,2021,"Young Adults, 15-24 Years"
+182,Any opioid,Female,1866.0,8.8,2021,"Young Adults, 15-24 Years"
+183,Any opioid,Male,4446.0,20.2,2021,"Young Adults, 15-24 Years"
