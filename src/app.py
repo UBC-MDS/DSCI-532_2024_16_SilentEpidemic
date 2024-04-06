@@ -51,11 +51,11 @@ def create_card(title, value, id_value):
         style={"textAlign": "center", "color": "red"}
     )
 
-# fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-death_card = create_card("Overall", formatted_deaths, "death-value")
-death_rate_card = create_card("Death Rate", formatted_death_rate, "death-rate-value")
+
+death_card = create_card("Overall\n", formatted_deaths, "death-value")
+death_rate_card = create_card("Death Rate\n", formatted_death_rate, "death-rate-value")
 percentage_card = create_card("Percentage of young adults deaths", formatted_percentage_young_adults, "percentage-value")
-fold_change_card = create_card("Fold Change from 2001 to 2015 (Overall/Young Adults)", fold_change_text, "fold-change-value")
+fold_change_card = create_card("Fold Change (2001-2015)\n(Overall/Young Adults)", fold_change_text, "fold-change-value")
 
 # the style arguments for the sidebar.
 SIDEBAR_STYLE = {
@@ -69,6 +69,9 @@ PAGE_STYLE = {
 
 ROW_STYLE = {
     "margin": "2rem 0rem",
+    'display': 'flex',
+    'flex-wrap': 'wrap',  # Allow the items to wrap on smaller screens
+    'align-items': 'stretch'
 }
 
 CONTENT_STYLE = {
@@ -103,8 +106,9 @@ sidebar = html.Div(
 
 
 CARD_STYLE = {
-    "height": "50px",  # Set a minimum height for each card
-    "margin-bottom": "10px"  # Add some space between the rows of cards
+    "height": "50px",  
+    "margin-bottom": "10px"  
+    
 }
 
 main_dashboard = dbc.Container([
@@ -120,7 +124,7 @@ main_dashboard = dbc.Container([
     dbc.Row([
         """ dbc.Col(card, md=4),
         dbc.Col(card, md=4),
-        dbc.Col(card, md=4), """
+        dbc.Col(card, md=4),  """
     ], style=ROW_STYLE), 
 ], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
 
