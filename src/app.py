@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-from .modules.components import footer
+from modules.components import footer
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
@@ -107,29 +107,32 @@ fig_demo = go.Figure()
 @app.callback(
     Output('demo_graph', 'figure'),
     [Input('drug_type_list', 'value'),
-     #Input('gender-dropdown', 'value'),
      Input('year_range_slider', 'value')]
-     )
+)
 def update_figure(selected_drug, selected_years):
     if selected_drug == ['Overall']:
         selected_drug = ['Total Overdose Deaths']
+        title = "Overall Overdose Death Rate based on Demographic"
     else:
         selected_drug = selected_drug
+        title = f"Overdose Death Rate based on Demographic <br>for {' and '.join(selected_drug[1:])}"
     print(selected_drug)
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
     fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
+    
     fig_demo.update_layout(
-        title="Overdose Death Rate based on Demographic",
+        title=title,
         xaxis_title="Year",
-        yaxis_title="Death Rate (per 100,000)",
+        yaxis_title="Death Rate <br>(per 100,000 population)",
         legend=dict(
-            yanchor="top", y=-0.4,
-            xanchor="center", x=0.5,
-            font=dict(size=6)))
+            x=0, y=-0.2,
+            xanchor='center', yanchor='top',
+            font=dict(size=8)))
 
     return fig_demo
+
 
 
 card = dbc.Card(children=[
