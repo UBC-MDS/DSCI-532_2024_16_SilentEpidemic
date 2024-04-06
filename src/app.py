@@ -4,6 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # test data, to be removed
 df = pd.DataFrame({
