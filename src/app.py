@@ -140,6 +140,7 @@ sidebar = html.Div(
         footer
     ],
     style=SIDEBAR_STYLE,
+)
 
 CARD_STYLE = {
     "height": "50px",  # Set a minimum height for each card
@@ -177,10 +178,6 @@ def update_figure(selected_drug, selected_years):
     return fig_demo
 
 
-card = dbc.Card(children=[
-    html.B(children="Test Graph"),
-    test_graph
-])
 
 main_dashboard = dbc.Container([
     dbc.Row([
@@ -193,7 +190,7 @@ main_dashboard = dbc.Container([
         # dbc.Col(card, md=12),
     ], style=ROW_STYLE),
     dbc.Row([
-        dbc.Col(card, md=6),
+        #dbc.Col(card, md=6),
         dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=6)
     ], style=ROW_STYLE),
 ], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
