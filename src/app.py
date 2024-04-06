@@ -1,5 +1,6 @@
 from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output
 import plotly.express as px
 import pandas as pd
 from modules.components import footer
@@ -40,23 +41,66 @@ sidebar = html.Div(
         html.Hr(),
         html.Div(children=[
             html.H2("Filter by Gender"),
-            dcc.Dropdown(['All Genders', 'Male', 'Female'], "All Genders", className=""),
-        ]),
+            dcc.Dropdown(id='gender-dropdown', 
+                         options=[
+                             {'label': 'All Genders', 'value': 'All'},
+                             {'label': 'Male', 'value': 'Male'},
+                             {'label': 'Female', 'value': 'Female'}
+                             ],
+                             value='All')
+                             ]),
         html.Div(children=[
             html.H2("Filter by Drug Type"),
-            # TODO: checkboxes
-        ]),
+            dcc.Checklist(
+                id='drug_type',
+                options=[
+                    {'label': 'Overall', 'value': 'Overall'},
+                    {'label': 'Any opioid', 'value': 'Any opioid'},
+                    {'label': 'Prescription opioids', 'value': 'Prescription opioids'},
+                    {'label': 'Synthetic opioids', 'value': 'Synthetic opioids'},
+                    {'label': 'Heroin', 'value': 'Heroin'},
+                    {'label': 'Stimulants', 'value': 'Stimulants'},
+                    {'label': 'Cocaine', 'value': 'Cocaine'},
+                    {'label': 'Psychostimulants', 'value': 'Psychostimulants'},
+                    {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
+                    {'label': 'Antidepressants', 'value': 'Antidepressants'},        
+                    ],
+                    value=['Overall']  # Default selected value
+                    )
+                    ]),
         html.Div(children=[
             html.H2("Filter by Year Range"),
-            # TODO: Double SLider
-        ]),
+            dcc.RangeSlider(
+                id='year_range',
+                min=1999, max=2021, step=1,
+                value=[1999, 2021],
+                marks={i: str(i) for i in range(1999, 2022, 5)}
+                ),
+            html.Div(id='display-selected-range')
+                ]),
+                
         html.Div(children=[
-            # TODO: Toggle button
-        ]),
+            html.H2("Filter by Age Group"),
+            dcc.RadioItems(
+                id='age_group',
+                options=[
+                    {'label': 'Young Adults, 15-24 Years', 'value': 'Young Adults, 15-24 Years'},
+                    {'label': 'Overall', 'value': 'Overall'}
+                    ],
+                    value='Overall'  # Default selected value
+                    )
+                    ]),
         footer
     ],
     style=SIDEBAR_STYLE,
 )
+
+@app.callback(
+    Output('display-selected-range', 'children'),
+    Input('year_range', 'value')
+)
+def update_output(value):
+    return 'Years selected: "{}"'.format(value)
 
 test_graph = dcc.Graph(id='example-graph', figure=fig)
 
