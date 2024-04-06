@@ -2,6 +2,7 @@ from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
+from modules.components import footer
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
@@ -53,20 +54,17 @@ sidebar = html.Div(
         html.Div(children=[
             # TODO: Toggle button
         ]),
+        footer
     ],
     style=SIDEBAR_STYLE,
 )
 
 
 main_dashboard = html.Div(children=[
-    html.Div(children='Overdose deaths'),
-
-    dcc.Graph(
-        id='example-graph',
-        figure=fig),
-],
-    id="page-content",
-    style=CONTENT_STYLE)
+        html.Div(children='Overdose deaths'),
+        dcc.Graph(id='example-graph', figure=fig),
+    ],
+    id="page-content", style=CONTENT_STYLE)
 
 
 app.layout = html.Div(children=[
