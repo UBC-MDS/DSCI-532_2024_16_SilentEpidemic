@@ -14,7 +14,6 @@ df_overall = pd.read_csv('data/processed/overall.csv')
 overall_deaths = df_overall[(df_overall['Drug Type'] == "Overall") &
                             (df_overall['Population Type'] == "Overall")]['Deaths'].sum()
 
-# Format the sum to include commas for thousands, millions, etc.
 formatted_deaths = f"{overall_deaths:,.0f}"
 average_death_rate = df_overall[(df_overall['Drug Type'] == "Overall") &
                             (df_overall['Population Type'] == "Overall")]['Death Rate'].mean()
@@ -102,12 +101,6 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 
-# test_graph = dcc.Graph(id='example-graph', figure=fig)
-
-""" card = dbc.Card(children=[
-    html.B(children="Test Graph"),
-    test_graph
-]) """
 
 CARD_STYLE = {
     "height": "50px",  # Set a minimum height for each card
@@ -121,14 +114,14 @@ main_dashboard = dbc.Container([
         dbc.Col(percentage_card, style=CARD_STYLE, md=3),
         dbc.Col(fold_change_card, style=CARD_STYLE, md=3),
     ], style=ROW_STYLE),
-    """ dbc.Row([
-        dbc.Col(card, md=12),
+     dbc.Row([
+        # dbc.Col(card, md=12),
     ], style=ROW_STYLE),
     dbc.Row([
+        """ dbc.Col(card, md=4),
         dbc.Col(card, md=4),
-        dbc.Col(card, md=4),
-        dbc.Col(card, md=4),
-    ], style=ROW_STYLE), """
+        dbc.Col(card, md=4), """
+    ], style=ROW_STYLE), 
 ], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
 
 
