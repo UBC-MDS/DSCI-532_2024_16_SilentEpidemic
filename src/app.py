@@ -69,16 +69,18 @@ sidebar = html.Div(
                     )
                     ]),
         html.Div(children=[
-            html.H2("Filter by Year Range"),
+            html.H2("Filter by Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
                 id='year_range_slider',
                 min=1999, max=2021, step=1,
                 value=[1999, 2021],
-                marks={i: str(i) for i in range(1999, 2022, 5)}
+                marks={1999: "1999", 2004: "2004", 2009: "2009", 
+                       2014: "2014", 2019: "2019", 2021: "2021"},
+                tooltip={
+                    "always_visible": True,
+                    "template": "{value}"}
                 ),
-            html.Div(id='display-selected-range')
-                ]),
-                
+                ]),    
         html.Div(children=[
             html.H2("Filter by Age Group"),
             dcc.RadioItems(
@@ -95,16 +97,7 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 
-@app.callback(
-    Output('display-selected-range', 'children'),
-    Input('year_range_slider', 'value')
-    )
-def update_output(value):
-    return 'Years selected: "{}"'.format(value)
-
-
 test_graph = dcc.Graph(id='example-graph', figure=fig)
-
 
 
 # create graph for the demographic
@@ -129,7 +122,7 @@ def update_figure(selected_drug, selected_years):
     fig_demo.update_layout(
         title="Overdose Death Rate based on Demographic",
         xaxis_title="Year",
-        yaxis_title="Death Rate",
+        yaxis_title="Death Rate (per 100,000)",
         legend=dict(
             yanchor="top", y=-0.4,
             xanchor="center", x=0.5,
@@ -154,9 +147,8 @@ main_dashboard = dbc.Container([
         dbc.Col(card, md=12),
     ], style=ROW_STYLE),
     dbc.Row([
-        dbc.Col(card, md=4),
-        dbc.Col(card, md=4),
-        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=4),
+        dbc.Col(card, md=6),
+        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=6)
     ], style=ROW_STYLE),
 ], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
 
