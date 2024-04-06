@@ -2,6 +2,7 @@ from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.express as px
+import plotly.graph_objects as go
 import pandas as pd
 from modules.components import footer
 
@@ -41,7 +42,7 @@ sidebar = html.Div(
         html.Hr(),
         html.Div(children=[
             html.H2("Filter by Gender"),
-            dcc.Dropdown(id='gender-dropdown', 
+            dcc.Dropdown(id='gender_dropdown', 
                          options=[
                              {'label': 'All Genders', 'value': 'All'},
                              {'label': 'Male', 'value': 'Male'},
@@ -52,7 +53,7 @@ sidebar = html.Div(
         html.Div(children=[
             html.H2("Filter by Drug Type"),
             dcc.Checklist(
-                id='drug_type',
+                id='drug_type_list',
                 options=[
                     {'label': 'Any opioid', 'value': 'Any opioid'},
                     {'label': 'Prescription opioids', 'value': 'Prescription opioids'},
@@ -70,7 +71,7 @@ sidebar = html.Div(
         html.Div(children=[
             html.H2("Filter by Year Range"),
             dcc.RangeSlider(
-                id='year_range',
+                id='year_range_slider',
                 min=1999, max=2021, step=1,
                 value=[1999, 2021],
                 marks={i: str(i) for i in range(1999, 2022, 5)}
@@ -81,7 +82,7 @@ sidebar = html.Div(
         html.Div(children=[
             html.H2("Filter by Age Group"),
             dcc.RadioItems(
-                id='age_group',
+                id='age_group_radio',
                 options=[
                     {'label': 'Young Adults, 15-24 Years', 'value': 'Young Adults, 15-24 Years'},
                     {'label': 'Overall', 'value': 'Overall'}
@@ -96,12 +97,46 @@ sidebar = html.Div(
 
 @app.callback(
     Output('display-selected-range', 'children'),
-    Input('year_range', 'value')
-)
+    Input('year_range_slider', 'value')
+    )
 def update_output(value):
     return 'Years selected: "{}"'.format(value)
 
+
 test_graph = dcc.Graph(id='example-graph', figure=fig)
+
+
+
+# create graph for the demographic
+df_demo = pd.read_csv('data/processed/demo.csv')
+fig_demo = go.Figure()
+@app.callback(
+    Output('demo_graph', 'figure'),
+    [Input('drug_type_list', 'value'),
+     #Input('gender-dropdown', 'value'),
+     Input('year_range_slider', 'value')]
+     )
+def update_figure(selected_drug, selected_years):
+    if selected_drug == ['Overall']:
+        selected_drug = ['Total Overdose Deaths']
+    else:
+        selected_drug = selected_drug
+    print(selected_drug)
+    filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
+                          (df_demo['Year'] >= selected_years[0]) &
+                          (df_demo['Year'] <= selected_years[1])]
+    fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
+    fig_demo.update_layout(
+        title="Overdose Death Rate based on Demographic",
+        xaxis_title="Year",
+        yaxis_title="Death Rate",
+        legend=dict(
+            yanchor="top", y=-0.4,
+            xanchor="center", x=0.5,
+            font=dict(size=6)))
+
+    return fig_demo
+
 
 card = dbc.Card(children=[
     html.B(children="Test Graph"),
@@ -121,7 +156,7 @@ main_dashboard = dbc.Container([
     dbc.Row([
         dbc.Col(card, md=4),
         dbc.Col(card, md=4),
-        dbc.Col(card, md=4),
+        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=4),
     ], style=ROW_STYLE),
 ], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
 
