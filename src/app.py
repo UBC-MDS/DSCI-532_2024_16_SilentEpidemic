@@ -66,9 +66,9 @@ sidebar = html.Div(
                     {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},        
                     ],
-                    value=['Overall']  # Default selected value
-                    )
-                    ]),
+                    value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 
+                           'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
+                           ]),
         html.Div(children=[
             html.H2("Filter by Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -110,13 +110,12 @@ fig_demo = go.Figure()
      Input('year_range_slider', 'value')]
 )
 def update_figure(selected_drug, selected_years):
-    if selected_drug == ['Overall']:
+    if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
         title = "Overall Overdose Death Rate based on Demographic"
     else:
         selected_drug = selected_drug
         title = f"Overdose Death Rate based on Demographic <br>for {' and '.join(selected_drug[1:])}"
-    print(selected_drug)
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
@@ -152,9 +151,12 @@ main_dashboard = dbc.Container([
     ], style=ROW_STYLE),
     dbc.Row([
         dbc.Col(card, md=6),
-        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=6)
-    ], style=ROW_STYLE),
-], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
+        dbc.Col([
+            dcc.Graph(id='demo_graph', figure=fig_demo),
+            html.P("Note: There may be instances of double counting in the data. For example, \
+                   a death involving both heroin and opioid would be counted in both the heroin and opioid\
+                   categories.")], md=6)
+    ], style=ROW_STYLE),], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
 
 
 app.layout = dbc.Container([
