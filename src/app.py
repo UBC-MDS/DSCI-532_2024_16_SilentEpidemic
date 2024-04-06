@@ -54,7 +54,6 @@ sidebar = html.Div(
             dcc.Checklist(
                 id='drug_type',
                 options=[
-                    {'label': 'Overall', 'value': 'Overall'},
                     {'label': 'Any opioid', 'value': 'Any opioid'},
                     {'label': 'Prescription opioids', 'value': 'Prescription opioids'},
                     {'label': 'Synthetic opioids', 'value': 'Synthetic opioids'},
