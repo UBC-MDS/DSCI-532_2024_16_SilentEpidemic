@@ -110,12 +110,13 @@ fig_demo = go.Figure()
      Input('year_range_slider', 'value')]
 )
 def update_figure(selected_drug, selected_years):
+    print(selected_drug)
     if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
         title = "Overall Overdose Death Rate based on Demographic"
     else:
         selected_drug = selected_drug
-        title = f"Overdose Death Rate based on Demographic <br>for {' and '.join(selected_drug[1:])}"
+        title = f"Overdose Death Rate based on Demographic <br>for {' and '.join(selected_drug)}"
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
@@ -153,7 +154,7 @@ main_dashboard = dbc.Container([
     dbc.Row([
         dbc.Col(card, md=6),
         dbc.Col([
-            dcc.Graph(id='demo_graph', figure=fig_demo),
+            dcc.Graph(id='demo_graph', figure=fig_demo, style={'width': '100%'}),
             html.P("Note: There may be instances of double counting in the data. For example, \
                    a death involving both heroin and opioid would be counted in both the heroin and opioid\
                    categories.")], md=6)
