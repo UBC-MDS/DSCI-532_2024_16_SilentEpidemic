@@ -128,6 +128,7 @@ def update_figure(selected_drug, selected_years):
         legend=dict(
             x=0, y=-0.2,
             xanchor='center', yanchor='top',
+            orientation='h',
             font=dict(size=8)))
 
     return fig_demo
