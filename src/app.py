@@ -14,23 +14,22 @@ df = pd.DataFrame({
 
 fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
-# the style arguments for the sidebar. We use position:fixed and a fixed width
+# the style arguments for the sidebar.
 SIDEBAR_STYLE = {
-    "position": "fixed",
-    "top": 0,
-    "left": 0,
-    "bottom": 0,
-    "width": "16rem",
     "padding": "2rem 1rem",
     "background-color": "#596b7c",
     "color": "#ffffff"
 }
 
-# the styles for the main content position it to the right of the sidebar and
-# add some padding.
+PAGE_STYLE = {
+}
+
+ROW_STYLE = {
+    "margin": "2rem 0rem",
+}
+
 CONTENT_STYLE = {
-    "margin-left": "18rem",
-    "margin-right": "2rem",
+    "margin": "2rem 0",
     "padding": "2rem 1rem",
 }
 
@@ -57,21 +56,37 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 
+test_graph = dcc.Graph(id='example-graph', figure=fig)
 
-main_dashboard = html.Div(children=[
-    html.Div(children='Overdose deaths'),
-
-    dcc.Graph(
-        id='example-graph',
-        figure=fig),
-],
-    id="page-content",
-    style=CONTENT_STYLE)
-
-
-app.layout = html.Div(children=[
-    sidebar, main_dashboard
+card = dbc.Card(children=[
+    html.B(children="Test Graph"),
+    test_graph
 ])
+
+main_dashboard = dbc.Container([
+    dbc.Row([
+        dbc.Col(card, md=3),
+        dbc.Col(card, md=3),
+        dbc.Col(card, md=3),
+        dbc.Col(card, md=3),
+    ], style=ROW_STYLE),
+    dbc.Row([
+        dbc.Col(card, md=12),
+    ], style=ROW_STYLE),
+    dbc.Row([
+        dbc.Col(card, md=4),
+        dbc.Col(card, md=4),
+        dbc.Col(card, md=4),
+    ], style=ROW_STYLE),
+], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
+
+
+app.layout = dbc.Container([
+    dbc.Row([
+        dbc.Col(sidebar, md=3),
+        dbc.Col(main_dashboard, md=9)
+    ])
+], style=PAGE_STYLE, fluid=True)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
