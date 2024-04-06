@@ -2,9 +2,10 @@ from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
-from modules.components import footer
+from .modules.components import footer
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # test data, to be removed
 df = pd.DataFrame({
