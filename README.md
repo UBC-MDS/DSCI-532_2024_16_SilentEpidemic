@@ -14,7 +14,7 @@ Dr. Darling and our group are concerned about the alarming rise in national drug
 The SilentEpidemic dashboard was created as a teaching tool for high school students in California. It is intended to raise awareness for the increasing rate of drug overdose deaths within the general population and within the 15-24 age group. The dashboard highlights the discrepancies in drug overdose deaths by ethnicity and gender, and also shows the rise in opioid-related deaths over time. 
 
 Our dashboard visualizes:
-*** Add GIF here ***
+![Demo](./img/out.gif)
 - Overdose Trends: Shows a clear upward trend in national drug overdose deaths over time, particularly focusing on the rise in synthetic opioid-related deaths.
 - Drug Risk Comparisons: Visually represents the relative risks associated with different drug categories, highlighting the dangers of synthetic opioids compared to other substances.
 - Demographic Disparities: Highlights potential risk factors by ethnicity and gender to identify high-risk student populations.
