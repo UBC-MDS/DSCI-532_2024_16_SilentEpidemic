@@ -111,7 +111,6 @@ demo_card = dbc.Card([
 
 opioid_data = pd.read_csv('data/processed/specific.csv')
 
-
 # Create Percentage of Overdoses Involving Opioids per Drug Type Chart
 # Create callback for the Percentage of Overdoses Involving Opioids per Drug Type Chart
 fig_percent_opioid_deaths = go.Figure()
@@ -149,16 +148,18 @@ def update_opioid_figure(selected_drug, selected_gender, selected_years, selecte
         gender_display = selected_gender
         gender_categories = [selected_gender]
 
-    if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
-        selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
-        title = f"All drugs and {gender_display} and {age_display}"
-    elif selected_drug == ['Any opioid']:
-        selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
-        title = f"For Any Opioid and {gender_display} and {age_display}"
-    else:
-        title = f"For {' and '.join(selected_drug)} and {gender_display} and {age_display}"
+    drugs = set(selected_drug.copy())
+    drugs_display = set(selected_drug.copy())
+    if 'Any opioid' in drugs:
+        drugs = list((drugs - {'Any opioid'}) | {'Prescription opioids', 'Synthetic opioids', 'Heroin'})
+        drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'} ) | {'Any opioid'})
 
-    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
+    if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}:
+        title = f"All drugs and {gender_display} and {age_display}"
+    else:
+        title = f"For {' and '.join(drugs_display)} and {gender_display} and {age_display}"
+
+    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
                                             filtered_opioid_df['Sex'].isin(gender_categories) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]
