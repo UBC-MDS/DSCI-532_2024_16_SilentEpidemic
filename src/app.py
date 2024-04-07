@@ -255,7 +255,7 @@ df_overall = pd.read_csv('data/processed/overall.csv')
      Output('death-rate-value', 'children'),
      Output('percentage-value', 'children'),
      Output('fold-change-value', 'children')],
-    [Input('gender_dropdown', 'value'),
+    [Input('sex_dropdown', 'value'),
      Input('year_range_slider', 'value'),
      Input('age_group_radio', 'value')]
      )
