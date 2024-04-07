@@ -4,8 +4,7 @@ Dash dashboard visualizing America's drug overdose death rates.
 
 **https://dsci-532-2024-16-silentepidemic.onrender.com**
 
-
-*** Add GIF here ***
+![](img/demo.gif)
 
 ## What are we doing:
 
