@@ -14,6 +14,6 @@ def create_card(title, value, id_value):
 
 death_card = create_card("Cumulative Deaths from All Drugs", 0, "death-value")
 death_rate_card = create_card("Average Death Rate", 0, "death-rate-value")
-percentage_card = create_card("Percentage of Young Adults deaths", 0, "percentage-value")
+percentage_card = create_card("Percentage Young Adult Deaths", 0, "percentage-value")
 fold_change_card = create_card("Fold Change", 0, "fold-change-value")
 
