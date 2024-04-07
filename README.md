@@ -44,7 +44,7 @@ git checkout -b name-of-your-fix-or-feature
 ```
 - To run the dashboard
 ```bash 
-python src/app.py
+gunicorn src.app:server
 ```
 
 ## Contributors: 
