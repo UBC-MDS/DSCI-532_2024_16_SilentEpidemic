@@ -1,5 +1,10 @@
 # The Slient Epidemic: National Drug Overdose Deaths
-Dash dashboard visualizing America's drug overdose death rates. The dashboard can be found [here](https://dsci-532-2024-16-silentepidemic.onrender.com/)).
+
+Dash dashboard visualizing America's drug overdose death rates.
+
+**https://dsci-532-2024-16-silentepidemic.onrender.com**
+
+![](img/demo.gif)
 
 ## What are we doing:
 
@@ -14,47 +19,47 @@ Dr. Darling and our group are concerned about the alarming rise in national drug
 The SilentEpidemic dashboard was created as a teaching tool for high school students in California. It is intended to raise awareness for the increasing rate of drug overdose deaths within the general population and within the 15-24 age group. The dashboard highlights the discrepancies in drug overdose deaths by ethnicity and gender, and also shows the rise in opioid-related deaths over time. 
 
 Our dashboard visualizes:
-*** Add GIF here ***
+
 - Overdose Trends: Shows a clear upward trend in national drug overdose deaths over time, particularly focusing on the rise in synthetic opioid-related deaths.
 - Drug Risk Comparisons: Visually represents the relative risks associated with different drug categories, highlighting the dangers of synthetic opioids compared to other substances.
 - Demographic Disparities: Highlights potential risk factors by ethnicity and gender to identify high-risk student populations.
 
-## Get Involved
+## Contributing
+Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING.md). Please note that this project is released with a [Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
 
-1. Try out the App! To start using the Silent Epidemic dashboard, click here: [Silent Epidemic Dashboard](https://dsci-532-2024-16-silentepidemic.onrender.com/).
-On the dashboard, begin your exploration by selecting your demographic of interest, drug type, and year range. Use the Drug Type Filter if you’d like to focus on specific types of drugs. Dive in and observe the trends and patterns in overdose death rates across different demographics!
-
-2. If you are interested in contributing to the development of the Silent Epidemic dashboard, please read the [contributing guidelines](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CONTRIBUTING.md) for full details. We also ask you to follow our [code of conduct](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CODE_OF_CONDUCT.md) in all interactions.
-
+## Running the Dashboard Locally
 Below are some quick steps to run the app locally.
-- In your terminal run:
+1. Clone the repo:
 ```bash
 git clone git@github.com:UBC-MDS/DSCI-532_2024_16_SilentEpidemic.git
 cd DSCI-532_2024_16_SilentEpidemic
 ```
-- Create and activate the virtual environment
-In the root of the repository run:
+
+2. Create and activate the virtual environment using `virtualenv`:
 ```bash 
 virtualenv ./venv
 source ./venv/bin/activate
 ```
-- Create a branch for local development and make your changes
-```bash 
-git checkout -b name-of-your-fix-or-feature
+
+3. Install all necessary packages via `pip`:
+```bash
+pip install -r requirements.txt
 ```
-- To run the dashboard
+
+4. Run the dashboard:
 ```bash 
 gunicorn src.app:server
 ```
 
-## Contributors: 
+## How to Get Help
+Running into issues? Please feel free to create an issue in our GitHub repo and describe what is the problem.
+When submitting the issue, please provide as much related information as possible so that we can find out the root causes and address them.  
+
+## Contributors
 The SilentEpidemic dashboard was created by Orix Au Yeung (@SoloSynth1), Yingzi Jin (@jinyz8888), Alysen Townsley (@AlysenTownsley), Bill Wan(@billwan96)
 
-## Contributing:
-Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
-
-## License: 
+## License
 The SilentEpidemic dashboard is licensed under the terms of the MIT license and [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Please refer to [the license file](LICENSE) for more information.
 
-## References:
+## References
 1. Dataset Reference: National Institute on Drug Abuse. (2023). Overdose Data 1999-2021 [Excel file]. Retrieved from https://nida.nih.gov/sites/default/files/Overdose_data_1999-2021%201.19.23.xlsx
