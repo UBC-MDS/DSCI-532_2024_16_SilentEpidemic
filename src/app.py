@@ -3,58 +3,10 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-from modules.components import footer
-
+from modules.components import footer, footnote, death_card, death_rate_card, percentage_card, fold_change_card
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, 'src/assets/styles.css'])
 server = app.server
-
-df_overall = pd.read_csv('data/processed/overall.csv')
-overall_deaths = df_overall[(df_overall['Drug Type'] == "Overall") &
-                            (df_overall['Population Type'] == "Overall")]['Deaths'].sum()
-
-formatted_deaths = f"{overall_deaths:,.0f}"
-average_death_rate = df_overall[(df_overall['Drug Type'] == "Overall") &
-                            (df_overall['Population Type'] == "Overall")]['Death Rate'].mean()
-formatted_death_rate = f"{average_death_rate:.2f}%"
-total_deaths_young_adults = df_overall[(df_overall['Drug Type'] == "Overall") & 
-                                    (df_overall['Population Type'] == "Young Adults, 15-24 Years")]['Deaths'].sum()
-percentage_young_adults_deaths = (total_deaths_young_adults / overall_deaths) * 100
-formatted_percentage_young_adults = f"{percentage_young_adults_deaths:.2f}%"
-
-overall_deaths_2001 = df_overall[(df_overall['Year'] == 2001) & 
-                                 (df_overall['Population Type'] == "Overall")]['Deaths'].sum()
-overall_deaths_2015 = df_overall[(df_overall['Year'] == 2015) & 
-                                 (df_overall['Population Type'] == "Overall")]['Deaths'].sum()
-
-# Filter the DataFrame to get the total deaths for Young Adults in 2001 and 2015
-young_adults_deaths_2001 = df_overall[(df_overall['Year'] == 2001) & 
-                                      (df_overall['Population Type'] == "Young Adults, 15-24 Years")]['Deaths'].sum()
-young_adults_deaths_2015 = df_overall[(df_overall['Year'] == 2015) & 
-                                      (df_overall['Population Type'] == "Young Adults, 15-24 Years")]['Deaths'].sum()
-
-# Calculate the fold change for Overall and Young Adults
-fold_change_overall = overall_deaths_2015 / overall_deaths_2001
-fold_change_young_adults = young_adults_deaths_2015 / young_adults_deaths_2001
-
-# Format the fold change as a string to display in the card
-fold_change_text = f"{fold_change_overall:.1f}/{fold_change_young_adults:.1f}"
-
-def create_card(title, value, id_value):
-    return dbc.Card(
-        [
-            html.H4(title, className="card-title", style={"color": "black"}),
-            html.H2(value, className="card-value", id=id_value),
-        ],
-        body=True,
-    )
-
-
-death_card = create_card("Overall\n", formatted_deaths, "death-value")
-death_rate_card = create_card("Death Rate\n", formatted_death_rate, "death-rate-value")
-percentage_card = create_card("Percentage of young adults deaths", formatted_percentage_young_adults, "percentage-value")
-fold_change_card = create_card("Fold Change (2001-2015)\n(Overall/Young Adults)", fold_change_text, "fold-change-value")
-
 
 
 sidebar = html.Div(
@@ -86,9 +38,9 @@ sidebar = html.Div(
                     {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},        
                     ],
-                    value=['Overall']  # Default selected value
-                    )
-                    ]),
+                    value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 
+                           'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
+                           ]),
         html.Div(children=[
             html.H2("Filter by Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -118,53 +70,45 @@ sidebar = html.Div(
 )
 
 
-
 # create graph for the demographic
 df_demo = pd.read_csv('data/processed/demo.csv')
 fig_demo = go.Figure()
 @app.callback(
-    Output('demo_graph', 'figure'),
+    [Output('demo_graph', 'figure'),
+    Output('demo_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
-     #Input('gender-dropdown', 'value'),
      Input('year_range_slider', 'value')]
-     )
+)
 def update_figure(selected_drug, selected_years):
-    if selected_drug == ['Overall']:
+    print(selected_drug)
+    if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
+        title = "All Drugs"
     else:
         selected_drug = selected_drug
+        title = f"For {' and '.join(selected_drug)}"
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
     fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
+    
     fig_demo.update_layout(
-        title="Overdose Death Rate based on Demographic",
         xaxis_title="Year",
-        yaxis_title="Death Rate (per 100,000)",
+        yaxis_title="Death Rate <br>(per 100,000 population)",
         legend=dict(
-            yanchor="top", y=-0.4,
-            xanchor="center", x=0.5,
-            font=dict(size=6)))
+            x=0, y=-0.2,
+            xanchor='center', yanchor='top',
+            orientation='h',
+            font=dict(size=8)))
 
-    return fig_demo
+    return fig_demo, title
 
 
-# TODO: placeholder data and components, to be removed
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-})
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-test_graph = dcc.Graph(id='example-graph', figure=fig)
-card = dbc.Card(children=[
-    html.B(children="Test Graph"),
-    test_graph
+demo_card = dbc.Card([
+    html.H4("Overdose Death Rate based on Demographic", id="demo_title"),
+    html.H6("Subtitle", id="demo_subtitle"),
+    dcc.Graph(id='demo_graph', figure=fig_demo)
 ])
-# TODO: placeholder data and components, to be removed
-
-demo_graph = dcc.Graph(id='demo_graph', figure=fig_demo)
-demo_card = dbc.Card(children=[demo_graph])
 
 main_dashboard = dbc.Container([
     dbc.Row([
@@ -174,12 +118,13 @@ main_dashboard = dbc.Container([
         dbc.Col(fold_change_card, md=3),
     ]),
      dbc.Row([
-        dbc.Col(card, md=12),
+        dbc.Col(demo_card, md=12),
     ]),
     dbc.Row([
-        dbc.Col(card, md=6),
-        dbc.Col(demo_card, md=6)
+        dbc.Col(demo_card, md=6),
+        dbc.Col(demo_card, md=6),
     ]),
+    footnote
 ], fluid=True, className="main-dashboard")
 
 

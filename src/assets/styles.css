@@ -1,5 +1,6 @@
 :root {
     --font-color: #ffffff;
+    --footnote-color: #a1a1a1;
     --background-color: #596b7c;
     --figure-color: #e51400;
 }
@@ -26,4 +27,9 @@
     padding: 2rem 1rem;
     background-color: var(--background-color);
     color: var(--font-color);
+}
+
+.footnote {
+    font-size: calc(0.5rem + .3vw);
+    color: var(--footnote-color);
 }
