@@ -132,8 +132,8 @@ def update_opioid_figure(selected_drug, selected_gender, selected_years, selecte
     opioid_data_mod = opioid_data_mod[(opioid_data_mod['Opioid Type'] == 'overall') | (opioid_data_mod['Opioid Type'] == 'any')]
     overall_deaths = opioid_data_mod[opioid_data_mod['Opioid Type'] == 'overall'].groupby(['Drug Type', 'Sex', 'Year', 'Population Type'])['Deaths'].sum()
     opioid_data_mod['Percent Opioid Deaths'] = opioid_data_mod.apply(lambda row: (row['Deaths'] / overall_deaths[(row['Drug Type'], row['Sex'], row['Year'], row['Population Type'])]) * 100 if (row['Drug Type'], row['Sex'], row['Year'], row['Population Type']) in overall_deaths.index else 0, axis=1)
-    filtered_opioid_df = opioid_data_mod.copy().query("(`Drug Type` in ['Prescription opioids', 'Synthetic opioids', 'Heroin'] and `Opioid Type` == 'overall') or (`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
-    filtered_opioid_df = filtered_opioid_df.copy().dropna(subset=['Percent Opioid Deaths'])
+    filtered_opioid_df = opioid_data_mod.query("(`Drug Type` in ['Prescription opioids', 'Synthetic opioids', 'Heroin'] and `Opioid Type` == 'overall') or (`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
+    filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
     filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
     
     # Cases to filter the dataset based on inputs
