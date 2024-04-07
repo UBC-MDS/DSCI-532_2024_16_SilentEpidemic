@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 4. Run the dashboard:
 ```bash 
-python src/app.py
+gunicorn src.app:server
 ```
 
 ## How to Get Help
