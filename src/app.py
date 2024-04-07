@@ -74,7 +74,8 @@ sidebar = html.Div(
 df_demo = pd.read_csv('data/processed/demo.csv')
 fig_demo = go.Figure()
 @app.callback(
-    Output('demo_graph', 'figure'),
+    [Output('demo_graph', 'figure'),
+    Output('demo_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
      Input('year_range_slider', 'value')]
 )
@@ -82,17 +83,16 @@ def update_figure(selected_drug, selected_years):
     print(selected_drug)
     if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
-        title = "Overall Overdose Death Rate based on Demographic"
+        title = "All Drugs"
     else:
         selected_drug = selected_drug
-        title = f"Overdose Death Rate based on Demographic <br>for {' and '.join(selected_drug)}"
+        title = f"For {' and '.join(selected_drug)}"
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
     fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
     
     fig_demo.update_layout(
-        title=title,
         xaxis_title="Year",
         yaxis_title="Death Rate <br>(per 100,000 population)",
         legend=dict(
@@ -101,25 +101,14 @@ def update_figure(selected_drug, selected_years):
             orientation='h',
             font=dict(size=8)))
 
-    return fig_demo
+    return fig_demo, title
 
 
-# TODO: placeholder data and components, to be removed
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-})
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-test_graph = dcc.Graph(id='example-graph', figure=fig)
-card = dbc.Card(children=[
-    html.B(children="Test Graph"),
-    test_graph
+demo_card = dbc.Card([
+    html.H4("Overdose Death Rate based on Demographic", id="demo_title"),
+    html.H6("Subtitle", id="demo_subtitle"),
+    dcc.Graph(id='demo_graph', figure=fig_demo)
 ])
-# TODO: placeholder data and components, to be removed
-
-demo_graph = dcc.Graph(id='demo_graph', figure=fig_demo)
-demo_card = dbc.Card(children=[demo_graph])
 
 main_dashboard = dbc.Container([
     dbc.Row([
@@ -129,11 +118,11 @@ main_dashboard = dbc.Container([
         dbc.Col(fold_change_card, md=3),
     ]),
      dbc.Row([
-        dbc.Col(card, md=12),
+        dbc.Col(demo_card, md=12),
     ]),
     dbc.Row([
-        dbc.Col(card, md=6),
-        dbc.Col([dbc.Card(dcc.Graph(id='demo_graph', figure=fig_demo, style={'width': '100%'}))], md=6),
+        dbc.Col(demo_card, md=6),
+        dbc.Col(demo_card, md=6),
     ]),
     footnote
 ], fluid=True, className="main-dashboard")
