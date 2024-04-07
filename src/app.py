@@ -1,41 +1,13 @@
-from dash import Dash, html, dcc
+from dash import Dash, html, dcc, callback, Output, Input
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-from modules.components import footer
+from modules.components import footer, footnote, death_card, death_rate_card, percentage_card, fold_change_card
 
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, 'src/assets/styles.css'])
 server = app.server
 
-# test data, to be removed
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-})
-
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-
-# the style arguments for the sidebar.
-SIDEBAR_STYLE = {
-    "padding": "2rem 1rem",
-    "background-color": "#596b7c",
-    "color": "#ffffff"
-}
-
-PAGE_STYLE = {
-}
-
-ROW_STYLE = {
-    "margin": "2rem 0rem",
-}
-
-CONTENT_STYLE = {
-    "margin": "2rem 0",
-    "padding": "2rem 1rem",
-}
 
 sidebar = html.Div(
     [
@@ -94,11 +66,8 @@ sidebar = html.Div(
                     )
                     ]),
         footer
-    ],
-    style=SIDEBAR_STYLE,
+    ], className="sidebar"
 )
-
-test_graph = dcc.Graph(id='example-graph', figure=fig)
 
 
 # create graph for the demographic
@@ -135,38 +104,47 @@ def update_figure(selected_drug, selected_years):
     return fig_demo
 
 
-
+# TODO: placeholder data and components, to be removed
+df = pd.DataFrame({
+    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
+    "Amount": [4, 1, 2, 2, 4, 5],
+    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
+})
+fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+test_graph = dcc.Graph(id='example-graph', figure=fig)
 card = dbc.Card(children=[
     html.B(children="Test Graph"),
     test_graph
 ])
+# TODO: placeholder data and components, to be removed
+
+demo_graph = dcc.Graph(id='demo_graph', figure=fig_demo)
+demo_card = dbc.Card(children=[demo_graph])
 
 main_dashboard = dbc.Container([
     dbc.Row([
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-    ], style=ROW_STYLE),
-    dbc.Row([
+        dbc.Col(death_card, md=3),
+        dbc.Col(death_rate_card, md=3),
+        dbc.Col(percentage_card, md=3),
+        dbc.Col(fold_change_card, md=3),
+    ]),
+     dbc.Row([
         dbc.Col(card, md=12),
-    ], style=ROW_STYLE),
+    ]),
     dbc.Row([
         dbc.Col(card, md=6),
-        dbc.Col([
-            dcc.Graph(id='demo_graph', figure=fig_demo, style={'width': '100%'}),
-            html.P("Note: There may be instances of double counting in the data. For example, \
-                   a death involving both heroin and opioid would be counted in both the heroin and opioid\
-                   categories.")], md=6)
-    ], style=ROW_STYLE),], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
+        dbc.Col([dbc.Card(dcc.Graph(id='demo_graph', figure=fig_demo, style={'width': '100%'}))], md=6),
+    ]),
+    footnote
+], fluid=True, className="main-dashboard")
 
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(sidebar, md=3),
-        dbc.Col(main_dashboard, md=9)
+        dbc.Col(sidebar, md=2),
+        dbc.Col(main_dashboard, md=10)
     ])
-], style=PAGE_STYLE, fluid=True)
+], fluid=True)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
