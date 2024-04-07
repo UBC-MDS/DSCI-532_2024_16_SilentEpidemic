@@ -1,5 +1,5 @@
 # The Slient Epidemic: National Drug Overdose Deaths
-Dash dashboard visualizing America's drug overdose death rates. The dashboard can be found here (insert built dashboard link - milestone 2).
+Dash dashboard visualizing America's drug overdose death rates. The dashboard can be found [here](https://dsci-532-2024-16-silentepidemic.onrender.com/)).
 
 ## Dashboard Contents:
 
@@ -24,7 +24,7 @@ Our dashboard visualizes:
 1. Try out the App! To start using the Silent Epidemic dashboard, click here: [Silent Epidemic Dashboard](https://dsci-532-2024-16-silentepidemic.onrender.com/).
 On the dashboard, begin your exploration by selecting your demographic of interest, drug type, and year range. Use the Drug Type Filter if you’d like to focus on specific types of drugs. Dive in and observe the trends and patterns in overdose death rates across different demographics!
 
-2. If you are interested in contributing to the development of the Silent Epidemic dashboard, please read the contributing guidelines for full details. Below are some quick steps to run the app locally.
+2. If you are interested in contributing to the development of the Silent Epidemic dashboard, please read the [contributing guidelines](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CONTRIBUTING.md) for full details. Below are some quick steps to run the app locally.
 - In your terminal run:
 ```bash
 git clone git@github.com:UBC-MDS/DSCI-532_2024_16_SilentEpidemic.git
