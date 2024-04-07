@@ -10,4 +10,4 @@ footer = html.Footer(children=[
     dcc.Link(children="Link to repo", href=REPO_URL, target="_blank"),
     html.Br(),
     html.Div("Last Updated: " + get_repo_last_updated_time().strftime("%B %d, %Y")),
-])
+], className="footer")

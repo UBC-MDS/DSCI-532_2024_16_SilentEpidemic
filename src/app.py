@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc, callback, Output, Input
+from dash import Dash, html, dcc, Output, Input
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
@@ -11,10 +11,10 @@ server = app.server
 
 sidebar = html.Div(
     [
-        html.H1("National Overdose Deaths Tracker", className="display-4"),
+        html.H2("National Overdose Deaths Tracker", className="title"),
         html.Hr(),
         html.Div(children=[
-            html.H2("Filter by Gender"),
+            html.H4("Sex"),
             dcc.Dropdown(id='gender_dropdown', 
                          options=[
                              {'label': 'All Genders', 'value': 'All'},
@@ -24,7 +24,7 @@ sidebar = html.Div(
                              value='All')
                              ]),
         html.Div(children=[
-            html.H2("Filter by Drug Type"),
+            html.H4("Drug Type"),
             dcc.Checklist(
                 id='drug_type_list',
                 options=[
@@ -42,7 +42,7 @@ sidebar = html.Div(
                            'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
                            ]),
         html.Div(children=[
-            html.H2("Filter by Year Range", style={'margin-bottom': '25px'}),
+            html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
                 id='year_range_slider',
                 min=1999, max=2021, step=1,
@@ -55,7 +55,7 @@ sidebar = html.Div(
                 ),
                 ]),    
         html.Div(children=[
-            html.H2("Filter by Age Group"),
+            html.H4("Age Group"),
             dcc.RadioItems(
                 id='age_group_radio',
                 options=[
@@ -78,8 +78,7 @@ fig_demo = go.Figure()
     [Input('drug_type_list', 'value'),
      Input('year_range_slider', 'value')]
 )
-def update_figure(selected_drug, selected_years):
-    print(selected_drug)
+def update_demo_figure(selected_drug, selected_years):
     if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
         title = "All Drugs"
@@ -103,11 +102,17 @@ def update_figure(selected_drug, selected_years):
     return fig_demo, title
 
 
+fake_demo_card = dbc.Card([
+    html.H4("Overdose Death Rate based on Demographic", id="fake_demo_title"),
+    html.H6("Subtitle", id="fake_demo_subtitle"),
+    dcc.Graph(id='fake_demo_graph', figure=fig_demo)
+], body=True)
+
 demo_card = dbc.Card([
     html.H4("Overdose Death Rate based on Demographic", id="demo_title"),
     html.H6("Subtitle", id="demo_subtitle"),
     dcc.Graph(id='demo_graph', figure=fig_demo)
-])
+], body=True)
 
 main_dashboard = dbc.Container([
     dbc.Row([
@@ -117,10 +122,10 @@ main_dashboard = dbc.Container([
         dbc.Col(fold_change_card, md=3),
     ]),
      dbc.Row([
-        dbc.Col(demo_card, md=12),
+        dbc.Col(fake_demo_card, md=12),
     ]),
     dbc.Row([
-        dbc.Col(demo_card, md=6),
+        dbc.Col(fake_demo_card, md=6),
         dbc.Col(demo_card, md=6),
     ]),
     footnote
