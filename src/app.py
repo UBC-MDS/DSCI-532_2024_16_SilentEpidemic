@@ -3,6 +3,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 from modules.components import footer
+from modules.datasets import specific_df
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
