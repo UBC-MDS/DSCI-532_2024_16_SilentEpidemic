@@ -1,4 +1,4 @@
-from dash import Dash, html, dcc, callback, Output, Input
+from dash import Dash, html, dcc, Output, Input
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
@@ -184,6 +184,51 @@ opioid_card = dbc.Card([
     html.H6("Subtitle", id="opioid_subtitle"),
     dcc.Graph(id='percent_opioids', figure=fig_percent_opioid_deaths)
 ])
+
+df_overall = pd.read_csv('data/processed/overall.csv')
+@app.callback(
+    [Output('death-value', 'children'),
+     Output('death-rate-value', 'children'),
+     Output('percentage-value', 'children'),
+     Output('fold-change-value', 'children')],
+    [Input('gender_dropdown', 'value'),
+     Input('year_range_slider', 'value'),
+     Input('age_group_radio', 'value')]
+     )
+def update_aggregated_values(selected_sex, selected_years, selected_age):
+    start_year = selected_years[0]
+    end_year = selected_years[1]
+
+    filtered_df = df_overall.copy()
+    filtered_df = filtered_df[filtered_df['Drug Type'] == "Overall"]
+
+    if selected_sex == 'All':
+        sexes = ['Male', 'Female']
+    else:
+        sexes = [selected_sex]
+
+    filtered_df = filtered_df[filtered_df['Sex'].isin(sexes)]
+    filtered_df = filtered_df[filtered_df['Year'].between(start_year, end_year, inclusive='both')]
+
+    pop_df = filtered_df[filtered_df['Population Type'] == selected_age]
+    youth_df = filtered_df[filtered_df['Population Type'] == 'Young Adults, 15-24 Years']
+
+    cumulative_deaths = pop_df['Deaths'].sum()
+
+    youth_cumulative_deaths = youth_df['Deaths'].sum()
+    young_rate = youth_cumulative_deaths / cumulative_deaths * 100
+
+    group_df = pop_df.groupby(['Year'])
+    fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
+
+    avg_death_rate = (pop_df['Death Rate'] * pop_df['Deaths']).sum() / pop_df['Deaths'].sum()
+
+    formatted_deaths = f"{cumulative_deaths:,.0f}"
+    formatted_death_rate = f"{avg_death_rate:.2f}%"
+    formatted_percentage_young_adults = f"{young_rate:.2f}%"
+    fold_change_text = f"{fold_change:.1f}"
+
+    return formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
 
 
 main_dashboard = dbc.Container([
