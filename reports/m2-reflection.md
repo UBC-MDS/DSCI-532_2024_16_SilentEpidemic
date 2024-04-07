@@ -1,6 +1,6 @@
 # Current Implementation
 Our dashboard currently implements the following features from our proposal/sketch:
-- Four Summary Information Cards: These provide a quick overview of key statistics including Overall Death, Death Rate, Percentage of young adults deaths, and Fold Change (2001-2015) (Overall/Young Adults).
+- Four Summary Information Cards: These provide a quick overview of key statistics including Overall Death, Death Rate, Percentage of young adults deaths, and Fold Change (Overall/Young Adults).
 - Main Bubble Chart: This shows the general trend of overdose deaths.
 - Percentage of Deaths Related to Any Opioid: This provides specific insights into opioid-related deaths.
 - Percentage of Deaths by Demographics: This allows for demographic-based (in particular the ethnicity) analysis.
