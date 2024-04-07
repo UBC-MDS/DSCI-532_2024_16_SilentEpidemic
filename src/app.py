@@ -1,14 +1,12 @@
 from dash import Dash, html, dcc, callback, Output, Input
 import dash_bootstrap_components as dbc
-import dash_vega_components as dvc
-import altair as alt
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 from modules.components import footer
 
 
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, 'src/assets/styles.css'])
 server = app.server
 
 df_overall = pd.read_csv('data/processed/overall.csv')
@@ -49,7 +47,6 @@ def create_card(title, value, id_value):
             html.H2(value, className="card-value", id=id_value),
         ],
         body=True,
-        style={"textAlign": "center", "color": "red"}
     )
 
 
@@ -58,27 +55,6 @@ death_rate_card = create_card("Death Rate\n", formatted_death_rate, "death-rate-
 percentage_card = create_card("Percentage of young adults deaths", formatted_percentage_young_adults, "percentage-value")
 fold_change_card = create_card("Fold Change (2001-2015)\n(Overall/Young Adults)", fold_change_text, "fold-change-value")
 
-# the style arguments for the sidebar.
-SIDEBAR_STYLE = {
-    "padding": "2rem 1rem",
-    "background-color": "#596b7c",
-    "color": "#ffffff"
-}
-
-PAGE_STYLE = {
-}
-
-ROW_STYLE = {
-    "margin": "2rem 0rem",
-    'display': 'flex',
-    'flex-wrap': 'wrap',  # Allow the items to wrap on smaller screens
-    'align-items': 'stretch'
-}
-
-CONTENT_STYLE = {
-    "margin": "2rem 0",
-    "padding": "2rem 1rem",
-}
 
 
 sidebar = html.Div(
@@ -138,14 +114,10 @@ sidebar = html.Div(
                     )
                     ]),
         footer
-    ],
-    style=SIDEBAR_STYLE,
+    ], className="sidebar"
 )
 
-CARD_STYLE = {
-    "height": "50px",  # Set a minimum height for each card
-    "margin-bottom": "10px"  # Add some space between the rows of cards
-}
+
 
 # create graph for the demographic
 df_demo = pd.read_csv('data/processed/demo.csv')
@@ -161,7 +133,6 @@ def update_figure(selected_drug, selected_years):
         selected_drug = ['Total Overdose Deaths']
     else:
         selected_drug = selected_drug
-    print(selected_drug)
     filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
                           (df_demo['Year'] >= selected_years[0]) &
                           (df_demo['Year'] <= selected_years[1])]
@@ -178,30 +149,46 @@ def update_figure(selected_drug, selected_years):
     return fig_demo
 
 
+# TODO: placeholder data and components, to be removed
+df = pd.DataFrame({
+    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
+    "Amount": [4, 1, 2, 2, 4, 5],
+    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
+})
+fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+test_graph = dcc.Graph(id='example-graph', figure=fig)
+card = dbc.Card(children=[
+    html.B(children="Test Graph"),
+    test_graph
+])
+# TODO: placeholder data and components, to be removed
+
+demo_graph = dcc.Graph(id='demo_graph', figure=fig_demo)
+demo_card = dbc.Card(children=[demo_graph])
 
 main_dashboard = dbc.Container([
     dbc.Row([
-        dbc.Col(death_card, style=CARD_STYLE, md=3),
-        dbc.Col(death_rate_card, style=CARD_STYLE, md=3),
-        dbc.Col(percentage_card, style=CARD_STYLE, md=3),
-        dbc.Col(fold_change_card, style=CARD_STYLE, md=3),
-    ], style=ROW_STYLE),
+        dbc.Col(death_card, md=3),
+        dbc.Col(death_rate_card, md=3),
+        dbc.Col(percentage_card, md=3),
+        dbc.Col(fold_change_card, md=3),
+    ]),
      dbc.Row([
-        # dbc.Col(card, md=12),
-    ], style=ROW_STYLE),
+        dbc.Col(card, md=12),
+    ]),
     dbc.Row([
-        #dbc.Col(card, md=6),
-        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=6)
-    ], style=ROW_STYLE),
-], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
+        dbc.Col(card, md=6),
+        dbc.Col(demo_card, md=6)
+    ]),
+], fluid=True, className="main-dashboard")
 
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(sidebar, md=3),
-        dbc.Col(main_dashboard, md=9)
+        dbc.Col(sidebar, md=2),
+        dbc.Col(main_dashboard, md=10)
     ])
-], style=PAGE_STYLE, fluid=True)
+], fluid=True)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
