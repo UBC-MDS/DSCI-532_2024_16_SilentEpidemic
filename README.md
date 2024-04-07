@@ -37,6 +37,7 @@ In the root of the repository run:
 ```bash 
 virtualenv ./venv
 source ./venv/bin/activate
+pip install -r requirements.txt
 ```
 - Create a branch for local development and make your changes
 ```bash 
