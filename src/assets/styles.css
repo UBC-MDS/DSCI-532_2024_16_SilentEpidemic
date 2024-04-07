@@ -1,0 +1,35 @@
+:root {
+    --font-color: #ffffff;
+    --footnote-color: #a1a1a1;
+    --background-color: #596b7c;
+    --figure-color: #e51400;
+}
+
+.card-value {
+    color: var(--figure-color);
+    text-align: center;
+}
+
+.row {
+    margin: 2rem 0;
+}
+
+.card {
+    height: 100%;
+}
+
+.main-dashboard {
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+}
+
+.sidebar {
+    padding: 2rem 1rem;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.footnote {
+    font-size: calc(0.5rem + .3vw);
+    color: var(--footnote-color);
+}

@@ -1,42 +1,13 @@
-from dash import Dash, html, dcc
+from dash import Dash, html, dcc, callback, Output, Input
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
-import pandas as pd
-from .modules.datasets import specific_df
-from .modules.components import footer
+from .modules.datasets import specific_df, demo_df
+from .modules.components import footer, footnote, death_card, death_rate_card, percentage_card, fold_change_card
 
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, 'src/assets/styles.css'])
 server = app.server
 
-# test data, to be removed
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-})
-
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
-
-# the style arguments for the sidebar.
-SIDEBAR_STYLE = {
-    "padding": "2rem 1rem",
-    "background-color": "#596b7c",
-    "color": "#ffffff"
-}
-
-PAGE_STYLE = {
-}
-
-ROW_STYLE = {
-    "margin": "2rem 0rem",
-}
-
-CONTENT_STYLE = {
-    "margin": "2rem 0",
-    "padding": "2rem 1rem",
-}
 
 sidebar = html.Div(
     [
@@ -67,9 +38,9 @@ sidebar = html.Div(
                     {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},        
                     ],
-                    value=['Overall']  # Default selected value
-                    )
-                    ]),
+                    value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 
+                           'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
+                           ]),
         html.Div(children=[
             html.H2("Filter by Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -95,72 +66,73 @@ sidebar = html.Div(
                     )
                     ]),
         footer
-    ],
-    style=SIDEBAR_STYLE,
+    ], className="sidebar"
 )
-
-test_graph = dcc.Graph(id='example-graph', figure=fig)
 
 
 # create graph for the demographic
-df_demo = pd.read_csv('data/processed/demo.csv')
 fig_demo = go.Figure()
 @app.callback(
-    Output('demo_graph', 'figure'),
+    [Output('demo_graph', 'figure'),
+    Output('demo_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
-     #Input('gender-dropdown', 'value'),
      Input('year_range_slider', 'value')]
-     )
+)
 def update_figure(selected_drug, selected_years):
-    if selected_drug == ['Overall']:
+    print(selected_drug)
+    if len(selected_drug) == 9:
         selected_drug = ['Total Overdose Deaths']
+        title = "All Drugs"
     else:
         selected_drug = selected_drug
-    print(selected_drug)
-    filtered_df = df_demo[(df_demo['Drug Type'].isin(selected_drug)) &
-                          (df_demo['Year'] >= selected_years[0]) &
-                          (df_demo['Year'] <= selected_years[1])]
+        title = f"For {' and '.join(selected_drug)}"
+    filtered_df = demo_df[(demo_df['Drug Type'].isin(selected_drug)) &
+                          (demo_df['Year'] >= selected_years[0]) &
+                          (demo_df['Year'] <= selected_years[1])]
     fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
+    
     fig_demo.update_layout(
-        title="Overdose Death Rate based on Demographic",
         xaxis_title="Year",
-        yaxis_title="Death Rate (per 100,000)",
+        yaxis_title="Death Rate <br>(per 100,000 population)",
         legend=dict(
-            yanchor="top", y=-0.4,
-            xanchor="center", x=0.5,
-            font=dict(size=6)))
+            x=0, y=-0.2,
+            xanchor='center', yanchor='top',
+            orientation='h',
+            font=dict(size=8)))
 
-    return fig_demo
+    return fig_demo, title
 
 
-card = dbc.Card(children=[
-    html.B(children="Test Graph"),
-    test_graph
+demo_card = dbc.Card([
+    html.H4("Overdose Death Rate based on Demographic", id="demo_title"),
+    html.H6("Subtitle", id="demo_subtitle"),
+    dcc.Graph(id='demo_graph', figure=fig_demo)
 ])
 
 main_dashboard = dbc.Container([
     dbc.Row([
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-        dbc.Col(card, md=3),
-    ], style=ROW_STYLE),
+        dbc.Col(death_card, md=3),
+        dbc.Col(death_rate_card, md=3),
+        dbc.Col(percentage_card, md=3),
+        dbc.Col(fold_change_card, md=3),
+    ]),
+     dbc.Row([
+        dbc.Col(demo_card, md=12),
+    ]),
     dbc.Row([
-        dbc.Col(card, md=12),
-    ], style=ROW_STYLE),
-    dbc.Row([
-        dbc.Col(card, md=6),
-        dbc.Col(dcc.Graph(id='demo_graph', figure=fig_demo), md=6)
-    ], style=ROW_STYLE),
-], fluid=True, id="main-dashboard", style=CONTENT_STYLE)
+        dbc.Col(demo_card, md=6),
+        dbc.Col(demo_card, md=6),
+    ]),
+    footnote
+], fluid=True, className="main-dashboard")
 
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(sidebar, md=3),
-        dbc.Col(main_dashboard, md=9)
+        dbc.Col(sidebar, md=2),
+        dbc.Col(main_dashboard, md=10)
     ])
-], style=PAGE_STYLE, fluid=True)
+], fluid=True)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
