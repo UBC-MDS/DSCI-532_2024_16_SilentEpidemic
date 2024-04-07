@@ -17,7 +17,7 @@ sidebar = html.Div(
             html.H2("Filter by Gender"),
             dcc.Dropdown(id='gender_dropdown', 
                          options=[
-                             {'label': 'All Genders', 'value': 'All'},
+                             {'label': 'All Sexes', 'value': 'All'},
                              {'label': 'Male', 'value': 'Male'},
                              {'label': 'Female', 'value': 'Female'}
                              ],
@@ -116,7 +116,7 @@ opioid_data = pd.read_csv('data/processed/specific.csv')
 # Create callback for the Percentage of Overdoses Involving Opioids per Drug Type Chart
 fig_percent_opioid_deaths = go.Figure()
 @app.callback(
-    [Output('percent-opioids', 'figure'),
+    [Output('percent_opioids', 'figure'),
      Output('opioid_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
      Input('gender_dropdown', 'value'),
@@ -124,6 +124,9 @@ fig_percent_opioid_deaths = go.Figure()
      Input('age_group_radio', 'value')]
      )
 def update_opioid_figure(selected_drug, selected_gender, selected_years, selected_age):
+    start_year = pd.to_datetime(selected_years[0], format='%Y')
+    end_year = pd.to_datetime(selected_years[1], format='%Y')
+
     # Import dataset and data wrangling for Percentage of Overdoses Involving Opioids per Drug Type plot
     opioid_data_mod = opioid_data.copy()
     opioid_data_mod = opioid_data_mod[(opioid_data_mod['Opioid Type'] == 'overall') | (opioid_data_mod['Opioid Type'] == 'any')]
@@ -135,69 +138,35 @@ def update_opioid_figure(selected_drug, selected_gender, selected_years, selecte
     
     # Cases to filter the dataset based on inputs
     if selected_age == 'Overall':
-        if selected_gender == 'All':
-            if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
-                title = f"All drugs and Both Sexes and Both Age Groups"
-            elif selected_drug == ['Any opioid']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
-                title = "For Any Opioid and Both Sexes and Both Age Groups"
-            else:
-                title = f"For {' and '.join(selected_drug)} and Both Sexes and Both Age Groups"
-
-            filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
-                                                    (filtered_opioid_df['Year'] >= pd.to_datetime(selected_years[0], format='%Y')) &
-                                                    (filtered_opioid_df['Year'] <= pd.to_datetime(selected_years[1], format='%Y'))]
-            filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])['Percent Opioid Deaths'].sum().reset_index()
-
-        else:
-            if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
-                title = f"All drugs and {selected_gender} and Both Age Groups"
-            elif selected_drug == ['Any opioid']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
-                title = f"For Any Opioid and {selected_gender} and Both Age Groups"
-            else:
-                title = f"For {' and '.join(selected_drug)} and {selected_gender} and Both Age Groups"
-            filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
-                                        (filtered_opioid_df['Year'] >= pd.to_datetime(selected_years[0], format='%Y')) &
-                                        (filtered_opioid_df['Year'] <= pd.to_datetime(selected_years[1], format='%Y')) &
-                                        (filtered_opioid_df['Sex'] == selected_gender)]
-                
+        age_display = "All Age Groups"
     else:
-        if selected_gender == 'All':
-            if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
-                title = f"All drugs and Both Sexes and {selected_age}"
-            elif selected_drug == ['Any opioid']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
-                title = f"For Any Opioid and Both Sexes and {selected_age}"
-            else:
-                title = f"For {' and '.join(selected_drug)} and Both Sexes and {selected_age}"
+        age_display = selected_age
 
-            filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
-                                                    (filtered_opioid_df['Year'] >= pd.to_datetime(selected_years[0], format='%Y')) &
-                                                    (filtered_opioid_df['Year'] <= pd.to_datetime(selected_years[1], format='%Y')) &
-                                                    (filtered_opioid_df['Population Type'] == selected_age)]
-            filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])['Percent Opioid Deaths'].sum().reset_index()
+    if selected_gender == 'All':
+        gender_display = "Both Sexes"
+        gender_categories = ['Male', 'Female']
+    else:
+        gender_display = selected_gender
+        gender_categories = [selected_gender]
 
-        else:
-            if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
-                title = f"All drugs and {selected_gender} and {selected_age}"
-            elif selected_drug == ['Any opioid']:
-                selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
-                title = f"For Any Opioid and {selected_gender} and {selected_age}"
-            else:
-                title = f"For {' and '.join(selected_drug)} and {selected_gender} and {selected_age}"
-            filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
-                                        (filtered_opioid_df['Year'] >= pd.to_datetime(selected_years[0], format='%Y')) &
-                                        (filtered_opioid_df['Year'] <= pd.to_datetime(selected_years[1], format='%Y')) &
-                                        (filtered_opioid_df['Sex'] == selected_gender) &
-                                        (filtered_opioid_df['Population Type'] == selected_age)]
+    if selected_drug == ['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']:
+        selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants']
+        title = f"All drugs and {gender_display} and {age_display}"
+    elif selected_drug == ['Any opioid']:
+        selected_drug = ['Prescription opioids', 'Synthetic opioids', 'Heroin']
+        title = f"For Any Opioid and {gender_display} and {age_display}"
+    else:
+        title = f"For {' and '.join(selected_drug)} and {gender_display} and {age_display}"
+
+    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
+                                            filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
+                                            filtered_opioid_df['Sex'].isin(gender_categories) &
+                                            (filtered_opioid_df['Population Type'] == selected_age)]
+    filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])['Percent Opioid Deaths'].sum().reset_index()
+
     
     # Plot Percent Opioid Deaths
-    fig_percent_opioid_deaths  = px.scatter(filtered_opioid_df, x='Year', y='Percent Opioid Deaths', color='Drug Type', trendline='ols')
+    fig_percent_opioid_deaths = px.scatter(filtered_opioid_df, x='Year', y='Percent Opioid Deaths', color='Drug Type', trendline='ols')
 
     # Update layout
     fig_percent_opioid_deaths.update_layout(
@@ -212,7 +181,7 @@ def update_opioid_figure(selected_drug, selected_gender, selected_years, selecte
 opioid_card = dbc.Card([
     html.H4("Percentage of Overdoses Involving Opioids by Drug Type", id="opioid_title"),
     html.H6("Subtitle", id="opioid_subtitle"),
-    dcc.Graph(id='percent-opioids', figure=fig_percent_opioid_deaths)
+    dcc.Graph(id='percent_opioids', figure=fig_percent_opioid_deaths)
 ])
 
 
