@@ -29,7 +29,6 @@ Our dashboard visualizes:
 Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING.md). Please note that this project is released with a [Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
 
 ## Running the Dashboard Locally
-
 Below are some quick steps to run the app locally.
 1. Clone the repo:
 ```bash
@@ -52,6 +51,10 @@ pip install -r requirements.txt
 ```bash 
 python src/app.py
 ```
+
+## How to Get Help
+Running into issues? Please feel free to create an issue in our GitHub repo and describe what is the problem.
+When submitting the issue, please provide as much related information as possible so that we can find out the root causes and address them.  
 
 ## Contributors
 The SilentEpidemic dashboard was created by Orix Au Yeung (@SoloSynth1), Yingzi Jin (@jinyz8888), Alysen Townsley (@AlysenTownsley), Bill Wan(@billwan96)
