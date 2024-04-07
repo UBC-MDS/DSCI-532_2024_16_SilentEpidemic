@@ -1,7 +1,7 @@
 # The Slient Epidemic: National Drug Overdose Deaths
 Dash dashboard visualizing America's drug overdose death rates. The dashboard can be found [here](https://dsci-532-2024-16-silentepidemic.onrender.com/)).
 
-## Dashboard Contents:
+## What are we doing:
 
 ### Problem & Importance
 Dr. Darling and our group are concerned about the alarming rise in national drug overdose deaths and want to provide additional education for upper high school students. This issue is of significant concern due to several factors:
@@ -19,12 +19,14 @@ Our dashboard visualizes:
 - Drug Risk Comparisons: Visually represents the relative risks associated with different drug categories, highlighting the dangers of synthetic opioids compared to other substances.
 - Demographic Disparities: Highlights potential risk factors by ethnicity and gender to identify high-risk student populations.
 
-## Usage
+## Get Involved
 
 1. Try out the App! To start using the Silent Epidemic dashboard, click here: [Silent Epidemic Dashboard](https://dsci-532-2024-16-silentepidemic.onrender.com/).
 On the dashboard, begin your exploration by selecting your demographic of interest, drug type, and year range. Use the Drug Type Filter if you’d like to focus on specific types of drugs. Dive in and observe the trends and patterns in overdose death rates across different demographics!
 
-2. If you are interested in contributing to the development of the Silent Epidemic dashboard, please read the [contributing guidelines](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CONTRIBUTING.md) for full details. Below are some quick steps to run the app locally.
+2. If you are interested in contributing to the development of the Silent Epidemic dashboard, please read the [contributing guidelines](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CONTRIBUTING.md) for full details. We also ask you to follow our [code of conduct](https://github.com/UBC-MDS/DSCI-532_2024_16_SilentEpidemic/blob/main/CODE_OF_CONDUCT.md) in all interactions.
+
+Below are some quick steps to run the app locally.
 - In your terminal run:
 ```bash
 git clone git@github.com:UBC-MDS/DSCI-532_2024_16_SilentEpidemic.git
