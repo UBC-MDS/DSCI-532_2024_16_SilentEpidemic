@@ -8,7 +8,7 @@ sidebar = html.Div(
         html.Hr(),
         html.Div(children=[
             html.H4("Sex"),
-            dcc.Dropdown(id='sex_dropdown',
+            dcc.RadioItems(id='sex_dropdown',
                          options=[
                              {'label': 'All Sexes', 'value': 'All'},
                              {'label': 'Male', 'value': 'Male'},
@@ -18,13 +18,12 @@ sidebar = html.Div(
         ]),
         html.Div(children=[
             html.H4("Drug Type"),
-            dcc.Checklist(
+            dcc.Dropdown(
                 id='drug_type_list',
                 options=[
-                    {'label': 'Any opioid', 'value': 'Any opioid'},
                     {'label': 'Prescription opioids', 'value': 'Prescription opioids'},
                     {'label': 'Synthetic opioids', 'value': 'Synthetic opioids'},
-                    {'label': 'Heroin', 'value': 'Heroin'},
+                    {'label': 'Heroin (opioids)', 'value': 'Heroin'},
                     {'label': 'Stimulants', 'value': 'Stimulants'},
                     {'label': 'Cocaine', 'value': 'Cocaine'},
                     {'label': 'Psychostimulants', 'value': 'Psychostimulants'},
@@ -32,7 +31,10 @@ sidebar = html.Div(
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},
                 ],
                 value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin',
-                       'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
+                       'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'],
+                placeholder = "Select a drug type",
+                multi=True)
+                       
         ]),
         html.Div(children=[
             html.H4("Year Range", style={'margin-bottom': '25px'}),
