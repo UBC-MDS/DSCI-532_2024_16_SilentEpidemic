@@ -3,8 +3,8 @@ import pandas as pd
 from parse_config import config, overall_columns, specific_columns, demographic_columns
 
 
-RAW_DATA_FILE = "./data/raw/Overdose_data_1999-2021 1.19.23.xlsx"
-OUTPUT_DIR = "./data/processed/"
+RAW_DATA_FILE = "../data/raw/Overdose_data_1999-2021 1.19.23.xlsx"
+OUTPUT_DIR = "../data/processed/"
 
 
 def read_raw_data():
