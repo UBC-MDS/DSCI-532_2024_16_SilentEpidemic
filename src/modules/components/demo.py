@@ -1,17 +1,16 @@
 import plotly.express as px
 import plotly.graph_objects as go
-from dash import Output, Input, html, dcc
+from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 
 from ..datasets import demo_df
-from ...core import app
 
 
 # create graph for the demographic
 fig_demo = go.Figure()
 
 
-@app.callback(
+@callback(
     [Output('demo_graph', 'figure'),
      Output('demo_subtitle', 'children')],
     [Input('drug_type_list', 'value'),

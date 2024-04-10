@@ -1,8 +1,7 @@
-from dash import html, Output, Input
+from dash import html, Output, Input, callback
 import dash_bootstrap_components as dbc
 
 from ..datasets import overall_df
-from ...core import app
 
 
 def create_card(title, value, id_value):
@@ -15,7 +14,7 @@ def create_card(title, value, id_value):
     )
 
 
-@app.callback(
+@callback(
     [Output('death_value', 'children'),
      Output('death_rate_value', 'children'),
      Output('percentage_value', 'children'),

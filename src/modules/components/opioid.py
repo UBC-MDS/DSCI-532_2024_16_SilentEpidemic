@@ -1,10 +1,9 @@
 import pandas as pd
-from dash import Output, Input, html, dcc
+from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
 
-from ...core import app
 from ..datasets import specific_df
 
 
@@ -13,7 +12,7 @@ from ..datasets import specific_df
 fig_percent_opioid_deaths = go.Figure()
 
 
-@app.callback(
+@callback(
     [Output('percent_opioids', 'figure'),
      Output('opioid_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
