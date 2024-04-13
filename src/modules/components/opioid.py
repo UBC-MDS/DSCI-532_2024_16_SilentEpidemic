@@ -36,7 +36,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
                                                                                             'Population Type']) in overall_deaths.index else 0,
                                                                      axis=1)
     filtered_opioid_df = opioid_data_mod.query(
-        "(`Drug Type` in ['Prescription opioids', 'Synthetic opioids', 'Heroin'] and `Opioid Type` == 'overall') or (`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
+        "(`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
     filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
     filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
 
@@ -55,11 +55,12 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
 
     drugs = set(selected_drug.copy())
     drugs_display = set(selected_drug.copy())
-    if 'Any opioid' in drugs:
-        drugs = list((drugs - {'Any opioid'}) | {'Prescription opioids', 'Synthetic opioids', 'Heroin'})
-        drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'}) | {'Any opioid'})
 
-    if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
+    drug_opioid = set(['Prescription opioids', 'Synthetic opioids', 'Heroin'])
+    drugs = set(selected_drug.copy()) - drug_opioid
+    drugs_display = set(selected_drug.copy()) - drug_opioid
+        
+    if set(drugs_display) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
                               'Antidepressants'}:
         title = f"All drugs and {sex_display} and {age_display}"
     else:
@@ -72,9 +73,16 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])[
         'Percent Opioid Deaths'].sum().reset_index()
 
-    # Plot Percent Opioid Deaths
-    fig_percent_opioid_deaths = px.scatter(filtered_opioid_df, x='Year', y='Percent Opioid Deaths', color='Drug Type',
-                                           trendline='ols')
+    # Create scatter plot with trendlines for males
+    fig_percent_opioid_deaths = px.line(filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year', y='Percent Opioid Deaths', color='Drug Type')
+    for trace in fig_percent_opioid_deaths.data:
+        trace.line.dash = 'dash'
+        trace.name += ' (Male)' 
+
+    # Add scatter points for females to the existing plot
+    for trace in px.line(filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year', y='Percent Opioid Deaths', color='Drug Type').data:
+        trace.name += ' (Female)' 
+        fig_percent_opioid_deaths.add_trace(trace)
 
     # Update layout
     fig_percent_opioid_deaths.update_layout(
@@ -86,9 +94,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
 
     return fig_percent_opioid_deaths.to_dict(), title
 
-
 opioid_card = dbc.Card([
-    html.H4("Percentage of Overdoses Involving Opioids by Drug Type", id="opioid_title"),
+    html.H4("Percentage of Overdose Deaths Involving Opioids as a Secondary Factor", id="opioid_title"),
     html.H6("Subtitle", id="opioid_subtitle"),
     dcc.Graph(id='percent_opioids', figure=fig_percent_opioid_deaths)
 ], body=True)
