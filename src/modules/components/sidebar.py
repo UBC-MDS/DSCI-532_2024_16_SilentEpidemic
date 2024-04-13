@@ -7,16 +7,6 @@ sidebar = html.Div(
         html.H2("National Overdose Deaths Tracker", className="title"),
         html.Hr(),
         html.Div(children=[
-            html.H4("Sex"),
-            dcc.RadioItems(id='sex_dropdown',
-                         options=[
-                             {'label': 'All Sexes', 'value': 'All'},
-                             {'label': 'Male', 'value': 'Male'},
-                             {'label': 'Female', 'value': 'Female'}
-                         ],
-                         value='All')
-        ], className="sidebar_selection"),
-        html.Div(children=[
             html.H4("Drug Type"),
             dcc.Dropdown(
                 id='drug_type_list',
@@ -36,6 +26,7 @@ sidebar = html.Div(
                 multi=True)
                        
         ], className="sidebar_selection"),
+        html.Hr(),
         html.Div(children=[
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -50,6 +41,18 @@ sidebar = html.Div(
                     "template": "{value}"}
             ),
         ], className="sidebar_selection"),
+        html.Hr(),
+        html.Div(children=[
+            html.H4("Sex"),
+            dcc.RadioItems(id='sex_dropdown',
+                         options=[
+                             {'label': 'All Sexes', 'value': 'All'},
+                             {'label': 'Male', 'value': 'Male'},
+                             {'label': 'Female', 'value': 'Female'}
+                         ],
+                         value='All')
+        ], className="sidebar_selection"),
+        html.Hr(),
         html.Div(children=[
             html.H4("Age Group"),
             dcc.RadioItems(
@@ -61,6 +64,7 @@ sidebar = html.Div(
                 value='Overall'  # Default selected value
             )
         ], className="sidebar_selection"),
+        html.Hr(),
         footer
     ], className="sidebar"
 )
