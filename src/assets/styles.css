@@ -18,6 +18,8 @@
 
 .card {
     height: 100%;
+    position: relative;
+    top: -95px;
 }
 
 .main-dashboard {
