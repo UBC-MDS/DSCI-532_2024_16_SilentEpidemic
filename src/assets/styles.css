@@ -35,12 +35,27 @@
     color: var(--sidebar-font-color);
 }
 
+.sidebar_selection {
+    margin-bottom: 1rem;
+}
+
+#year_range_slider {
+    margin-top: 2rem;
+}
+
+.Select-value-label {
+    font-size: calc(0.6rem + .2vw);
+    line-height: 0;
+    padding: 0px;
+}
+
 .footnote {
     font-size: calc(0.5rem + .3vw);
     color: var(--footnote-color);
 }
 
 .footer {
+    margin-top: 6rem;;
     font-size: calc(0.5rem + .3vw);
 }
 

@@ -15,7 +15,7 @@ sidebar = html.Div(
                              {'label': 'Female', 'value': 'Female'}
                          ],
                          value='All')
-        ]),
+        ], className="sidebar_selection"),
         html.Div(children=[
             html.H4("Drug Type"),
             dcc.Dropdown(
@@ -35,7 +35,7 @@ sidebar = html.Div(
                 placeholder = "Select a drug type",
                 multi=True)
                        
-        ]),
+        ], className="sidebar_selection"),
         html.Div(children=[
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -45,10 +45,11 @@ sidebar = html.Div(
                 marks={1999: "1999", 2004: "2004", 2009: "2009",
                        2014: "2014", 2019: "2019", 2021: "2021"},
                 tooltip={
+                    "placement": "bottom",
                     "always_visible": True,
                     "template": "{value}"}
             ),
-        ]),
+        ], className="sidebar_selection"),
         html.Div(children=[
             html.H4("Age Group"),
             dcc.RadioItems(
@@ -59,7 +60,7 @@ sidebar = html.Div(
                 ],
                 value='Overall'  # Default selected value
             )
-        ]),
+        ], className="sidebar_selection"),
         footer
     ], className="sidebar"
 )
