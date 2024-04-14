@@ -9,9 +9,7 @@ sidebar = dbc.Container([
         dbc.Row([
             html.H2("National Overdose Deaths Tracker", className="title"),
         ]),
-        dbc.Row([
-            html.Hr(),
-        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Drug Type"),
             dcc.Dropdown(
@@ -31,7 +29,8 @@ sidebar = dbc.Container([
                 placeholder = "Select a drug type",
                 multi=True)
                        
-        ], className="sidebar_selection"),
+        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -45,7 +44,8 @@ sidebar = dbc.Container([
                     "always_visible": True,
                     "template": "{value}"}
             ),
-        ], className="sidebar_selection"),
+        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Sex"),
             dcc.RadioItems(id='sex_dropdown',
@@ -55,7 +55,8 @@ sidebar = dbc.Container([
                              {'label': 'Female', 'value': 'Female'}
                          ],
                          value='All')
-        ], className="sidebar_selection"),
+        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Age Group"),
             dcc.RadioItems(
@@ -66,7 +67,8 @@ sidebar = dbc.Container([
                 ],
                 value='Overall'  # Default selected value
             )
-        ], className="sidebar_selection"),
+        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([footer])
     ])
 ], className="sidebar", fluid=True)

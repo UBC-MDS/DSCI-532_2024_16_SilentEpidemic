@@ -34,14 +34,10 @@
     color: var(--sidebar-font-color);
 }
 
-.sidebar_selection {
-    margin-bottom: 0.5rem;
-}
-
 .Select-value-label {
     font-size: calc(0.6rem + .2vw);
     line-height: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 .footnote {
