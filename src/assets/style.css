@@ -36,9 +36,8 @@
 }
 
 .Select-value-label {
-    font-size: calc(0.6rem + .2vw);
-    line-height: 0;
-    padding: 0;
+    font-size: calc(0.55rem + .2vw);
+    word-break: break-all;
 }
 
 .footnote {
