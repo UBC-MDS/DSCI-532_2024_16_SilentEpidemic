@@ -5,6 +5,10 @@
     --figure-color: #e51400;
 }
 
+.card-title {
+    height: 2.5rem;
+}
+
 .card-value {
     color: var(--figure-color);
     text-align: center;
@@ -18,9 +22,6 @@
 
 .card {
     height: 100%;
-}
-
-.main-dashboard {
 }
 
 .sidebar {
@@ -49,11 +50,7 @@
     font-size: calc(0.5rem + .3vw);
 }
 
-@media screen and (min-width: 800px) {
-   .footer {
-       margin-top: 6rem;
-   }
-}
+
 
 .title {
     font-size: calc(1rem + 1.25vw);
@@ -62,4 +59,13 @@
 
 .dash-dropdown {
     color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .footer {
+        margin-top: 6rem;
+    }
+    .card-title {
+        height: 3.5rem;
+    }
 }
