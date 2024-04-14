@@ -19,7 +19,7 @@ def create_card(title, value, id_value):
      Output('death_rate_value', 'children'),
      Output('percentage_value', 'children'),
      Output('fold_change_value', 'children')],
-    [Input('sex_dropdown', 'value'),
+    [Input('sex_checklist', 'value'),
      Input('year_range_slider', 'value'),
      Input('age_group_radio', 'value')]
      )
@@ -30,12 +30,7 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     filtered_df = overall_df.copy()
     filtered_df = filtered_df[filtered_df['Drug Type'] == "Overall"]
 
-    if selected_sex == 'All':
-        sexes = ['Male', 'Female']
-    else:
-        sexes = [selected_sex]
-
-    filtered_df = filtered_df[filtered_df['Sex'].isin(sexes)]
+    filtered_df = filtered_df[filtered_df['Sex'].isin(selected_sex)]
     filtered_df = filtered_df[filtered_df['Year'].between(start_year, end_year, inclusive='both')]
 
     pop_df = filtered_df[filtered_df['Population Type'] == selected_age]

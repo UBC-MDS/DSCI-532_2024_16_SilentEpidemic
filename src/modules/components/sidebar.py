@@ -48,13 +48,7 @@ sidebar = dbc.Container([
         dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Sex"),
-            dcc.RadioItems(id='sex_dropdown',
-                         options=[
-                             {'label': 'All Sexes', 'value': 'All'},
-                             {'label': 'Male', 'value': 'Male'},
-                             {'label': 'Female', 'value': 'Female'}
-                         ],
-                         value='All')
+            dcc.Checklist(id='sex_checklist', options=['Male', 'Female'], value=['Male', 'Female'])
         ]),
         dbc.Row([html.Hr()]),
         dbc.Row([
