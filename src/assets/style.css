@@ -36,9 +36,8 @@
 }
 
 .Select-value-label {
-    font-size: calc(0.6rem + .2vw);
-    line-height: 0;
-    padding: 0;
+    font-size: calc(0.55rem + .2vw);
+    word-break: break-all;
 }
 
 .footnote {
@@ -50,8 +49,6 @@
     font-size: calc(0.5rem + .3vw);
 }
 
-
-
 .title {
     font-size: calc(1rem + 1.25vw);
     font-weight: 700;
@@ -61,11 +58,17 @@
     color: black;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .footer {
         margin-top: 6rem;
     }
     .card-title {
-        height: 3.5rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-title {
+        height: 5rem;
     }
 }
