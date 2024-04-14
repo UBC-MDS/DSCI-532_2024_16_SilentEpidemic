@@ -46,9 +46,15 @@
 }
 
 .footer {
-    margin-top: 6rem;;
     font-size: calc(0.5rem + .3vw);
 }
+
+@media screen and (min-width: 800px) {
+   .footer {
+       margin-top: 6rem;
+   }
+}
+
 
 .title {
     font-size: calc(1rem + 1.25vw);
