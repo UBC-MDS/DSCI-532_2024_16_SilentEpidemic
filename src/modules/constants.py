@@ -1,0 +1,1 @@
+DRUG_OPIOIDS = {'Prescription opioids', 'Synthetic opioids', 'Heroin'}

@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from ..datasets import specific_df
+from ..constants import DRUG_OPIOIDS
 
 
 fig_deaths_and_rates = go.Figure()
@@ -39,8 +40,8 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
         sex_categories = [selected_sex]
 
     drugs_display = set(selected_drug.copy())
-    if {'Prescription opioids', 'Synthetic opioids', 'Heroin'}.issubset(drugs_display):
-        drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'}) | {'Any opioid'})
+    if DRUG_OPIOIDS.issubset(drugs_display):
+        drugs_display = list((drugs_display - DRUG_OPIOIDS) | {'Any opioid'})
 
     if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
                               'Antidepressants'}:

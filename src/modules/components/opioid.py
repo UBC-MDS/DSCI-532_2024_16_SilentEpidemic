@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from ..datasets import specific_df
+from ..constants import DRUG_OPIOIDS
 
 
 # Create Percentage of Overdoses Involving Opioids per Drug Type Chart
@@ -36,7 +37,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
                                                                                             'Population Type']) in overall_deaths.index else 0,
                                                                      axis=1)
     filtered_opioid_df = opioid_data_mod.query(
-        "(`Drug Type` in ['Prescription opioids', 'Synthetic opioids', 'Heroin'] and `Opioid Type` == 'overall') or (`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
+        "(`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
     filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
     filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
 
@@ -53,26 +54,30 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
         sex_display = selected_sex
         sex_categories = [selected_sex]
 
-    drugs_display = set(selected_drug.copy())
-    if {'Prescription opioids', 'Synthetic opioids', 'Heroin'}.issubset(drugs_display):
-        drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'}) | {'Any opioid'})
+    drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
-    if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
-                              'Antidepressants'}:
+    if set(drugs) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}:
         title = f"All drugs and {sex_display} and {age_display}"
     else:
-        title = f"For {' and '.join(drugs_display)} and {sex_display} and {age_display}"
+        title = f"For {' and '.join(drugs)} and {sex_display} and {age_display}"
 
-    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
+    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
                                             filtered_opioid_df['Sex'].isin(sex_categories) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]
     filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])[
         'Percent Opioid Deaths'].sum().reset_index()
 
-    # Plot Percent Opioid Deaths
-    fig_percent_opioid_deaths = px.scatter(filtered_opioid_df, x='Year', y='Percent Opioid Deaths', color='Drug Type',
-                                           trendline='ols')
+    # Create scatter plot with trendlines for males
+    fig_percent_opioid_deaths = px.line(filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year', y='Percent Opioid Deaths', color='Drug Type')
+    for trace in fig_percent_opioid_deaths.data:
+        trace.line.dash = 'dash'
+        trace.name += ' (Male)' 
+
+    # Add scatter points for females to the existing plot
+    for trace in px.line(filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year', y='Percent Opioid Deaths', color='Drug Type').data:
+        trace.name += ' (Female)' 
+        fig_percent_opioid_deaths.add_trace(trace)
 
     # Update layout
     fig_percent_opioid_deaths.update_layout(
@@ -86,7 +91,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
 
 
 opioid_card = dbc.Card([
-    html.H4("Percentage of Overdoses Involving Opioids by Drug Type", id="opioid_title"),
+    html.H4("Percentage of Overdose Deaths Involving Opioids as a Secondary Factor", id="opioid_title"),
     html.H6("Subtitle", id="opioid_subtitle"),
     dcc.Graph(id='percent_opioids', figure=fig_percent_opioid_deaths)
 ], body=True)
