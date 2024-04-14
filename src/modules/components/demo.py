@@ -17,11 +17,9 @@ fig_demo = go.Figure()
      Input('year_range_slider', 'value')]
 )
 def update_demo_figure(selected_drug, selected_years):
-    if len(selected_drug) == 9:
-        selected_drug = ['Total Overdose Deaths']
+    if len(selected_drug) == 8:
         title = "All Drugs"
     else:
-        selected_drug = selected_drug
         title = f"For {' and '.join(selected_drug)}"
     filtered_df = demo_df[(demo_df['Drug Type'].isin(selected_drug)) &
                           (demo_df['Year'] >= selected_years[0]) &
