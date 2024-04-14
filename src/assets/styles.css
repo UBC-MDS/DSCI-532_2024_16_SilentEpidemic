@@ -13,22 +13,19 @@
 }
 
 .row {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .card {
     height: 100%;
-    position: relative;
-    top: -95px;
 }
 
 .main-dashboard {
-    margin: 2rem 0;
-    padding: 2rem 1rem;
 }
 
 .sidebar {
-    padding: 2rem 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
     background-color: var(--background-color);
     color: var(--sidebar-font-color);
 }
