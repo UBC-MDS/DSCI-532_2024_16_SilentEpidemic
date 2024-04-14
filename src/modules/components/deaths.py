@@ -55,7 +55,10 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
     filtered_df = main_df.groupby(['Drug Type', 'Year', 'Population Type']).agg({'Deaths': 'sum', 'Death Rate': 'mean'}).reset_index()
     filtered_df = filtered_df.fillna(0)
 
-    fig_deaths_and_rates = px.scatter(filtered_df, x='Year', y='Deaths', color='Drug Type', size='Death Rate', size_max=60)
+    fig_deaths_and_rates = px.scatter(
+        filtered_df, x='Year',y='Deaths', color='Drug Type',
+        size='Death Rate', size_max=60, color_discrete_sequence=px.colors.qualitative.Prism
+    )
 
     # Update layout
     fig_deaths_and_rates.update_layout(xaxis_title='Year', yaxis_title='Deaths',

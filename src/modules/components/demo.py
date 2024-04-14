@@ -26,7 +26,9 @@ def update_demo_figure(selected_drug, selected_years):
     filtered_df = demo_df[(demo_df['Drug Type'].isin(selected_drug)) &
                           (demo_df['Year'] >= selected_years[0]) &
                           (demo_df['Year'] <= selected_years[1])]
-    fig_demo = px.bar(filtered_df, x="Year", y="Death Rate", color="Demographic", barmode="group")
+    fig_demo = px.bar(
+        filtered_df, x="Year", y="Death Rate", color="Demographic",
+        barmode="group", color_discrete_sequence=px.colors.qualitative.T10)
 
     fig_demo.update_layout(
         xaxis_title="Year",
