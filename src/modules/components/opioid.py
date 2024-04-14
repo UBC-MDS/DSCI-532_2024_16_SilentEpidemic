@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from ..datasets import specific_df
+from ..constants import DRUG_OPIOIDS
 
 
 # Create Percentage of Overdoses Involving Opioids per Drug Type Chart
@@ -53,21 +54,14 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
         sex_display = selected_sex
         sex_categories = [selected_sex]
 
-    drugs_display = set(selected_drug.copy())
-    if {'Prescription opioids', 'Synthetic opioids', 'Heroin'}.issubset(drugs_display):
-        drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'}) | {'Any opioid'})
+    drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
-    drug_opioid = set(['Prescription opioids', 'Synthetic opioids', 'Heroin'])
-    drugs = set(selected_drug.copy()) - drug_opioid
-    drugs_display = set(selected_drug.copy()) - drug_opioid
-        
-    if set(drugs_display) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
-                              'Antidepressants'}:
+    if set(drugs) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}:
         title = f"All drugs and {sex_display} and {age_display}"
     else:
-        title = f"For {' and '.join(drugs_display)} and {sex_display} and {age_display}"
+        title = f"For {' and '.join(drugs)} and {sex_display} and {age_display}"
 
-    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
+    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
                                             filtered_opioid_df['Sex'].isin(sex_categories) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]
@@ -94,6 +88,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     fig_percent_opioid_deaths.update_yaxes(range=[0, 100])
 
     return fig_percent_opioid_deaths.to_dict(), title
+
 
 opioid_card = dbc.Card([
     html.H4("Percentage of Overdose Deaths Involving Opioids as a Secondary Factor", id="opioid_title"),
