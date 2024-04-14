@@ -1,12 +1,17 @@
 from dash import html, dcc
+import dash_bootstrap_components as dbc
 
 from .footer import footer
 
-sidebar = html.Div(
-    [
-        html.H2("National Overdose Deaths Tracker", className="title"),
-        html.Hr(),
-        html.Div(children=[
+sidebar = dbc.Container([
+    dbc.Col([
+        dbc.Row([
+            html.H2("National Overdose Deaths Tracker", className="title"),
+        ]),
+        dbc.Row([
+            html.Hr(),
+        ]),
+        dbc.Row([
             html.H4("Sex"),
             dcc.Dropdown(id='sex_dropdown',
                          options=[
@@ -16,7 +21,7 @@ sidebar = html.Div(
                          ],
                          value='All')
         ]),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Drug Type"),
             dcc.Checklist(
                 id='drug_type_list',
@@ -34,7 +39,7 @@ sidebar = html.Div(
                 value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin',
                        'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
         ]),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
                 id='year_range_slider',
@@ -47,7 +52,7 @@ sidebar = html.Div(
                     "template": "{value}"}
             ),
         ]),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Age Group"),
             dcc.RadioItems(
                 id='age_group_radio',
@@ -58,6 +63,7 @@ sidebar = html.Div(
                 value='Overall'  # Default selected value
             )
         ]),
-        footer
-    ], className="sidebar"
+        dbc.Row([footer])
+    ])
+], className="sidebar", fluid=True
 )
