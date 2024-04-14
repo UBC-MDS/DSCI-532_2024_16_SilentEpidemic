@@ -53,10 +53,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
         sex_display = selected_sex
         sex_categories = [selected_sex]
 
-    drugs = set(selected_drug.copy())
     drugs_display = set(selected_drug.copy())
-    if 'Any opioid' in drugs:
-        drugs = list((drugs - {'Any opioid'}) | {'Prescription opioids', 'Synthetic opioids', 'Heroin'})
+    if {'Prescription opioids', 'Synthetic opioids', 'Heroin'}.issubset(drugs_display):
         drugs_display = list((drugs_display - {'Prescription opioids', 'Synthetic opioids', 'Heroin'}) | {'Any opioid'})
 
     if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
@@ -65,7 +63,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     else:
         title = f"For {' and '.join(drugs_display)} and {sex_display} and {age_display}"
 
-    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
+    filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(selected_drug)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
                                             filtered_opioid_df['Sex'].isin(sex_categories) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]

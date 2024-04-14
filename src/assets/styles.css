@@ -34,6 +34,12 @@
     color: var(--sidebar-font-color);
 }
 
+.Select-value-label {
+    font-size: calc(0.6rem + .2vw);
+    line-height: 0;
+    padding: 0;
+}
+
 .footnote {
     font-size: calc(0.5rem + .3vw);
     color: var(--footnote-color);
@@ -41,6 +47,12 @@
 
 .footer {
     font-size: calc(0.5rem + .3vw);
+}
+
+@media screen and (min-width: 800px) {
+   .footer {
+       margin-top: 6rem;
+   }
 }
 
 .title {

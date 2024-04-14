@@ -3,42 +3,34 @@ import dash_bootstrap_components as dbc
 
 from .footer import footer
 
+
 sidebar = dbc.Container([
     dbc.Col([
         dbc.Row([
             html.H2("National Overdose Deaths Tracker", className="title"),
         ]),
-        dbc.Row([
-            html.Hr(),
-        ]),
-        dbc.Row([
-            html.H4("Sex"),
-            dcc.Dropdown(id='sex_dropdown',
-                         options=[
-                             {'label': 'All Sexes', 'value': 'All'},
-                             {'label': 'Male', 'value': 'Male'},
-                             {'label': 'Female', 'value': 'Female'}
-                         ],
-                         value='All')
-        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Drug Type"),
-            dcc.Checklist(
+            dcc.Dropdown(
                 id='drug_type_list',
                 options=[
-                    {'label': 'Any opioid', 'value': 'Any opioid'},
                     {'label': 'Prescription opioids', 'value': 'Prescription opioids'},
                     {'label': 'Synthetic opioids', 'value': 'Synthetic opioids'},
-                    {'label': 'Heroin', 'value': 'Heroin'},
+                    {'label': 'Heroin (opioids)', 'value': 'Heroin'},
                     {'label': 'Stimulants', 'value': 'Stimulants'},
                     {'label': 'Cocaine', 'value': 'Cocaine'},
                     {'label': 'Psychostimulants', 'value': 'Psychostimulants'},
                     {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},
                 ],
-                value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin',
-                       'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'])
+                value=['Prescription opioids', 'Synthetic opioids', 'Heroin',
+                       'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'],
+                placeholder = "Select a drug type",
+                multi=True)
+                       
         ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
@@ -48,10 +40,23 @@ sidebar = dbc.Container([
                 marks={1999: "1999", 2004: "2004", 2009: "2009",
                        2014: "2014", 2019: "2019", 2021: "2021"},
                 tooltip={
+                    "placement": "bottom",
                     "always_visible": True,
                     "template": "{value}"}
             ),
         ]),
+        dbc.Row([html.Hr()]),
+        dbc.Row([
+            html.H4("Sex"),
+            dcc.RadioItems(id='sex_dropdown',
+                         options=[
+                             {'label': 'All Sexes', 'value': 'All'},
+                             {'label': 'Male', 'value': 'Male'},
+                             {'label': 'Female', 'value': 'Female'}
+                         ],
+                         value='All')
+        ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([
             html.H4("Age Group"),
             dcc.RadioItems(
@@ -63,7 +68,7 @@ sidebar = dbc.Container([
                 value='Overall'  # Default selected value
             )
         ]),
+        dbc.Row([html.Hr()]),
         dbc.Row([footer])
     ])
-], className="sidebar", fluid=True
-)
+], className="sidebar", fluid=True)
