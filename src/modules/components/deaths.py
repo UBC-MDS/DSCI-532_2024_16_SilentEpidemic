@@ -60,7 +60,19 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     # Update layout
     fig_deaths_and_rates.update_layout(xaxis_title='Year', yaxis_title='Deaths',
-                                       legend=dict(orientation="h",yanchor="bottom", y=1.02))
+                                       legend=dict(orientation="h", yanchor="bottom", y=1.02))
+
+    # Add hints indicating bubble size as death rate
+    # This is added since plotly currently does not support displaying a legend for marker size
+    # Possible workaround exists but requires creating another trace which is not ideal for the styling
+    #
+    # Refer to:
+    # https://github.com/plotly/plotly.py/issues/3505
+    # https://github.com/plotly/plotly.js/issues/5099
+    # https://stackoverflow.com/questions/66190742/plotly-scatter-bubble-plot-marker-size-in-legend?noredirect=1&lq=1
+    # https://stackoverflow.com/questions/66686072/size-legend-for-plotly-express-scatterplot-in-python
+
+    title = title + ", Death Rate Proportional to Size of Bubbles"
 
     return fig_deaths_and_rates.to_dict(), title
 
