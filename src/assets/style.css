@@ -61,11 +61,17 @@
     color: black;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .footer {
         margin-top: 6rem;
     }
     .card-title {
-        height: 3.5rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-title {
+        height: 5rem;
     }
 }
