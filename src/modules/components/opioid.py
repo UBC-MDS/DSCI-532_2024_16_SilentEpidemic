@@ -17,7 +17,7 @@ fig_percent_opioid_deaths = go.Figure()
     [Output('percent_opioids', 'figure'),
      Output('opioid_subtitle', 'children')],
     [Input('drug_type_list', 'value'),
-     Input('sex_dropdown', 'value'),
+     Input('sex_checklist', 'value'),
      Input('year_range_slider', 'value'),
      Input('age_group_radio', 'value')]
 )
@@ -47,12 +47,11 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     else:
         age_display = selected_age
 
-    if selected_sex == 'All':
+    sex_categories = selected_sex
+    if len(selected_sex) == 2:
         sex_display = "Both Sexes"
-        sex_categories = ['Male', 'Female']
     else:
-        sex_display = selected_sex
-        sex_categories = [selected_sex]
+        sex_display = ''.join(selected_sex)
 
     drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
