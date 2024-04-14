@@ -1,12 +1,18 @@
 from dash import html, dcc
+import dash_bootstrap_components as dbc
 
 from .footer import footer
 
-sidebar = html.Div(
-    [
-        html.H2("National Overdose Deaths Tracker", className="title"),
-        html.Hr(),
-        html.Div(children=[
+
+sidebar = dbc.Container([
+    dbc.Col([
+        dbc.Row([
+            html.H2("National Overdose Deaths Tracker", className="title"),
+        ]),
+        dbc.Row([
+            html.Hr(),
+        ]),
+        dbc.Row([
             html.H4("Drug Type"),
             dcc.Dropdown(
                 id='drug_type_list',
@@ -20,14 +26,13 @@ sidebar = html.Div(
                     {'label': 'Benzodiazepines', 'value': 'Benzodiazepines'},
                     {'label': 'Antidepressants', 'value': 'Antidepressants'},
                 ],
-                value=['Any opioid', 'Prescription opioids', 'Synthetic opioids', 'Heroin',
+                value=['Prescription opioids', 'Synthetic opioids', 'Heroin',
                        'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'],
                 placeholder = "Select a drug type",
                 multi=True)
                        
         ], className="sidebar_selection"),
-        html.Hr(),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Year Range", style={'margin-bottom': '25px'}),
             dcc.RangeSlider(
                 id='year_range_slider',
@@ -41,8 +46,7 @@ sidebar = html.Div(
                     "template": "{value}"}
             ),
         ], className="sidebar_selection"),
-        html.Hr(),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Sex"),
             dcc.RadioItems(id='sex_dropdown',
                          options=[
@@ -52,8 +56,7 @@ sidebar = html.Div(
                          ],
                          value='All')
         ], className="sidebar_selection"),
-        html.Hr(),
-        html.Div(children=[
+        dbc.Row([
             html.H4("Age Group"),
             dcc.RadioItems(
                 id='age_group_radio',
@@ -64,7 +67,6 @@ sidebar = html.Div(
                 value='Overall'  # Default selected value
             )
         ], className="sidebar_selection"),
-        html.Hr(),
-        footer
-    ], className="sidebar"
-)
+        dbc.Row([footer])
+    ])
+], className="sidebar", fluid=True)
