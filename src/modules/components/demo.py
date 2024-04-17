@@ -39,6 +39,7 @@ def update_demo_figure(selected_drug, selected_years):
             trace.line = dict(width=5) 
         else:
             trace.opacity = 0.7
+        trace.name = trace.name.replace(" (Non-Hispanic)", "")
 
     fig_demo.update_layout(
         xaxis_title="Year",
