@@ -19,24 +19,35 @@ fig_demo = go.Figure()
 def update_demo_figure(selected_drug, selected_years):
     if len(selected_drug) == 8:
         title = "All Drugs"
-    else:
+        filtered_df = demo_df[(demo_df['Drug Type'] == 'Total Overdose Deaths') &
+                              (demo_df['Year'] >= selected_years[0]) &
+                              (demo_df['Year'] <= selected_years[1])]
+    elif len(selected_drug) > 0:
         title = f"For {' and '.join(selected_drug)}"
-    filtered_df = demo_df[(demo_df['Drug Type'].isin(selected_drug)) &
-                          (demo_df['Year'] >= selected_years[0]) &
-                          (demo_df['Year'] <= selected_years[1])]
-    fig_demo = px.bar(
+        filtered_df = demo_df[(demo_df['Drug Type'].isin(selected_drug)) &
+                              (demo_df['Year'] >= selected_years[0]) &
+                              (demo_df['Year'] <= selected_years[1])]
+        filtered_df = filtered_df.groupby(['Year', 'Demographic'])['Death Rate'].sum().reset_index()
+    else:
+        return go.Figure(), "Please select a drug type"
+
+    fig_demo = px.line(
         filtered_df, x="Year", y="Death Rate", color="Demographic",
-        barmode="group", color_discrete_sequence=px.colors.qualitative.T10)
+        line_group="Demographic", color_discrete_sequence=px.colors.qualitative.T10)
+
+    for trace in fig_demo.data:
+        if trace.name == 'Overall':
+            trace.line = dict(width=2.5) 
+        else:
+            trace.opacity = 0.7
 
     fig_demo.update_layout(
         xaxis_title="Year",
         yaxis_title="Death Rate <br>(per 100,000 population)",
         legend=dict(
-            orientation="h", yanchor="bottom", y=1.02,
-            font=dict(size=8)))
+            orientation="h", yanchor="bottom", y=1.02))
 
     return fig_demo, title
-
 
 demo_card = dbc.Card([
     html.H4("Overdose Death Rate based on Demographic", id="demo_title"),
