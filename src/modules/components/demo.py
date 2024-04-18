@@ -2,7 +2,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
-import pandas as pd
 
 from ..datasets import demo_df
 
