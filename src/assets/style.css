@@ -58,6 +58,11 @@
     color: black;
 }
 
+#infotitle_box {
+    border: none;
+    background-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
     .footer {
         margin-top: 6rem;

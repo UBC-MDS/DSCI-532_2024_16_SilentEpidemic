@@ -9,7 +9,7 @@ from .modules.components.deaths import deaths_card
 from .modules.components.sidebar import sidebar
 
 
-app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, 'src/assets/style.css'])
+app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, 'src/assets/style.css'])
 server = app.server
 
 main_dashboard = dbc.Container([

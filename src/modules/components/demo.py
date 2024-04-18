@@ -39,11 +39,19 @@ def update_demo_figure(selected_drug, selected_years):
 
 
 demo_card = dbc.Card([
-    html.H4(id="demo_title", children="Overdose Death Rate based on Demographic"),
+    dbc.Alert(
+        [
+            html.H4(id="demo_title", children="Overdose Death Rate based on Demographic "),
+            html.I(id="info_icon", className="bi bi-info-circle-fill me-2"),
+        ],
+        id="infotitle_box",
+        className="d-flex align-items-center",
+    ),
     html.H6("Subtitle", id="demo_subtitle"),
     dbc.Tooltip(
         "This chart shows the overdose death rate based on demographic only for both sexes and overall agegroup.",
-        target="demo_subtitle",
+        target="info_icon",
+        placement="right"
     ),
     dcc.Graph(id='demo_graph', figure=fig_demo)
 ], body=True)
