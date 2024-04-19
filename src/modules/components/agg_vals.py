@@ -44,7 +44,8 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     group_df = pop_df.groupby(['Year'])
     fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
 
-    avg_death_rate = (pop_df['Death Rate'] * pop_df['Deaths']).sum() / pop_df['Deaths'].sum()
+    #avg_death_rate = (pop_df['Death Rate'] * pop_df['Deaths']).sum() / pop_df['Deaths'].sum()
+    avg_death_rate = (pop_df['Deaths'].sum()) / ((pop_df['Deaths']/pop_df['Death Rate']).sum())
 
     formatted_deaths = f"{cumulative_deaths:,.0f}"
     formatted_death_rate = f"{avg_death_rate:.2f}%"
