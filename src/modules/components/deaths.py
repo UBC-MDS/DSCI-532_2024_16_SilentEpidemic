@@ -20,6 +20,9 @@ fig_deaths_and_rates = go.Figure()
      Input('age_group_radio', 'value')]
 )
 def update_main_figure(selected_drug, selected_sex, selected_years, selected_age):
+    if not selected_drug or not selected_sex:
+        return go.Figure(), "Please select at least one drug type and one sex category"
+    
     main_df = specific_df[specific_df['Opioid Type'] == 'overall']
     main_df['Year'] = pd.to_datetime(main_df['Year'], format='%Y')
 

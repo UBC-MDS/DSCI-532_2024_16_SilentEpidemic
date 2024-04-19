@@ -22,9 +22,11 @@ fig_percent_opioid_deaths = go.Figure()
      Input('age_group_radio', 'value')]
 )
 def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_age):
+    if not selected_drug or not selected_sex:
+        return go.Figure(), "Please select at least one drug type and one sex category"
+     
     start_year = pd.to_datetime(selected_years[0], format='%Y')
     end_year = pd.to_datetime(selected_years[1], format='%Y')
-
     # Import dataset and data wrangling for Percentage of Overdoses Involving Opioids per Drug Type plot
     opioid_data_mod = specific_df.copy()
     opioid_data_mod = opioid_data_mod[
