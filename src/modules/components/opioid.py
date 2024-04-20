@@ -39,24 +39,43 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
                                             filtered_opioid_df['Sex'].isin(selected_sex) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]
 
-    # Create scatter plot with trendlines for males
+    # Create plot
     fig_percent_opioid_deaths = px.line(
-        filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
-        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
+    filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
+    y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+    category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     )
-    for trace in fig_percent_opioid_deaths.data:
-        trace.line.dash = 'dash'
-        trace.name += ' (Male)' 
+    
+    # Plot behaviour for both male and female selected
+    if set(selected_sex) == {'Male', 'Female'}:
+        for trace in fig_percent_opioid_deaths.data:
+            trace.line.dash = 'dash'
+            trace.name += ' (Male)' 
+            trace.showlegend = False
 
-    # Add scatter points for females to the existing plot
-    for trace in px.line(
-            filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
-            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
-    ).data:
-        trace.name += ' (Female)' 
-        fig_percent_opioid_deaths.add_trace(trace)
+        for trace in px.line(
+                filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
+                y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
+        ).data:
+             trace.name += ' (Female, --- Male)' 
+             fig_percent_opioid_deaths.add_trace(trace)
+
+    # Plot behaviour for males only    
+    elif set(selected_sex) == {'Male'}:
+            for trace in fig_percent_opioid_deaths.data:
+                 trace.line.dash = 'dash'
+                 trace.name += ' (Male)' 
+
+    #Plot behaviour for females only
+    else:
+        for trace in px.line(
+                filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
+                y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
+                ).data:
+                trace.name += ' (Female)' 
+                fig_percent_opioid_deaths.add_trace(trace)
 
     # Update layout
     fig_percent_opioid_deaths.update_layout(
