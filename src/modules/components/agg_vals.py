@@ -4,6 +4,9 @@ import dash_bootstrap_components as dbc
 from ..datasets import overall_df
 
 
+cache = {}
+
+
 def create_card(title, value, id_value):
     return dbc.Card(
         [
@@ -24,11 +27,14 @@ def create_card(title, value, id_value):
      Input('age_group_radio', 'value')]
      )
 def update_aggregated_values(selected_sex, selected_years, selected_age):
+    key = (tuple(selected_sex), tuple(selected_years), selected_age)
+    if key in cache:
+        return cache[key]
+    
     start_year = selected_years[0]
     end_year = selected_years[1]
 
-    filtered_df = overall_df.copy()
-    filtered_df = filtered_df[filtered_df['Drug Type'] == "Overall"]
+    filtered_df = overall_df[overall_df['Drug Type'] == "Overall"]
 
     filtered_df = filtered_df[filtered_df['Sex'].isin(selected_sex)]
     filtered_df = filtered_df[filtered_df['Year'].between(start_year, end_year, inclusive='both')]
@@ -36,22 +42,30 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     pop_df = filtered_df[filtered_df['Population Type'] == selected_age]
     youth_df = filtered_df[filtered_df['Population Type'] == 'Young Adults, 15-24 Years']
 
-    cumulative_deaths = pop_df['Deaths'].sum()
+    if len(pop_df) == 0:
+        cumulative_deaths = 0
+        avg_death_rate = 0
+        young_rate = 0
+        fold_change = 0
+    else:
+        cumulative_deaths = pop_df['Deaths'].sum()
 
-    youth_cumulative_deaths = youth_df['Deaths'].sum()
-    young_rate = youth_cumulative_deaths / cumulative_deaths * 100
+        youth_cumulative_deaths = youth_df['Deaths'].sum()
+        young_rate = youth_cumulative_deaths / cumulative_deaths * 100
 
-    group_df = pop_df.groupby(['Year'])
-    fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
+        group_df = pop_df.groupby(['Year'])
+        fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
 
-    avg_death_rate = group_df['Death Rate'].mean().mean()
+        avg_death_rate = group_df['Death Rate'].mean().mean()
 
     formatted_deaths = f"{cumulative_deaths:,.0f}"
     formatted_death_rate = f"{avg_death_rate:.2f}"
     formatted_percentage_young_adults = f"{young_rate:.2f}%"
     fold_change_text = f"{fold_change:.1f}"
 
-    return formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
+    result = formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
+    cache[key] = result
+    return result
 
 
 death_card = create_card("Cumulative Deaths from All Drugs", 0, "death_value")
