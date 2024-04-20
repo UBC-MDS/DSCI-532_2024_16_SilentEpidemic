@@ -43,7 +43,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     fig_percent_opioid_deaths = px.line(
         filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
         y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     )
     for trace in fig_percent_opioid_deaths.data:
         trace.line.dash = 'dash'
@@ -53,7 +53,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     for trace in px.line(
             filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
             y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
+            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     ).data:
         trace.name += ' (Female)' 
         fig_percent_opioid_deaths.add_trace(trace)

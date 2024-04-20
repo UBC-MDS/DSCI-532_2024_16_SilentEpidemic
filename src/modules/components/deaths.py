@@ -40,7 +40,7 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
         size='Death Rate', size_max=45, color_discrete_sequence=COLOR_SEQUENCE,
-        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
+        hover_data={'Death Rate': ":.1f", "Deaths": ":,"}, category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
     )
 
     # Update layout
