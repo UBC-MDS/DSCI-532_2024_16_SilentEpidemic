@@ -2,15 +2,13 @@ import pandas as pd
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import plotly.graph_objects as go
 
 from ..datasets import specific_df
 from ..constants import DRUG_OPIOIDS
+from ..utils import get_px_figure_with_default_template
 
 
-# Create Percentage of Overdoses Involving Opioids per Drug Type Chart
-# Create callback for the Percentage of Overdoses Involving Opioids per Drug Type Chart
-fig_percent_opioid_deaths = go.Figure()
+fig_percent_opioid_deaths = get_px_figure_with_default_template()
 
 
 @callback(

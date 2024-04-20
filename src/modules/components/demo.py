@@ -1,12 +1,12 @@
 import plotly.express as px
-import plotly.graph_objects as go
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 
 from ..datasets import demo_df
+from ..utils import get_px_figure_with_default_template
 
 # create graph for the demographic
-fig_demo = go.Figure()
+fig_demo = get_px_figure_with_default_template()
 
 
 @callback([
@@ -27,7 +27,7 @@ def update_demo_figure(selected_drug, selected_years):
         filtered_df = filtered_df[(filtered_df['Drug Type'].isin(selected_drug))]
         filtered_df = filtered_df.groupby(['Year', 'Demographic'])['Death Rate'].sum().reset_index()
     else:
-        return go.Figure(), "Please select a drug type"
+        return get_px_figure_with_default_template(), "Please select a drug type"
 
     fig_demo = px.line(filtered_df, x="Year", y="Death Rate", color="Demographic", line_group="Demographic",
         color_discrete_sequence=px.colors.qualitative.T10)
