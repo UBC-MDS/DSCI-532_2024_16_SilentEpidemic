@@ -61,7 +61,7 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     formatted_deaths = f"{cumulative_deaths:,.0f}"
     formatted_death_rate = f"{avg_death_rate:.2f}"
     formatted_percentage_young_adults = f"{young_rate:.2f}%"
-    fold_change_text = f"{fold_change:.1f}"
+    fold_change_text = f"{fold_change:.2f}x"
 
     result = formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
     cache[key] = result
