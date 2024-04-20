@@ -28,7 +28,7 @@ sidebar = dbc.Container([
                        'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'],
                 placeholder = "Select a drug type",
                 multi=True,
-                clearable=False)
+                clearable=True)
                        
         ]),
         dbc.Row([html.Hr()]),
