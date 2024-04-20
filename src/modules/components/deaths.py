@@ -2,13 +2,13 @@ import pandas as pd
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import plotly.graph_objects as go
 
 from ..datasets import specific_df
 from ..constants import DRUG_OPIOIDS
+from ..utils import get_px_figure_with_default_template
 
 
-fig_deaths_and_rates = go.Figure()
+fig_deaths_and_rates = get_px_figure_with_default_template()
 
 
 @callback(
