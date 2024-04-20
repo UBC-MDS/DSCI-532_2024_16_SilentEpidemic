@@ -5,7 +5,7 @@ import plotly.express as px
 
 from ..datasets import opioid_df
 from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
-from ..utils import get_px_figure_with_default_template
+from ..utils import get_px_figure_with_default_template, get_placeholder_figure
 
 
 fig_percent_opioid_deaths = get_px_figure_with_default_template()
@@ -20,10 +20,16 @@ fig_percent_opioid_deaths = get_px_figure_with_default_template()
      Input('age_group_radio', 'value')]
 )
 def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_age):
-    if not selected_drug or not selected_sex:
-        return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
-     
+    drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
     start_year, end_year = [pd.to_datetime(x, format='%Y') for x in selected_years]
+
+    if not drugs:
+        return get_placeholder_figure("Please select at least one non-opioid drug type"), ""
+    elif not selected_sex:
+        return get_placeholder_figure("Please select at least one sex category"), ""
+    elif start_year == end_year:
+        return get_placeholder_figure("Please select a year range that spans more than one year."), ""
+
 
     filtered_opioid_df = opioid_df.dropna(subset=['Percent Opioid Deaths'])
 
@@ -32,7 +38,6 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     sex_display = "Both Sexes" if len(selected_sex) == 2 else ''.join(selected_sex)
     title = f"For {sex_display} and {age_display}"
 
-    drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
     filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
@@ -67,7 +72,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
                  trace.line.dash = 'dash'
                  trace.name += ' (Male)' 
 
-    #Plot behaviour for females only
+    # Plot behaviour for females only
     else:
         for trace in px.line(
                 filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',

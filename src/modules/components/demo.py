@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 
 from ..datasets import demo_df
 from ..constants import UNIQUE_DEMOS, DEMO_COLOR_SEQUENCE
-from ..utils import get_px_figure_with_default_template
+from ..utils import get_px_figure_with_default_template, get_placeholder_figure
 
 # create graph for the demographic
 fig_demo = get_px_figure_with_default_template()
@@ -19,6 +19,12 @@ fig_demo = get_px_figure_with_default_template()
 ])
 def update_demo_figure(selected_drug, selected_years):
     start_year, end_year = selected_years
+
+    if not selected_drug:
+        return get_placeholder_figure("Please select at least one drug type"), ""
+    elif start_year == end_year:
+        return get_placeholder_figure("Please select a year range that spans more than one year."), ""
+
     filtered_df = demo_df[(demo_df['Year'].between(start_year, end_year))]
     if len(selected_drug) == 8:
         title = "All Drugs"
