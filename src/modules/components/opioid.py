@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS
+from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template
 
 
@@ -68,8 +68,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Create scatter plot with trendlines for males
     fig_percent_opioid_deaths = px.line(
         filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
-        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10,
-        hover_data={'Percent Opioid Deaths': ":.2f"}
+        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     )
     for trace in fig_percent_opioid_deaths.data:
         trace.line.dash = 'dash'
@@ -78,8 +78,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Add scatter points for females to the existing plot
     for trace in px.line(
             filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
-            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10,
-            hover_data={'Percent Opioid Deaths': ":.2f"}
+            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     ).data:
         trace.name += ' (Female)' 
         fig_percent_opioid_deaths.add_trace(trace)
