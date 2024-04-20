@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 
 from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS
+from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template
 
 
@@ -57,7 +57,8 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
-        size='Death Rate', size_max=45, color_discrete_sequence=px.colors.qualitative.Prism
+        size='Death Rate', size_max=45, color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
     )
 
     # Update layout
