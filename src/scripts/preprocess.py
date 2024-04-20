@@ -3,8 +3,8 @@ import pandas as pd
 from parse_config import config, overall_columns, specific_columns, demographic_columns
 
 
-RAW_DATA_FILE = "../data/raw/Overdose_data_1999-2021 1.19.23.xlsx"
-OUTPUT_DIR = "../data/processed/"
+RAW_DATA_FILE = "data/raw/Overdose_data_1999-2021 1.19.23.xlsx"
+OUTPUT_DIR = "data/processed/"
 
 
 def read_raw_data():
@@ -114,9 +114,9 @@ def preprocess():
     specific_df = pd.DataFrame(specific_rows, columns=specific_columns)
     demo_df = pd.DataFrame(demo_rows, columns=demographic_columns)
 
-    overall_df.to_csv(os.path.join(OUTPUT_DIR, "overall.csv"), index=False)
-    specific_df.to_csv(os.path.join(OUTPUT_DIR, "specific.csv"), index=False)
-    demo_df.to_csv(os.path.join(OUTPUT_DIR, "demo.csv"), index=False)
+    overall_df.to_parquet(os.path.join(OUTPUT_DIR, "overall.parquet"), index=False)
+    specific_df.to_parquet(os.path.join(OUTPUT_DIR, "specific.parquet"), index=False)
+    demo_df.to_parquet(os.path.join(OUTPUT_DIR, "demo.parquet"), index=False)
 
 
 if __name__ == "__main__":
