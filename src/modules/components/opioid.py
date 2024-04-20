@@ -26,21 +26,31 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     end_year = pd.to_datetime(selected_years[1], format='%Y')
 
     # Import dataset and data wrangling for Percentage of Overdoses Involving Opioids per Drug Type plot
+    # Filter rows where Opioid Type is 'overall' or 'any'
     opioid_data_mod = specific_df.copy()
-    opioid_data_mod = opioid_data_mod[
-        (opioid_data_mod['Opioid Type'] == 'overall') | (opioid_data_mod['Opioid Type'] == 'any')]
-    overall_deaths = opioid_data_mod[opioid_data_mod['Opioid Type'] == 'overall'].groupby(
-        ['Drug Type', 'Sex', 'Year', 'Population Type'])['Deaths'].sum()
-    opioid_data_mod['Percent Opioid Deaths'] = opioid_data_mod.apply(lambda row: (row['Deaths'] / overall_deaths[
-        (row['Drug Type'], row['Sex'], row['Year'], row['Population Type'])]) * 100 if (row['Drug Type'], row['Sex'],
-                                                                                        row['Year'], row[
-                                                                                            'Population Type']) in overall_deaths.index else 0,
-                                                                     axis=1)
-    filtered_opioid_df = opioid_data_mod.query(
-        "(`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
-    filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
-    filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
+    opioid_data_mod = opioid_data_mod[opioid_data_mod['Opioid Type'].isin(['overall', 'any'])]
 
+    # Calculate overall deaths by grouping and summing
+    overall_deaths = opioid_data_mod.loc[opioid_data_mod['Opioid Type'] == 'overall'].groupby(
+        ['Drug Type', 'Sex', 'Year', 'Population Type'])['Deaths'].sum()
+
+    # Calculate Percent Opioid Deaths
+    opioid_data_mod['Percent Opioid Deaths'] = (opioid_data_mod['Deaths'] / 
+                                                opioid_data_mod.set_index(['Drug Type', 'Sex', 'Year', 'Population Type'])
+                                                            .index.map(overall_deaths)) * 100
+    opioid_data_mod['Percent Opioid Deaths'] = opioid_data_mod['Percent Opioid Deaths'].round(1)
+
+    # Filter rows based on non-opioid drug types
+    filtered_opioid_df = opioid_data_mod[(opioid_data_mod['Drug Type'].isin(['Stimulants', 'Cocaine', 'Psychostimulants',
+                                                                            'Benzodiazepines', 'Antidepressants'])) &
+                                        (opioid_data_mod['Opioid Type'] == 'any')]
+
+    # Drop rows with missing values in 'Percent Opioid Deaths' column
+    filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
+
+    # Convert 'Year' column to datetime format
+    filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
+    
     # Cases to filter the dataset based on inputs
     if selected_age == 'Overall':
         age_display = "All Age Groups"
