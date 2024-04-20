@@ -27,6 +27,7 @@ packaging==24.0
 pandas==2.2.1
 patsy==0.5.6
 plotly==5.20.0
+pyarrow==15.0.2
 python-dateutil==2.9.0.post0
 pytz==2024.1
 referencing==0.34.0
