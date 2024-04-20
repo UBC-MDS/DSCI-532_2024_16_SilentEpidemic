@@ -2,13 +2,13 @@ import pandas as pd
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import plotly.graph_objects as go
 
 from ..datasets import specific_df
 from ..constants import DRUG_OPIOIDS, unique_drug_types, color_sequence
+from ..utils import get_px_figure_with_default_template
 
 
-fig_deaths_and_rates = go.Figure()
+fig_deaths_and_rates = get_px_figure_with_default_template()
 
 
 @callback(
@@ -57,7 +57,7 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
-        size='Death Rate', size_max=60, color_discrete_sequence=color_sequence,
+        size='Death Rate', size_max=45, color_discrete_sequence=color_sequence,
         category_orders={"Drug Type": unique_drug_types} 
     )
 
