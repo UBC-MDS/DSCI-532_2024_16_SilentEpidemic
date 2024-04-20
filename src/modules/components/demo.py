@@ -48,7 +48,6 @@ def update_demo_figure(selected_drug, selected_years):
     return fig_demo, title
 
 
-<<<<<<< HEAD
 demo_card = dbc.Card([
     dbc.Alert(
         [
