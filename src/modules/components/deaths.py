@@ -5,7 +5,7 @@ import plotly.express as px
 
 from ..datasets import main_df
 from ..constants import UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
-from ..utils import get_px_figure_with_default_template
+from ..utils import get_px_figure_with_default_template, get_placeholder_figure
 
 
 fig_deaths_and_rates = get_px_figure_with_default_template()
@@ -20,10 +20,12 @@ fig_deaths_and_rates = get_px_figure_with_default_template()
      Input('age_group_radio', 'value')]
 )
 def update_main_figure(selected_drug, selected_sex, selected_years, selected_age):
-    if not selected_drug or not selected_sex:
-        return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
-
     start_year, end_year = [pd.to_datetime(x, format='%Y') for x in selected_years]
+
+    if not selected_drug:
+        return get_placeholder_figure("Please select at least one drug type"), ""
+    elif not selected_sex:
+        return get_placeholder_figure("Please select at least one sex category"), ""
 
     # Words to display in the subtitle
     age_display = "All Age Groups" if selected_age == 'Overall' else selected_age
