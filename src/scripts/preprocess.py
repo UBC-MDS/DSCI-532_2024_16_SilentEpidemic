@@ -114,6 +114,10 @@ def preprocess():
     specific_df = pd.DataFrame(specific_rows, columns=specific_columns)
     demo_df = pd.DataFrame(demo_rows, columns=demographic_columns)
 
+    # pre-calculate the percentage of OD with opioids as second factor
+    specific_df['In-category Overall Deaths'] = specific_df.groupby(['Drug Type', 'Sex', 'Year', 'Population Type'])['Deaths'].transform('max')
+    specific_df['Percent Opioid Deaths'] = specific_df['Deaths'] / specific_df['In-category Overall Deaths'] * 100
+
     overall_df.to_parquet(os.path.join(OUTPUT_DIR, "overall.parquet"), index=False)
     specific_df.to_parquet(os.path.join(OUTPUT_DIR, "specific.parquet"), index=False)
     demo_df.to_parquet(os.path.join(OUTPUT_DIR, "demo.parquet"), index=False)

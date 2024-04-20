@@ -3,7 +3,7 @@ from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
-from ..datasets import specific_df
+from ..datasets import opioid_df
 from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template
 
@@ -23,68 +23,59 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     if not selected_drug or not selected_sex:
         return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
      
-    start_year = pd.to_datetime(selected_years[0], format='%Y')
-    end_year = pd.to_datetime(selected_years[1], format='%Y')
-    # Import dataset and data wrangling for Percentage of Overdoses Involving Opioids per Drug Type plot
-    opioid_data_mod = specific_df.copy()
-    opioid_data_mod = opioid_data_mod[
-        (opioid_data_mod['Opioid Type'] == 'overall') | (opioid_data_mod['Opioid Type'] == 'any')]
-    overall_deaths = opioid_data_mod[opioid_data_mod['Opioid Type'] == 'overall'].groupby(
-        ['Drug Type', 'Sex', 'Year', 'Population Type'])['Deaths'].sum()
-    opioid_data_mod['Percent Opioid Deaths'] = opioid_data_mod.apply(lambda row: (row['Deaths'] / overall_deaths[
-        (row['Drug Type'], row['Sex'], row['Year'], row['Population Type'])]) * 100 if (row['Drug Type'], row['Sex'],
-                                                                                        row['Year'], row[
-                                                                                            'Population Type']) in overall_deaths.index else 0,
-                                                                     axis=1)
-    filtered_opioid_df = opioid_data_mod.query(
-        "(`Drug Type` in ['Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'] and `Opioid Type` == 'any')")
-    filtered_opioid_df = filtered_opioid_df.dropna(subset=['Percent Opioid Deaths'])
-    filtered_opioid_df['Year'] = pd.to_datetime(filtered_opioid_df['Year'], format='%Y')
+    start_year, end_year = [pd.to_datetime(x, format='%Y') for x in selected_years]
 
-    # Cases to filter the dataset based on inputs
-    if selected_age == 'Overall':
-        age_display = "All Age Groups"
-    else:
-        age_display = selected_age
+    filtered_opioid_df = opioid_df.dropna(subset=['Percent Opioid Deaths'])
 
-    sex_categories = selected_sex
-    if len(selected_sex) == 2:
-        sex_display = "Both Sexes"
-    else:
-        sex_display = ''.join(selected_sex)
+    # Words to display in the subtitle
+    age_display = "All Age Groups" if selected_age == 'Overall' else selected_age
+    sex_display = "Both Sexes" if len(selected_sex) == 2 else ''.join(selected_sex)
+    title = f"For {sex_display} and {age_display}"
 
     drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
-    if set(drugs) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}:
-        title = f"All drugs and {sex_display} and {age_display}"
-    else:
-        title = f"For {' and '.join(drugs)} and {sex_display} and {age_display}"
-
     filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &
-                                            filtered_opioid_df['Sex'].isin(sex_categories) &
+                                            filtered_opioid_df['Sex'].isin(selected_sex) &
                                             (filtered_opioid_df['Population Type'] == selected_age)]
-    filtered_opioid_df = filtered_opioid_df.groupby(['Drug Type', 'Year', 'Population Type', 'Sex'])[
-        'Percent Opioid Deaths'].sum().reset_index()
 
-    # Create scatter plot with trendlines for males
+    # Create plot
     fig_percent_opioid_deaths = px.line(
-        filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
-        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
+    filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
+    y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+    category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
     )
-    for trace in fig_percent_opioid_deaths.data:
-        trace.line.dash = 'dash'
-        trace.name += ' (Male)' 
+    
+    # Plot behaviour for both male and female selected
+    if set(selected_sex) == {'Male', 'Female'}:
+        for trace in fig_percent_opioid_deaths.data:
+            trace.line.dash = 'dash'
+            trace.name += ' (Male)' 
+            trace.showlegend = False
 
-    # Add scatter points for females to the existing plot
-    for trace in px.line(
-            filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
-            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
-            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
-    ).data:
-        trace.name += ' (Female)' 
-        fig_percent_opioid_deaths.add_trace(trace)
+        for trace in px.line(
+                filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
+                y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
+        ).data:
+             trace.name += ' (Female, --- Male)' 
+             fig_percent_opioid_deaths.add_trace(trace)
+
+    # Plot behaviour for males only    
+    elif set(selected_sex) == {'Male'}:
+            for trace in fig_percent_opioid_deaths.data:
+                 trace.line.dash = 'dash'
+                 trace.name += ' (Male)' 
+
+    #Plot behaviour for females only
+    else:
+        for trace in px.line(
+                filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
+                y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}, hover_data = {'Percent Opioid Deaths': ":.1f"}
+                ).data:
+                trace.name += ' (Female)' 
+                fig_percent_opioid_deaths.add_trace(trace)
 
     # Update layout
     fig_percent_opioid_deaths.update_layout(
