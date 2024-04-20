@@ -55,10 +55,19 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
 
     drugs = set(selected_drug.copy()) - DRUG_OPIOIDS
 
+    if not drugs:
+        subtitle = "Please select a non-opioid drug type"
+        return go.Figure(), subtitle
+    
+    if not sex_categories:
+        subtitle = "Please select at least one sex"
+        return go.Figure(), subtitle
+
     if set(drugs) == {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}:
         title = f"All drugs and {sex_display} and {age_display}"
     else:
         title = f"For {' and '.join(drugs)} and {sex_display} and {age_display}"
+
 
     filtered_opioid_df = filtered_opioid_df[(filtered_opioid_df['Drug Type'].isin(drugs)) &
                                             filtered_opioid_df['Year'].between(start_year, end_year, inclusive='both') &

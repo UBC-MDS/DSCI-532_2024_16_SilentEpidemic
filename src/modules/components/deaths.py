@@ -42,6 +42,14 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
     if DRUG_OPIOIDS.issubset(drugs_display):
         drugs_display = list((drugs_display - DRUG_OPIOIDS) | {'Any opioid'})
 
+    if not drugs_display:
+        subtitle = "Please select a drug type"
+        return go.Figure(), subtitle
+    
+    if not sex_categories:
+        subtitle = "Please select at least one sex"
+        return go.Figure(), subtitle
+
     if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
                               'Antidepressants'}:
         title = f"All drugs and {sex_display} and {age_display}"
