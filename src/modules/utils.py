@@ -1,6 +1,8 @@
-import requests
 from datetime import datetime
-from constants import API_ENDPOINT
+
+import requests
+
+from .constants import API_ENDPOINT
 
 
 def get_repo_last_updated_time():
