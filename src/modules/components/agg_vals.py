@@ -1,5 +1,6 @@
 from dash import html, Output, Input, callback
 import dash_bootstrap_components as dbc
+import joblib
 
 from ..datasets import overall_df
 
@@ -13,7 +14,7 @@ def create_card(title, value, id_value):
         body=True,
     )
 
-
+memory = joblib.Memory("tmp", verbose=0)
 @callback(
     [Output('death_value', 'children'),
      Output('death_rate_value', 'children'),
@@ -23,7 +24,11 @@ def create_card(title, value, id_value):
      Input('year_range_slider', 'value'),
      Input('age_group_radio', 'value')]
      )
+
+@memory.cache()
 def update_aggregated_values(selected_sex, selected_years, selected_age):
+    import time
+    time.sleep(1)
     start_year = selected_years[0]
     end_year = selected_years[1]
 
