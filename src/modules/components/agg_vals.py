@@ -55,6 +55,6 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
 
 
 death_card = create_card("Cumulative Deaths from All Drugs", 0, "death_value")
-death_rate_card = create_card("Average Death Rate (per 100,000)", 0, "death_rate_value")
+death_rate_card = create_card("Average Death Rate (All Drugs, per 100,000)", 0, "death_rate_value")
 percentage_card = create_card("Percentage Young Adult Deaths", 0, "percentage_value")
 fold_change_card = create_card("Fold Change", 0, "fold_change_value")
