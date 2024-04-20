@@ -38,7 +38,7 @@ sidebar = dbc.Container([
                 id='year_range_slider',
                 min=1999, max=2021, step=1,
                 value=[1999, 2021],
-                marks= None,
+                marks= {1999: "", 2010: "", 2021: ""},
                 tooltip={
                     "placement": "bottom",
                     "always_visible": True,
