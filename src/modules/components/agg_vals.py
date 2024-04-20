@@ -44,10 +44,10 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     group_df = pop_df.groupby(['Year'])
     fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
 
-    avg_death_rate = (pop_df['Death Rate'] * pop_df['Deaths']).sum() / pop_df['Deaths'].sum()
+    avg_death_rate = group_df['Death Rate'].mean().mean()
 
     formatted_deaths = f"{cumulative_deaths:,.0f}"
-    formatted_death_rate = f"{avg_death_rate:.2f}%"
+    formatted_death_rate = f"{avg_death_rate:.2f}"
     formatted_percentage_young_adults = f"{young_rate:.2f}%"
     fold_change_text = f"{fold_change:.1f}"
 
@@ -55,6 +55,6 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
 
 
 death_card = create_card("Cumulative Deaths from All Drugs", 0, "death_value")
-death_rate_card = create_card("Average Death Rate", 0, "death_rate_value")
+death_rate_card = create_card("Average Death Rate (All Drugs, per 100,000)", 0, "death_rate_value")
 percentage_card = create_card("Percentage Young Adult Deaths", 0, "percentage_value")
 fold_change_card = create_card("Fold Change", 0, "fold_change_value")
