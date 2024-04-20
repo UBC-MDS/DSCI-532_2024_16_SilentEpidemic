@@ -68,7 +68,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Create scatter plot with trendlines for males
     fig_percent_opioid_deaths = px.line(
         filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
-        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10
+        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10,
+        hover_data={'Percent Opioid Deaths': ":.2f"}
     )
     for trace in fig_percent_opioid_deaths.data:
         trace.line.dash = 'dash'
@@ -77,7 +78,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Add scatter points for females to the existing plot
     for trace in px.line(
             filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
-            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10
+            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10,
+            hover_data={'Percent Opioid Deaths': ":.2f"}
     ).data:
         trace.name += ' (Female)' 
         fig_percent_opioid_deaths.add_trace(trace)
