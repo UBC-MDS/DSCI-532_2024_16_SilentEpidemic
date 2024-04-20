@@ -2,6 +2,7 @@ import plotly.express as px
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 
+from .tooltip import create_tooltip
 from ..datasets import demo_df
 from ..constants import UNIQUE_DEMOS, DEMO_COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template, get_placeholder_figure
@@ -54,6 +55,12 @@ def update_demo_figure(selected_drug, selected_years):
     return fig_demo, title
 
 
-demo_card = dbc.Card(
-    [html.H4("Overdose Death Rate based on Demographic", id="demo_title"), html.H6("Subtitle", id="demo_subtitle"),
-        dcc.Graph(id='demo_graph', figure=fig_demo)], body=True)
+demo_card = dbc.Card([
+    html.H4([
+        "Overdose Death Rate based on Demographic",
+        create_tooltip("demo-tooltip",
+                       "This chart shows overall demographic statistics, and is independent on the sex or age group selection.")
+    ], id="demo_title"),
+    html.H6("Subtitle", id="demo_subtitle"),
+    dcc.Graph(id='demo_graph', figure=fig_demo)
+], body=True)

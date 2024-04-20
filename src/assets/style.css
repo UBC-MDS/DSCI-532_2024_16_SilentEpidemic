@@ -58,6 +58,10 @@
     color: black;
 }
 
+.tooltip-wrapper {
+    margin: auto;
+}
+
 @media screen and (min-width: 768px) {
     .footer {
         margin-top: 6rem;

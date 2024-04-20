@@ -3,9 +3,11 @@ from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
+from .tooltip import create_tooltip
 from ..datasets import opioid_df
 from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template, get_placeholder_figure
+
 
 
 fig_percent_opioid_deaths = get_px_figure_with_default_template()
@@ -94,7 +96,10 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
 
 
 opioid_card = dbc.Card([
-    html.H4("Percentage of Overdose Deaths Involving Opioids as a Secondary Factor", id="opioid_title"),
+    html.H4([
+        "Percentage of Overdose Deaths Involving Opioids as a Secondary Factor",
+        create_tooltip("opioid-tooltip", "This chart will not show trend lines for opioids, which is always 100%.")
+    ], id="opioid_title"),
     html.H6("Subtitle", id="opioid_subtitle"),
     dcc.Graph(id='percent_opioids', figure=fig_percent_opioid_deaths)
 ], body=True)

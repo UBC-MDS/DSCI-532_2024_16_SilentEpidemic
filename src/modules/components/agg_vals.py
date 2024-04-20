@@ -1,16 +1,20 @@
 from dash import html, Output, Input, callback
 import dash_bootstrap_components as dbc
 
+from .tooltip import create_tooltip
 from ..datasets import overall_df
 
 
 cache = {}
 
 
-def create_card(title, value, id_value):
+def create_card(title, value, id_value, tooltip_id="", tooltip_msg=""):
     return dbc.Card(
         [
-            html.H4(title, className="card-title"),
+            html.H4([
+                title,
+                create_tooltip(tooltip_id, tooltip_msg) if tooltip_id and tooltip_msg else None
+            ], className="card-title"),
             html.P(value, className="card-value", id=id_value),
         ],
         body=True,
@@ -68,7 +72,9 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     return result
 
 
-death_card = create_card("Cumulative Deaths from All Drugs", 0, "death_value")
-death_rate_card = create_card("Average Death Rate (All Drugs, per 100,000)", 0, "death_rate_value")
+death_card = create_card("Cumulative Deaths From All Drugs", 0, "death_value")
+death_rate_card = create_card("Average Death Rate", 0, "death_rate_value",
+                              "deathrate-tooltip", "This is the overall death rate normalized per 100,000 population from all drugs, averaged across the selected time range.")
 percentage_card = create_card("Percentage Young Adult Deaths", 0, "percentage_value")
-fold_change_card = create_card("Fold Change", 0, "fold_change_value")
+fold_change_card = create_card("Fold Change", 0, "fold_change_value",
+                               "fold-tooltip", "This is the fold increased in number of deaths from the start to end of the selected time range.")
