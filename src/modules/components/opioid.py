@@ -21,7 +21,7 @@ fig_percent_opioid_deaths = get_px_figure_with_default_template()
 )
 def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_age):
     if not selected_drug or not selected_sex:
-        return go.Figure(), "Please select at least one drug type and one sex category"
+        return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
      
     start_year = pd.to_datetime(selected_years[0], format='%Y')
     end_year = pd.to_datetime(selected_years[1], format='%Y')
