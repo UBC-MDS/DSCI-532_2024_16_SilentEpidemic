@@ -4,6 +4,7 @@ from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 
 from ..datasets import demo_df
+from ..constants import unique_demos, demo_color_sequence
 
 # create graph for the demographic
 fig_demo = go.Figure()
@@ -30,7 +31,9 @@ def update_demo_figure(selected_drug, selected_years):
         return go.Figure(), "Please select a drug type"
 
     fig_demo = px.line(filtered_df, x="Year", y="Death Rate", color="Demographic", line_group="Demographic",
-        color_discrete_sequence=px.colors.qualitative.T10)
+                       color_discrete_sequence=demo_color_sequence,
+                       category_orders={"Demographic": unique_demos}
+    ) 
 
     for trace in fig_demo.data:
         if trace.name == 'Overall':

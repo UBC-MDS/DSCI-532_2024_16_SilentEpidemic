@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS
+from ..constants import DRUG_OPIOIDS, unique_drug_types, color_sequence
 
 
 fig_deaths_and_rates = go.Figure()
@@ -57,7 +57,8 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
-        size='Death Rate', size_max=60, color_discrete_sequence=px.colors.qualitative.Prism
+        size='Death Rate', size_max=60, color_discrete_sequence=color_sequence,
+        category_orders={"Drug Type": unique_drug_types} 
     )
 
     # Update layout
