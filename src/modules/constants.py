@@ -1,6 +1,7 @@
 import plotly.express as px
 
 DRUG_OPIOIDS = {'Prescription opioids', 'Synthetic opioids', 'Heroin'}
+DRUG_NON_OPIOIDS = {'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'}
 UNIQUE_DRUG_TYPES = ('Antidepressants', 'Benzodiazepines', 'Cocaine', 'Heroin', 'Prescription opioids', 'Psychostimulants', 'Stimulants', 'Synthetic opioids')
 UNIQUE_DEMOS = ('Overall', 'American Indian or Alaska Native (Non-Hispanic)', 'Asian (Non-Hispanic)', 'Black (Non-Hispanic)', 'Hispanic', 'Native Hawaiin or Other Pacific Islander (Non-Hispanic)', 'White (Non-Hispanic)')
 

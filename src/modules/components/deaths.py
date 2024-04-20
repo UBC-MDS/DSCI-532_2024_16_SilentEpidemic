@@ -3,8 +3,8 @@ from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
-from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
+from ..datasets import main_df
+from ..constants import UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template
 
 
@@ -22,40 +22,19 @@ fig_deaths_and_rates = get_px_figure_with_default_template()
 def update_main_figure(selected_drug, selected_sex, selected_years, selected_age):
     if not selected_drug or not selected_sex:
         return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
-    
-    main_df = specific_df[specific_df['Opioid Type'] == 'overall']
-    main_df['Year'] = pd.to_datetime(main_df['Year'], format='%Y')
 
-    start_year = pd.to_datetime(selected_years[0], format='%Y')
-    end_year = pd.to_datetime(selected_years[1], format='%Y')
+    start_year, end_year = [pd.to_datetime(x, format='%Y') for x in selected_years]
 
-    # Cases to filter the dataset based on inputs
-    if selected_age == 'Overall':
-        age_display = "All Age Groups"
-    else:
-        age_display = selected_age
+    # Words to display in the subtitle
+    age_display = "All Age Groups" if selected_age == 'Overall' else selected_age
+    sex_display = "Both Sexes" if len(selected_sex) == 2 else ''.join(selected_sex)
+    title = f"For {sex_display} and {age_display}"
 
-    sex_categories = selected_sex
-    if len(selected_sex) == 2:
-        sex_display = "Both Sexes"
-    else:
-        sex_display = ''.join(selected_sex)
-
-    drugs_display = set(selected_drug.copy())
-    if DRUG_OPIOIDS.issubset(drugs_display):
-        drugs_display = list((drugs_display - DRUG_OPIOIDS) | {'Any opioid'})
-
-    if set(drugs_display) == {'Any opioid', 'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines',
-                              'Antidepressants'}:
-        title = f"All drugs and {sex_display} and {age_display}"
-    else:
-        title = f"For {' and '.join(drugs_display)} and {sex_display} and {age_display}"
-
-    main_df = main_df[(main_df['Drug Type'].isin(selected_drug)) &
+    filtered_df = main_df[(main_df['Drug Type'].isin(selected_drug)) &
                                             main_df['Year'].between(start_year, end_year, inclusive='both') &
-                                            main_df['Sex'].isin(sex_categories) &
+                                            main_df['Sex'].isin(selected_sex) &
                                             (main_df['Population Type'] == selected_age)]
-    filtered_df = main_df.groupby(['Drug Type', 'Year', 'Population Type']).agg({'Deaths': 'sum', 'Death Rate': 'mean'}).reset_index()
+    filtered_df = filtered_df.groupby(['Drug Type', 'Year', 'Population Type']).agg({'Deaths': 'sum', 'Death Rate': 'mean'}).reset_index()
     filtered_df = filtered_df.fillna(0)
 
     fig_deaths_and_rates = px.scatter(
