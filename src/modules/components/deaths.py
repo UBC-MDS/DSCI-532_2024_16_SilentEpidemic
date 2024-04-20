@@ -3,6 +3,7 @@ from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
 
+from .tooltip import create_tooltip
 from ..datasets import main_df
 from ..constants import UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
 from ..utils import get_px_figure_with_default_template
@@ -63,7 +64,10 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
 
 deaths_card = dbc.Card([
-    html.H4("Overdoses Deaths and Death Rates by Drug Type", id="main_title"),
+    html.H4([
+        "Overdoses Deaths and Death Rates by Drug Type",
+        create_tooltip("main-tooltip", "The bubbles represent the normalized death rate per 100,000 population.")
+    ], id="main_title"),
     html.H6("Subtitle", id="main_subtitle"),
     dcc.Graph(id='main_graph', figure=fig_deaths_and_rates)
 ], body=True)
