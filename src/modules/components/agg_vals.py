@@ -4,6 +4,9 @@ import dash_bootstrap_components as dbc
 from ..datasets import overall_df
 
 
+cache = {}
+
+
 def create_card(title, value, id_value):
     return dbc.Card(
         [
@@ -13,7 +16,6 @@ def create_card(title, value, id_value):
         body=True,
     )
 
-CACHE = {}
 
 @callback(
     [Output('death_value', 'children'),
@@ -26,8 +28,8 @@ CACHE = {}
      )
 def update_aggregated_values(selected_sex, selected_years, selected_age):
     key = (tuple(selected_sex), tuple(selected_years), selected_age)
-    if key in CACHE:
-        return CACHE[key]
+    if key in cache:
+        return cache[key]
     
     start_year = selected_years[0]
     end_year = selected_years[1]
@@ -49,7 +51,6 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     group_df = pop_df.groupby(['Year'])
     fold_change = group_df['Deaths'].sum().iloc[-1] / group_df['Deaths'].sum().iloc[0]
 
-    #avg_death_rate = (pop_df['Death Rate'] * pop_df['Deaths']).sum() / pop_df['Deaths'].sum()
     avg_death_rate = (pop_df['Deaths'].sum()) / ((pop_df['Deaths']/pop_df['Death Rate']).sum())
 
     formatted_deaths = f"{cumulative_deaths:,.0f}"
@@ -58,7 +59,7 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     fold_change_text = f"{fold_change:.1f}"
 
     result = formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
-    CACHE[key] = result
+    cache[key] = result
     return result
 
 
