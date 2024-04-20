@@ -2,13 +2,13 @@ import pandas as pd
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import plotly.graph_objects as go
 
 from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS
+from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
+from ..utils import get_px_figure_with_default_template
 
 
-fig_deaths_and_rates = go.Figure()
+fig_deaths_and_rates = get_px_figure_with_default_template()
 
 
 @callback(
@@ -20,6 +20,9 @@ fig_deaths_and_rates = go.Figure()
      Input('age_group_radio', 'value')]
 )
 def update_main_figure(selected_drug, selected_sex, selected_years, selected_age):
+    if not selected_drug or not selected_sex:
+        return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
+    
     main_df = specific_df[specific_df['Opioid Type'] == 'overall']
     main_df['Year'] = pd.to_datetime(main_df['Year'], format='%Y')
 
@@ -57,7 +60,8 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
-        size='Death Rate', size_max=60, color_discrete_sequence=px.colors.qualitative.Prism
+        size='Death Rate', size_max=45, color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
     )
 
     # Update layout

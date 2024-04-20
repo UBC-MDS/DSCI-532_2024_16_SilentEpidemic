@@ -27,7 +27,8 @@ sidebar = dbc.Container([
                 value=['Prescription opioids', 'Synthetic opioids', 'Heroin',
                        'Stimulants', 'Cocaine', 'Psychostimulants', 'Benzodiazepines', 'Antidepressants'],
                 placeholder = "Select a drug type",
-                multi=True)
+                multi=True,
+                clearable=False)
                        
         ]),
         dbc.Row([html.Hr()]),
@@ -37,8 +38,7 @@ sidebar = dbc.Container([
                 id='year_range_slider',
                 min=1999, max=2021, step=1,
                 value=[1999, 2021],
-                marks={1999: "1999", 2004: "2004", 2009: "2009",
-                       2014: "2014", 2019: "2019", 2021: "2021"},
+                marks= {1999: "", 2010: "", 2021: ""},
                 tooltip={
                     "placement": "bottom",
                     "always_visible": True,
@@ -63,6 +63,11 @@ sidebar = dbc.Container([
             )
         ]),
         dbc.Row([html.Hr()]),
+        dbc.Row([html.A(
+            dbc.Button(
+                "Reset All Filters",color="light",
+                className="me-1 link-underline-opacity-0", outline=True),
+            href='/', className="d-grid gap-2 link-underline-opacity-0")]),
         dbc.Row([footer])
     ])
 ], className="sidebar", fluid=True)

@@ -2,15 +2,13 @@ import pandas as pd
 from dash import Output, Input, html, dcc, callback
 import dash_bootstrap_components as dbc
 import plotly.express as px
-import plotly.graph_objects as go
 
 from ..datasets import specific_df
-from ..constants import DRUG_OPIOIDS
+from ..constants import DRUG_OPIOIDS, UNIQUE_DRUG_TYPES, COLOR_SEQUENCE
+from ..utils import get_px_figure_with_default_template
 
 
-# Create Percentage of Overdoses Involving Opioids per Drug Type Chart
-# Create callback for the Percentage of Overdoses Involving Opioids per Drug Type Chart
-fig_percent_opioid_deaths = go.Figure()
+fig_percent_opioid_deaths = get_px_figure_with_default_template()
 
 
 @callback(
@@ -22,9 +20,11 @@ fig_percent_opioid_deaths = go.Figure()
      Input('age_group_radio', 'value')]
 )
 def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_age):
+    if not selected_drug or not selected_sex:
+        return get_px_figure_with_default_template(), "Please select at least one drug type and one sex category"
+     
     start_year = pd.to_datetime(selected_years[0], format='%Y')
     end_year = pd.to_datetime(selected_years[1], format='%Y')
-
     # Import dataset and data wrangling for Percentage of Overdoses Involving Opioids per Drug Type plot
     opioid_data_mod = specific_df.copy()
     opioid_data_mod = opioid_data_mod[
@@ -70,7 +70,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Create scatter plot with trendlines for males
     fig_percent_opioid_deaths = px.line(
         filtered_opioid_df[filtered_opioid_df['Sex'] == 'Male'], x='Year',
-        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10
+        y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+        category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
     )
     for trace in fig_percent_opioid_deaths.data:
         trace.line.dash = 'dash'
@@ -79,7 +80,8 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     # Add scatter points for females to the existing plot
     for trace in px.line(
             filtered_opioid_df[filtered_opioid_df['Sex'] == 'Female'], x='Year',
-            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=px.colors.qualitative.T10
+            y='Percent Opioid Deaths', color='Drug Type', color_discrete_sequence=COLOR_SEQUENCE,
+            category_orders={"Drug Type": UNIQUE_DRUG_TYPES}
     ).data:
         trace.name += ' (Female)' 
         fig_percent_opioid_deaths.add_trace(trace)

@@ -1,6 +1,7 @@
 from dash import html, dcc
 
-from ..utils import REPO_URL, get_repo_last_updated_time
+from ..constants import REPO_URL
+from ..utils import get_repo_last_updated_time
 
 
 footer = html.Footer(children=[

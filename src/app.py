@@ -10,6 +10,7 @@ from .modules.components.sidebar import sidebar
 
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP, dbc.icons.BOOTSTRAP, 'src/assets/style.css'])
+app.title = 'Silent Epidemic'
 server = app.server
 
 main_dashboard = dbc.Container([
