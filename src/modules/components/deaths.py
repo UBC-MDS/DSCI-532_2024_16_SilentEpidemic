@@ -57,7 +57,7 @@ def update_main_figure(selected_drug, selected_sex, selected_years, selected_age
 
     fig_deaths_and_rates = px.scatter(
         filtered_df, x='Year',y='Deaths', color='Drug Type',
-        size='Death Rate', size_max=60, color_discrete_sequence=px.colors.qualitative.Prism
+        size='Death Rate', size_max=45, color_discrete_sequence=px.colors.qualitative.Prism
     )
 
     # Update layout
