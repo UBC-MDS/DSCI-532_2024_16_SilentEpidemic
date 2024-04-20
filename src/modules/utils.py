@@ -1,11 +1,15 @@
-import requests
 from datetime import datetime
 
-REPO_NAME = "UBC-MDS/DSCI-532_2024_16_SilentEpidemic"
-REPO_URL = f"https://github.com/{REPO_NAME}"
-API_ENDPOINT = f"https://api.github.com/repos/{REPO_NAME}"
+import requests
+import plotly.graph_objects as go
+
+from .constants import API_ENDPOINT
 
 
 def get_repo_last_updated_time():
     repo_info = requests.get(API_ENDPOINT).json()
     return datetime.fromisoformat(repo_info['pushed_at'])
+
+
+def get_px_figure_with_default_template():
+    return go.Figure(layout=dict(template='plotly'))

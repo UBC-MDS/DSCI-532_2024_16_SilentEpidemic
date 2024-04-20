@@ -63,6 +63,11 @@ sidebar = dbc.Container([
             )
         ]),
         dbc.Row([html.Hr()]),
+        dbc.Row([html.A(
+            dbc.Button(
+                "Reset All Filters",color="light",
+                className="me-1 link-underline-opacity-0", outline=True),
+            href='/', className="d-grid gap-2 link-underline-opacity-0")]),
         dbc.Row([footer])
     ])
 ], className="sidebar", fluid=True)
