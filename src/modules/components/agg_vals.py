@@ -1,6 +1,5 @@
 from dash import html, Output, Input, callback
 import dash_bootstrap_components as dbc
-import joblib
 
 from ..datasets import overall_df
 
@@ -14,7 +13,8 @@ def create_card(title, value, id_value):
         body=True,
     )
 
-memory = joblib.Memory("tmp", verbose=0)
+CACHE = {}
+
 @callback(
     [Output('death_value', 'children'),
      Output('death_rate_value', 'children'),
@@ -24,11 +24,11 @@ memory = joblib.Memory("tmp", verbose=0)
      Input('year_range_slider', 'value'),
      Input('age_group_radio', 'value')]
      )
-
-@memory.cache()
 def update_aggregated_values(selected_sex, selected_years, selected_age):
-    import time
-    time.sleep(1)
+    key = (tuple(selected_sex), tuple(selected_years), selected_age)
+    if key in CACHE:
+        return CACHE[key]
+    
     start_year = selected_years[0]
     end_year = selected_years[1]
 
@@ -57,7 +57,9 @@ def update_aggregated_values(selected_sex, selected_years, selected_age):
     formatted_percentage_young_adults = f"{young_rate:.2f}%"
     fold_change_text = f"{fold_change:.1f}"
 
-    return formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
+    result = formatted_deaths, formatted_death_rate, formatted_percentage_young_adults, fold_change_text
+    CACHE[key] = result
+    return result
 
 
 death_card = create_card("Cumulative Deaths from All Drugs", 0, "death_value")
