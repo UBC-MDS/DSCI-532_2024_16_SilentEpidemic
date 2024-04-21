@@ -30,7 +30,7 @@ def update_opioid_figure(selected_drug, selected_sex, selected_years, selected_a
     elif not selected_sex:
         return get_placeholder_figure("Please select at least one sex category"), ""
     elif start_year == end_year:
-        return get_placeholder_figure("Please select a year range that spans more than one year."), ""
+        return get_placeholder_figure("Please select a year range that spans more than one year"), ""
 
 
     filtered_opioid_df = opioid_df.dropna(subset=['Percent Opioid Deaths'])
